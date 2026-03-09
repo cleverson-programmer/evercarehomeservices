@@ -8,16 +8,16 @@ const HTML_DIR = path.join(__dirname, 'public', 'html');
 // Serve static assets (CSS, JS, images, favicons)
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Route map: clean URL → HTML file
+// Route map: clean URL → HTML file (subdirectory/index.html structure)
 const routes = {
   '/':                 'index.html',
-  '/services':         'services.html',
-  '/about':            'about.html',
-  '/contact':          'contact.html',
-  '/cleaning-services':'cleaning-services.html',
-  '/evercare-care':    'evercare-care.html',
-  '/privacy':          'privacy.html',
-  '/terms':            'terms.html',
+  '/services':         'services/index.html',
+  '/about':            'about/index.html',
+  '/contact':          'contact/index.html',
+  '/cleaning-services':'cleaning-services/index.html',
+  '/evercare-care':    'evercare-care/index.html',
+  '/privacy':          'privacy/index.html',
+  '/terms':            'terms/index.html',
 };
 
 // Register each route
@@ -33,7 +33,7 @@ app.get('/cleaning', (req, res) => res.redirect(301, '/cleaning-services'));
 
 // 404 handler — must be last
 app.use((req, res) => {
-  res.status(404).sendFile(path.join(HTML_DIR, '404.html'));
+  res.status(404).sendFile(path.join(HTML_DIR, '404', 'index.html'));
 });
 
 app.listen(PORT, () => {
