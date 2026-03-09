@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logo Size Comparison</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #f0f4f8; padding: 40px 20px; }
+    h1 { text-align: center; font-size: 1.1rem; color: #444; margin-bottom: 32px; font-weight: 500; }
+
+    .label {
+      text-align: center;
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .label.current { color: #4487BF; }
+    .label.opt { color: #888; }
+
+    .nav-preview {
+      background: rgba(255,255,255,.97);
+      border-bottom: 1px solid rgba(68,135,191,.1);
+      box-shadow: 0 2px 12px rgba(0,0,0,.06);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 32px;
+      margin-bottom: 32px;
+      border-radius: 12px;
+    }
+
+    .nav-left { display: flex; align-items: center; }
+    .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+    .nav-links a { color: #6b7280; font-size: .78rem; font-weight: 600; text-decoration: none; letter-spacing: .06em; text-transform: uppercase; }
+    .nav-links a.active { color: #4487BF; }
+    .btn { background: linear-gradient(135deg, #4487BF, #3aaa85); color: #fff; border: none; padding: 10px 22px; border-radius: 100px; font-size: .78rem; font-weight: 600; cursor: pointer; white-space: nowrap; }
+    .phone { color: #4487BF; font-size: .82rem; font-weight: 700; }
+
+    /* Height variants */
+    .h52 { height: 52px; width: auto; display: block; }
+    .h68 { height: 68px; width: auto; display: block; }
+    .h80 { height: 80px; width: auto; display: block; }
+    .h96 { height: 96px; width: auto; display: block; }
+
+    /* Nav heights per logo */
+    .nav-52 { height: 64px; }
+    .nav-68 { height: 80px; }
+    .nav-80 { height: 90px; }
+    .nav-96 { height: 108px; }
+
+    .badge {
+      display: inline-block;
+      background: #e8f3fb;
+      color: #4487BF;
+      font-size: .7rem;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 100px;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Comparação de tamanhos de logo na navbar</h1>
+
+  <!-- 52px -->
+  <p class="label opt">52px — original (antes)</p>
+  <div class="nav-preview nav-52">
+    <div class="nav-left">
+      <img src="https://evercarehomeservice.com/logo.svg" alt="EverCare" class="h52">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#" class="phone">☎ (508) 736-1263</a></li>
+    </ul>
+    <button class="btn">Get a Free Estimate</button>
+  </div>
+
+  <!-- 68px -->
+  <p class="label current">68px — atual <span class="badge">ATUAL</span></p>
+  <div class="nav-preview nav-68">
+    <div class="nav-left">
+      <img src="https://evercarehomeservice.com/logo.svg" alt="EverCare" class="h68">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#" class="phone">☎ (508) 736-1263</a></li>
+    </ul>
+    <button class="btn">Get a Free Estimate</button>
+  </div>
+
+  <!-- 80px -->
+  <p class="label opt">80px — opção A</p>
+  <div class="nav-preview nav-80">
+    <div class="nav-left">
+      <img src="https://evercarehomeservice.com/logo.svg" alt="EverCare" class="h80">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#" class="phone">☎ (508) 736-1263</a></li>
+    </ul>
+    <button class="btn">Get a Free Estimate</button>
+  </div>
+
+  <!-- 96px -->
+  <p class="label opt">96px — opção B</p>
+  <div class="nav-preview nav-96">
+    <div class="nav-left">
+      <img src="https://evercarehomeservice.com/logo.svg" alt="EverCare" class="h96">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#" class="phone">☎ (508) 736-1263</a></li>
+    </ul>
+    <button class="btn">Get a Free Estimate</button>
+  </div>
+
+</body>
+</html>

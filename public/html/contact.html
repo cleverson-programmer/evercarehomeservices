@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="apple-touch-icon" href="/favicon-192.png">
+  <title>Contact EverCare Home Services | Worcester, MA</title>
+  <meta name="description" content="Contact EverCare Home Services in Worcester, MA. Get in touch by text, call, or email for in-home care or cleaning services in Central Massachusetts.">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      /* Blue — Care */
+      --b1: #2a5f8f; --b2: #4487bf; --b3: #56c2c1; --b4: #a8d8ea;
+      /* Green — Cleaning */
+      --g1: #1e5c38; --g2: #2f7a57; --g3: #52b788; --g4: #a8d8bc;
+      /* Shared */
+      --navy: #0d1e2e; --navy2: #152535;
+      --white: #ffffff; --cream: #f4f8fc; --cream2: #e8f2f8;
+      --text: #1a2e3d; --muted: #4a6070;
+      --serif: 'Playfair Display', Georgia, serif;
+      --sans: 'Inter', system-ui, sans-serif;
+      --sh: 0 6px 32px rgba(68,135,191,.12);
+      --sh2: 0 20px 60px rgba(68,135,191,.18);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--sans); color: var(--text); background: var(--white); overflow-x: hidden; }
+    h1,h2,h3,h4 { font-family: var(--serif); line-height: 1.2; letter-spacing: -.01em; font-weight: 700; }
+    em.serif-em { font-style: italic; font-weight: 600; }
+    ::selection { background: var(--b3); color: #fff; }
+
+    /* NAV */
+    #header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: transparent; border-bottom: 1px solid transparent; transition: background .4s, box-shadow .4s, border-color .4s; overflow: visible; }
+    #header.scrolled { background: #fff; box-shadow: 0 4px 24px rgba(13,30,46,.08); }
+    .nav-inner { max-width: 1260px; margin: 0 auto; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; height: 110px; }
+    .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,.85); font-size: .8rem; font-weight: 600; text-decoration: none; letter-spacing: .06em; text-transform: uppercase; transition: color .2s; }
+    .nav-links a:hover, .nav-links a.nav-active { color: #fff; } #header.scrolled .nav-links a { color: var(--muted); } #header.scrolled .nav-links a:hover, #header.scrolled .nav-links a.nav-active { color: var(--b2); }
+    .nav-links a.nav-active { position: relative; }
+    .nav-links a.nav-active:not(.btn-nav)::after { content: ''; position: absolute; bottom: -4px; left: 0; right: 0; height: 2px; border-radius: 2px; background: linear-gradient(90deg, var(--b2), var(--b3)); }
+    .nav-phone { color: var(--b2) !important; font-size: .82rem !important; font-weight: 700 !important; }
+    .btn-nav { background:linear-gradient(135deg,var(--b2),var(--g3)); color: #fff !important; padding: 11px 24px; border-radius: 100px; font-weight: 700 !important; font-size: .82rem !important; text-decoration: none; box-shadow:0 4px 16px rgba(68,135,191,.35); transition: all .25s; }
+    .btn-nav:hover { transform: translateY(-2px); box-shadow:0 8px 24px rgba(68,135,191,.5); }
+    #hamburger { display: none; background: none; border: none; cursor: pointer; color: rgba(255,255,255,.9); font-size: 1.7rem; padding: 4px 8px; line-height: 1; transition: color .2s, transform .2s; } #header.scrolled #hamburger { color: var(--navy); }
+    #mobile-menu { display: block; max-height: 0; overflow: hidden; opacity: 0; position: absolute; top: 110px; left: 0; right: 0; background: var(--white); padding: 0 24px; box-shadow: 0 8px 32px rgba(13,30,46,.12); border-top: 2px solid var(--b2); transition: max-height .35s ease, opacity .25s ease, padding .35s ease; }
+    #mobile-menu.open { max-height: 540px; opacity: 1; padding: 16px 24px 28px; }
+    #mobile-menu a { display: block; padding: 14px 0; font-weight: 600; color: var(--navy); text-decoration: none; border-bottom: 1px solid rgba(0,0,0,.06); font-size: .95rem; letter-spacing: .04em; text-transform: uppercase; transition: color .2s; }
+    #mobile-menu a:hover { color: var(--b2); }
+    #mobile-menu .btn-nav { display: block; margin-top: 16px !important; text-align: center; padding: 16px 24px; font-size: 1rem; border-radius: 100px; color: #fff !important; border-bottom: none; text-transform: none; }
+    @media(max-width:900px) { .nav-links,.nav-phone,.btn-nav { display: none; } #hamburger { display: block; } }
+
+    /* HERO */
+    #hero { min-height: 52vh; position: relative; display: flex; align-items: center; overflow: hidden; padding-top: 0; background: linear-gradient(135deg, var(--navy) 0%, #0e2a3d 50%, #0a1f18 100%); }
+    .hero-dots { position: absolute; inset: 0; background-image: radial-gradient(circle, rgba(255,255,255,.04) 1px, transparent 1px); background-size: 28px 28px; }
+    .hero-orb-1 { position: absolute; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(68,135,191,.18), transparent 70%); top: -150px; right: -100px; pointer-events: none; }
+    .hero-orb-2 { position: absolute; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(82,183,136,.15), transparent 70%); bottom: -100px; left: -80px; pointer-events: none; }
+    .hero-content { position: relative; z-index: 2; max-width: 1260px; margin: 0 auto; padding: 110px 32px 60px; width: 100%; text-align: center; }
+    .hero-eyebrow { display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,.1); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,.2); border-radius: 100px; padding: 8px 20px; color: rgba(255,255,255,.8); font-size: .78rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 28px; }
+    #hero h1 { font-size: clamp(2.8rem, 5vw, 4.4rem); color: #fff; font-weight: 700; margin-bottom: 20px; }
+    #hero h1 em { font-style: italic; background: linear-gradient(135deg, var(--b4), var(--g4)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .hero-sub { color: rgba(255,255,255,.65); font-size: 1.1rem; line-height: 1.75; max-width: 560px; margin: 0 auto 24px; font-weight: 300; }
+    .hero-sms-btn { display: inline-flex; align-items: center; gap: 12px; background: linear-gradient(135deg, var(--b2), var(--g3)); color: #fff; padding: 20px 44px; border-radius: 16px; font-weight: 700; font-size: 1.1rem; text-decoration: none; box-shadow: 0 8px 32px rgba(68,135,191,.45); transition: all .25s; }
+    .hero-sms-btn:hover { transform: translateY(-3px); box-shadow: 0 14px 44px rgba(68,135,191,.6); }
+    .hero-note { color: rgba(255,255,255,.45); font-size: .82rem; margin-top: 16px; }
+    .hero-note i { color: var(--g4); margin-right: 6px; }
+
+    /* WAVE */
+    .wave { line-height: 0; overflow: hidden; }
+    .wave svg { display: block; width: 100%; }
+
+    /* COMMON */
+    .sec { padding: 96px 32px; }
+    .container { max-width: 1260px; margin: 0 auto; }
+    .sec-tag { display: inline-flex; align-items: center; gap: 10px; font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--b3); margin-bottom: 14px; }
+    .sec-tag::before, .sec-tag::after { content: ''; height: 2px; width: 24px; border-radius: 2px; background: var(--b2); }
+    .sec-tag.center { justify-content: center; }
+    .sec-tag.green { color: var(--g3); }
+    .sec-tag.green::before, .sec-tag.green::after { background: var(--g2); }
+    .sec-title { font-size: clamp(1.9rem, 3.5vw, 2.9rem); color: var(--navy); margin-bottom: 14px; font-weight: 700; }
+    .sec-line { width: 52px; height: 4px; border-radius: 4px; background: linear-gradient(90deg, var(--b2), var(--g3)); margin: 0 auto 20px; }
+    .sec-sub { color: var(--muted); font-size: 1rem; line-height: 1.75; max-width: 620px; }
+    .sec-sub.c { margin: 0 auto; }
+    /* SCROLL REVEAL — visível por padrão, animação é progressive enhancement */
+    .fi { opacity: 1; transform: none; transition: opacity .65s ease, transform .65s ease; }
+    body.reveal-ready .fi { opacity: 0; transform: translateY(24px); }
+    body.reveal-ready .fi.vis { opacity: 1; transform: none; }
+
+    /* CONTACT CHANNELS */
+    #channels { background: var(--cream); }
+    .channels-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+    @media(max-width:768px) {
+      .channels-grid { grid-template-columns: 1fr; }
+      .channel-card.primary { order: -1; }
+    }
+    .channel-card { border-radius: 28px; padding: 44px 36px; text-align: center; transition: all .3s cubic-bezier(.4,0,.2,1); position: relative; overflow: hidden; }
+    .channel-card.primary { background: linear-gradient(135deg, var(--navy), #1a3a52); color: #fff; box-shadow: var(--sh2); }
+    .channel-card.secondary { background: var(--white); border: 2px solid rgba(68,135,191,.12); }
+    .channel-card.tertiary { background: var(--white); border: 2px solid rgba(82,183,136,.12); }
+    .channel-card.secondary:hover { border-color: var(--b3); transform: translateY(-6px); box-shadow: var(--sh2); }
+    .channel-card.tertiary:hover { border-color: var(--g3); transform: translateY(-6px); box-shadow: 0 20px 60px rgba(47,122,87,.18); }
+    .channel-icon { width: 88px; height: 88px; border-radius: 50%; margin: 0 auto 24px; display: flex; align-items: center; justify-content: center; font-size: 2rem; }
+    .channel-card.primary .channel-icon { background: rgba(255,255,255,.15); color: #fff; }
+    .channel-card.secondary .channel-icon { background: linear-gradient(135deg, var(--b1), var(--b3)); color: #fff; box-shadow: 0 8px 24px rgba(68,135,191,.3); }
+    .channel-card.tertiary .channel-icon { background: linear-gradient(135deg, var(--g1), var(--g3)); color: #fff; box-shadow: 0 8px 24px rgba(47,122,87,.3); }
+    .channel-card.primary h3 { color: #fff; font-family: var(--serif); font-size: 1.5rem; margin-bottom: 12px; font-weight: 700; }
+    .channel-card h3 { font-family: var(--serif); font-size: 1.4rem; color: var(--navy); margin-bottom: 12px; font-weight: 700; }
+    .channel-card.primary p { color: rgba(255,255,255,.7); font-size: .95rem; line-height: 1.7; margin-bottom: 28px; }
+    .channel-card p { color: var(--muted); font-size: .95rem; line-height: 1.7; margin-bottom: 28px; }
+    .channel-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.25); border-radius: 100px; padding: 5px 14px; color: rgba(255,255,255,.85); font-size: .75rem; font-weight: 600; margin-bottom: 20px; }
+    .btn-channel-sms { display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, var(--b2), var(--g3)); color: #fff; padding: 16px 32px; border-radius: 14px; font-weight: 700; font-size: .95rem; text-decoration: none; box-shadow: 0 6px 20px rgba(68,135,191,.4); transition: all .25s; width: 100%; justify-content: center; }
+    .btn-channel-sms:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(68,135,191,.55); }
+    .btn-channel-call { display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, var(--b1), var(--b2)); color: #fff; padding: 16px 32px; border-radius: 14px; font-weight: 700; font-size: .95rem; text-decoration: none; box-shadow: 0 6px 20px rgba(68,135,191,.3); transition: all .25s; width: 100%; justify-content: center; }
+    .btn-channel-call:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(68,135,191,.45); }
+    .btn-channel-email { display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, var(--g1), var(--g2)); color: #fff; padding: 16px 32px; border-radius: 14px; font-weight: 700; font-size: .95rem; text-decoration: none; box-shadow: 0 6px 20px rgba(47,122,87,.3); transition: all .25s; width: 100%; justify-content: center; }
+    .btn-channel-email:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(47,122,87,.45); }
+    .channel-note { font-size: .78rem; margin-top: 12px; }
+    .channel-card.primary .channel-note { color: rgba(255,255,255,.45); }
+    .channel-card .channel-note { color: var(--muted); }
+
+    /* FORM */
+    #form-sec { background: var(--white); }
+    .form-inner { display: grid; grid-template-columns: 1fr 1.1fr; gap: 72px; align-items: start; }
+    .form-left h2 { font-size: clamp(1.9rem,3.5vw,2.8rem); color: var(--navy); margin-bottom: 16px; }
+    .form-left p { color: var(--muted); font-size: 1rem; line-height: 1.8; margin-bottom: 32px; }
+    .form-info { display: flex; flex-direction: column; gap: 16px; }
+    .form-info-item { display: flex; align-items: center; gap: 16px; padding: 18px 20px; background: var(--cream); border-radius: 14px; border: 1.5px solid rgba(68,135,191,.08); transition: all .2s; }
+    .form-info-item:hover { border-color: var(--b3); background: var(--cream2); }
+    .form-info-icon { width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1rem; color: #fff; flex-shrink: 0; }
+    .fii-blue { background: linear-gradient(135deg, var(--b1), var(--b2)); }
+    .fii-teal { background: linear-gradient(135deg, var(--b2), var(--b3)); }
+    .fii-green { background: linear-gradient(135deg, var(--g1), var(--g3)); }
+    .form-info-item strong { display: block; color: var(--navy); font-size: .9rem; font-weight: 600; }
+    .form-info-item span { color: var(--muted); font-size: .84rem; }
+    .contact-form { background: var(--cream); border-radius: 28px; padding: 48px 44px; border: 2px solid rgba(68,135,191,.08); }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { display: flex; flex-direction: column; gap: 8px; margin-bottom: 18px; }
+    .form-group label { font-size: .82rem; font-weight: 600; color: var(--navy); letter-spacing: .04em; text-transform: uppercase; }
+    .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 14px 18px; border-radius: 12px; border: 1.5px solid rgba(68,135,191,.15); background: var(--white); color: var(--text); font-family: var(--sans); font-size: .92rem; outline: none; transition: border-color .2s, box-shadow .2s; }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--b2); box-shadow: 0 0 0 3px rgba(68,135,191,.1); }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+    .form-group select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%234a6070' d='M6 8L1 3h10z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; }
+    .service-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+    .service-pill { display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 100px; border: 1.5px solid rgba(68,135,191,.2); background: var(--white); color: var(--muted); font-size: .82rem; font-weight: 600; cursor: pointer; transition: all .2s; user-select: none; }
+    .service-pill:hover { border-color: var(--b2); color: var(--b2); }
+    .service-pill.active.blue { border-color: var(--b2); background: rgba(68,135,191,.1); color: var(--b1); }
+    .service-pill.active.green { border-color: var(--g2); background: rgba(82,183,136,.1); color: var(--g1); }
+    .pill-dot { width: 8px; height: 8px; border-radius: 50%; }
+    .pill-dot.blue { background: var(--b2); }
+    .pill-dot.green { background: var(--g2); }
+    .btn-submit { width: 100%; padding: 18px; border-radius: 14px; border: none; cursor: pointer; background: linear-gradient(135deg, var(--b2), var(--g3)); color: #fff; font-weight: 700; font-size: 1rem; font-family: var(--sans); box-shadow: 0 6px 24px rgba(68,135,191,.4); transition: all .25s; display: flex; align-items: center; justify-content: center; gap: 10px; }
+    .btn-submit:hover { transform: translateY(-2px); box-shadow: 0 10px 32px rgba(68,135,191,.55); }
+    .form-disclaimer { text-align: center; color: var(--muted); font-size: .78rem; margin-top: 14px; line-height: 1.6; }
+
+    /* FAQ */
+    #faq { background: var(--white); }
+    .faq-list { max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+    .faq-item { background: var(--cream); border-radius: 16px; border: 1.5px solid rgba(68,135,191,.1); overflow: hidden; transition: border-color .2s; }
+    .faq-item.open { border-color: var(--b3); }
+    .faq-q { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 28px; cursor: pointer; user-select: none; }
+    .faq-q h3 { font-family: var(--serif); font-size: 1.1rem; color: var(--navy); font-weight: 700; }
+    .faq-arrow { width: 36px; height: 36px; border-radius: 50%; flex-shrink: 0; background: var(--white); display: flex; align-items: center; justify-content: center; color: var(--b2); font-size: .8rem; transition: all .3s; }
+    .faq-item.open .faq-arrow { background: linear-gradient(135deg, var(--b2), var(--g3)); color: #fff; transform: rotate(180deg); }
+    .faq-a { max-height: 0; overflow: hidden; padding: 0 28px; color: var(--muted); font-size: .92rem; line-height: 1.75; transition: max-height .4s ease, padding .3s ease; }
+    .faq-item.open .faq-a { max-height: 300px; padding: 0 28px 22px; }
+
+    /* CTA FINAL */
+    #cta-final { background: linear-gradient(135deg, var(--navy) 0%, #0e2a3d 50%, #0a1f18 100%); padding: 120px 32px; position: relative; overflow: hidden; text-align: center; }
+    .cta-orb { position: absolute; border-radius: 50%; filter: blur(80px); pointer-events: none; }
+    .cta-orb-1 { width: 500px; height: 500px; background: rgba(68,135,191,.12); top: -120px; right: -100px; }
+    .cta-orb-2 { width: 500px; height: 500px; background: rgba(82,183,136,.1); bottom: -120px; left: -100px; }
+    .cta-inner { position: relative; z-index: 2; max-width: 700px; margin: 0 auto; }
+    .cta-eyebrow { display: inline-flex; align-items: center; gap: 10px; color: rgba(255,255,255,.5); font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 24px; }
+    .cta-eyebrow span { display: inline-block; width: 24px; height: 2px; border-radius: 2px; background: linear-gradient(90deg, var(--b3), var(--g3)); }
+    #cta-final h2 { font-size: clamp(2.4rem,5vw,3.8rem); color: #fff; font-weight: 700; margin-bottom: 20px; }
+    #cta-final h2 em { font-style: italic; background: linear-gradient(135deg, var(--b4), var(--g4)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .cta-sub { color: rgba(255,255,255,.6); font-size: 1.05rem; line-height: 1.75; margin-bottom: 44px; font-weight: 300; }
+    .cta-accepting { color: var(--g4); font-size: .9rem; font-weight: 600; margin-bottom: 32px; letter-spacing: .02em; }
+    .cta-accepting i { margin-right: 8px; }
+    .cta-btns { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-bottom: 28px; }
+    .btn-cta-sms { display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, var(--b2), var(--g3)); color: #fff; padding: 20px 40px; border-radius: 16px; font-weight: 700; font-size: 1.05rem; text-decoration: none; box-shadow: 0 8px 30px rgba(68,135,191,.5); transition: all .25s; }
+    .btn-cta-sms:hover { transform: translateY(-3px); box-shadow: 0 14px 40px rgba(68,135,191,.65); }
+    .btn-cta-call { display: inline-flex; align-items: center; gap: 10px; background: var(--white); color: var(--navy); padding: 20px 40px; border-radius: 16px; font-weight: 700; font-size: 1.05rem; text-decoration: none; box-shadow: 0 8px 30px rgba(0,0,0,.15); transition: all .25s; }
+    .btn-cta-call i { color: var(--b2); }
+    .btn-cta-call:hover { transform: translateY(-3px); }
+    .cta-trust { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 20px; color: rgba(255,255,255,.4); font-size: .8rem; }
+    .cta-t { display: flex; align-items: center; gap: 7px; }
+    .cta-t i { color: var(--b4); }
+    .cta-sep { width: 4px; height: 4px; border-radius: 50%; background: rgba(255,255,255,.2); }
+
+    /* FOOTER */
+    footer { background: #060d12; color: rgba(255,255,255,.45); padding: 72px 32px 32px; }
+    .footer-grid { max-width: 1260px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1.4fr; gap: 48px; margin-bottom: 48px; }
+    .footer-brand p { font-size: .88rem; line-height: 1.75; margin-top: 14px; max-width: 280px; }
+    .footer-cities { font-size: .78rem; color: rgba(255,255,255,.28); margin-top: 10px; line-height: 1.6; }
+    .footer-socials { display: flex; gap: 10px; margin-top: 20px; }
+    .soc-btn { width: 38px; height: 38px; border-radius: 50%; background: rgba(255,255,255,.08); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,.5); text-decoration: none; font-size: .85rem; transition: all .2s; }
+    .soc-btn:hover { background: linear-gradient(135deg, var(--b2), var(--g3)); color: #fff; }
+    .footer-col h4 { color: #fff; font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 18px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col a { color: rgba(255,255,255,.4); text-decoration: none; font-size: .88rem; transition: color .2s; }
+    .footer-col a:hover { color: var(--b4); }
+    .fi-wrap { display: flex; flex-direction: column; gap: 10px; }
+    .fi-wrap input { width: 100%; padding: 12px 16px; border-radius: 10px; border: 1.5px solid rgba(255,255,255,.1); background: rgba(255,255,255,.06); color: #fff; font-size: .88rem; outline: none; transition: border-color .2s; }
+    .fi-wrap input::placeholder { color: rgba(255,255,255,.25); }
+    .fi-wrap input:focus { border-color: var(--b3); }
+    .fi-wrap button { width: 100%; padding: 12px; border-radius: 10px; border: none; cursor: pointer; background: linear-gradient(135deg, var(--b2), var(--g3)); color: #fff; font-weight: 700; font-size: .88rem; transition: opacity .2s; }
+    .fi-wrap button:hover { opacity: .85; }
+    .footer-bottom { max-width: 1260px; margin: 0 auto; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.07); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-size: .8rem; }
+    .footer-bottom a { color: rgba(255,255,255,.35); text-decoration: none; margin-left: 20px; transition: color .2s; }
+    .footer-bottom a:hover { color: var(--b4); }
+
+    /* WIDGET */
+    #contact-widget{position:fixed;bottom:28px;right:28px;z-index:200;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+    #widget-panel{background:#fff;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.18);width:320px;overflow:hidden;display:none;transform:scale(.9) translateY(10px);opacity:0;transition:all .3s cubic-bezier(.34,1.56,.64,1);transform-origin:bottom right;max-height:calc(100vh - 120px);overflow-y:auto}
+    #widget-panel.open{display:block;transform:scale(1) translateY(0);opacity:1}
+    .widget-header{background:linear-gradient(135deg,var(--b2),var(--g3));padding:20px}
+    .widget-header-top{display:flex;align-items:center;gap:12px}
+    .widget-avatar{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:1.2rem;color:#fff;flex-shrink:0}
+    .widget-name{color:#fff;font-weight:700;font-size:.95rem}
+    .widget-status{color:rgba(255,255,255,.72);font-size:.74rem;display:flex;align-items:center;gap:6px;margin-top:3px}
+    .widget-dot{width:7px;height:7px;border-radius:50%;background:#4ade80;display:inline-block;flex-shrink:0}
+    .widget-options{padding:12px;display:flex;flex-direction:column;gap:8px}
+    .widget-btn{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:12px;text-decoration:none;transition:all .2s;border:1.5px solid transparent}
+    .widget-btn:hover{transform:translateX(3px)}
+    .wb-sms{background:rgba(68,135,191,.07);border-color:rgba(68,135,191,.12)}
+    .wb-sms:hover{background:rgba(68,135,191,.12);border-color:rgba(68,135,191,.25)}
+    .wb-call{background:rgba(82,183,136,.07);border-color:rgba(82,183,136,.12)}
+    .wb-call:hover{background:rgba(82,183,136,.12);border-color:rgba(82,183,136,.25)}
+    .wb-email{background:rgba(42,95,143,.05);border-color:rgba(42,95,143,.1)}
+    .wb-email:hover{background:rgba(42,95,143,.1);border-color:rgba(42,95,143,.22)}
+    .widget-btn-icon{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:.95rem;color:#fff;flex-shrink:0}
+    .wb-sms .widget-btn-icon{background:linear-gradient(135deg,var(--b2),var(--b3))}
+    .wb-call .widget-btn-icon{background:linear-gradient(135deg,var(--g2),var(--g3))}
+    .wb-email .widget-btn-icon{background:linear-gradient(135deg,var(--b1),var(--b2))}
+    .wb-label{display:block;font-size:.86rem;font-weight:700;color:var(--text)}
+    .wb-sub{display:block;font-size:.74rem;color:var(--muted);margin-top:1px}
+    @keyframes widgetPulse{0%{box-shadow:0 8px 28px rgba(68,135,191,.55),0 0 0 0 rgba(68,135,191,.45)}70%{box-shadow:0 8px 28px rgba(68,135,191,.55),0 0 0 16px rgba(68,135,191,0)}100%{box-shadow:0 8px 28px rgba(68,135,191,.55),0 0 0 0 rgba(68,135,191,0)}}
+    #widget-toggle{width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,var(--b2),var(--g3));color:#fff;border:none;cursor:pointer;box-shadow:0 8px 28px rgba(68,135,191,.55);transition:transform .3s,box-shadow .3s;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0}
+    #widget-toggle:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(68,135,191,.7)}
+    #widget-toggle.pulse{animation:widgetPulse 2s ease-out}
+    .icon-open{display:flex}.icon-close{display:none}
+    #widget-toggle.active .icon-open{display:none}
+    #widget-toggle.active .icon-close{display:flex}
+    #widget-label{background:#fff;border-radius:12px;padding:10px 14px;box-shadow:0 4px 20px rgba(0,0,0,.12);transition:opacity .5s,transform .5s;pointer-events:none}
+    #widget-label.hidden{opacity:0;transform:translateX(8px)}
+    .wl-main{display:block;font-size:.85rem;font-weight:700;color:var(--text);white-space:nowrap}
+    .wl-sub{display:block;font-size:.72rem;color:var(--muted);white-space:nowrap;margin-top:2px}
+    #widget-row{display:flex;align-items:center;gap:12px}
+    @media(max-width:480px){#contact-widget{bottom:18px;right:14px}#widget-panel{width:calc(100vw - 28px)}#widget-label{display:none}#widget-toggle{width:54px;height:54px;font-size:1.25rem}}
+
+    /* RESPONSIVE */
+    @media(max-width:1024px) {
+      .channels-grid { grid-template-columns: 1fr; gap: 20px; }
+      .form-inner,.hours-inner { grid-template-columns: 1fr; gap: 40px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media(max-width:768px) {
+      .nav-links,.nav-phone,.btn-nav { display: none; }
+      #hamburger { display: block; }
+      .channels-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .sec { padding: 64px 20px; }
+      #contact-widget { bottom: 20px; right: 16px; }
+      #widget-toggle { padding: 11px 16px; }
+      .toggle-sub { display: none; }
+    }
+  
+    .fa-chevron-down { transition: transform .25s ease; }
+  </style>
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://evercarehomeservice.com/contact">
+  <meta property="og:title" content="Contact EverCare Home Services | Worcester, MA">
+  <meta property="og:image" content="https://storage.googleapis.com/uxpilot-auth.appspot.com/f27249cb76-630079eb8143fe714781.png">
+  <meta property="og:description" content="Text or call EverCare for professional cleaning and in-home care services in Worcester and Central Massachusetts. Fast response guaranteed.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact EverCare | Worcester, MA">
+  <meta name="twitter:description" content="Get in touch with EverCare for cleaning or in-home care services in Central Massachusetts.">
+  <link rel="canonical" href="https://evercarehomeservice.com/contact">
+</head>
+<body>
+
+<!-- NAV -->
+<header id="header">
+  <div class="nav-inner">
+    <a href="/" style="display:flex;align-items:center;text-decoration:none">
+      <img src="/logo.svg" alt="EverCare Home Services" style="height:220px;width:auto;display:block">
+    </a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/services">Services</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact" class="nav-active">Contact</a></li>
+      <li><a href="tel:+15087361263" class="nav-phone"><i class="fa-solid fa-phone" style="margin-right:6px"></i> Call Us</a></li>
+      <li><a href="/contact" class="btn-nav">Get a Free Estimate</a></li>
+    </ul>
+    <button id="hamburger"><i class="fa-solid fa-bars"></i></button>
+  </div>
+  <div id="mobile-menu">
+    <a href="/">Home</a>
+    <a href="/services">Services</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+    <a href="tel:+15087361263"><i class="fa-solid fa-phone" style="margin-right:8px;color:var(--b2)"></i> Call Us</a>
+    <a href="/contact" class="btn-nav">Get a Free Estimate</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-dots"></div>
+  <div class="hero-orb-1"></div>
+  <div class="hero-orb-2"></div>
+  <div class="hero-content fi">
+    <div class="hero-eyebrow"><i class="fa-solid fa-location-dot"></i> Worcester &amp; Central Massachusetts</div>
+    <h1>Contact EverCare Home Services in <em>Worcester, Massachusetts</em></h1>
+    <p class="hero-sub">Whether you need in-home care for a loved one or professional cleaning for your home or business — our local team is ready to help.</p>
+    <a href="sms:+15087361263" class="hero-sms-btn"><i class="fa-solid fa-comment-sms"></i> Text Us for a Free Consultation</a>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;margin-top:20px;color:rgba(255,255,255,.55);font-size:.8rem">
+      <span><i class="fa-solid fa-check" style="color:var(--g4);margin-right:6px"></i>Local Worcester-based team</span>
+      <span><i class="fa-solid fa-check" style="color:var(--g4);margin-right:6px"></i>Fast responses by text</span>
+      <span><i class="fa-solid fa-check" style="color:var(--g4);margin-right:6px"></i>Free consultation with no obligation</span>
+    </div>
+  </div>
+</section>
+
+<div class="wave" style="background:transparent;margin-top:-60px;position:relative;z-index:1"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,70 800,0 1200,30 L1200,60 L0,60 Z" fill="var(--cream)"/></svg></div>
+
+<!-- CONTACT CHANNELS -->
+<section class="sec" id="channels" style="background:var(--cream)">
+  <div class="container">
+    <div class="fi" style="text-align:center;margin-bottom:56px">
+      <div class="sec-tag center">Reach Us</div>
+      <h2 class="sec-title" style="text-align:center">Choose How You'd Like to Connect</h2>
+      <div class="sec-line"></div>
+      <p class="sec-sub c">We're available by text, phone, or email. Text is always the fastest — most messages get a response within a couple of hours.</p>
+    </div>
+    <div class="channels-grid">
+      <div class="channel-card primary fi">
+        <div class="channel-badge"><i class="fa-solid fa-bolt"></i> Fastest Response</div>
+        <div class="channel-icon"><i class="fa-solid fa-comment-sms"></i></div>
+        <h3>Send Us a Text</h3>
+        <p>The fastest way to reach our team. Send a text with your question or service request and we typically respond within 1–2 hours during business hours.</p>
+        <a href="sms:+15087361263" class="btn-channel-sms"><i class="fa-solid fa-comment-sms"></i> Text Us</a>
+        <p class="channel-note">Mon–Sat · 8am–7pm</p>
+      </div>
+      <div class="channel-card secondary fi" style="transition-delay:.1s">
+        <div class="channel-icon"><i class="fa-solid fa-phone"></i></div>
+        <h3>Give Us a Call</h3>
+        <p>Prefer speaking directly? Call our team and we'll help you understand your options and answer your questions.</p>
+        <a href="tel:+15087361263" class="btn-channel-call"><i class="fa-solid fa-phone"></i> Call Us</a>
+        <p class="channel-note">Mon–Sat · 8am–7pm</p>
+      </div>
+      <div class="channel-card tertiary fi" style="transition-delay:.2s">
+        <div class="channel-icon"><i class="fa-solid fa-envelope"></i></div>
+        <h3>Send an Email</h3>
+        <p>Send us an email with details about your needs and we'll follow up with guidance and next steps.</p>
+        <a href="mailto:info@evercarehomeservice.com" class="btn-channel-email"><i class="fa-solid fa-envelope"></i> Send an Email</a>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wave" style="background:var(--cream)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,0 800,60 1200,30 L1200,60 L0,60 Z" fill="var(--white)"/></svg></div>
+
+<!-- FORM -->
+<section class="sec" id="form-sec" style="background:var(--white)">
+  <div class="container">
+    <div class="form-inner fi">
+      <div class="form-left">
+        <div class="sec-tag">Send a Message</div>
+        <h2>Tell Us About Your <em class="serif-em">Needs</em></h2>
+        <p>Fill out the form and we'll reach out to discuss how we can help. Not a fan of forms? Just text us — it's faster and just as easy.</p>
+
+        <!-- Social proof — more specific and visual -->
+        <div style="margin:28px 0;padding:24px;background:linear-gradient(135deg,rgba(68,135,191,.06),rgba(82,183,136,.04));border-radius:18px;border:1.5px solid rgba(68,135,191,.12)">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+            <div style="display:flex;gap:2px;color:#f59e0b;font-size:.85rem"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <span style="font-size:.8rem;color:var(--muted);font-weight:600"><i class="fa-solid fa-location-dot" style="color:var(--b2);margin-right:5px"></i>Worcester, MA</span>
+          </div>
+          <p style="font-size:.92rem;color:var(--text);line-height:1.7;font-style:italic">"Families and businesses across Worcester rely on EverCare for compassionate in-home care and dependable cleaning — from first contact through every visit."</p>
+        </div>
+
+        <div class="form-info">
+          <div class="form-info-item">
+            <div class="form-info-icon fii-blue"><i class="fa-solid fa-comment-sms"></i></div>
+            <div><strong>Send Us a Text</strong><span>Fastest way to reach us — replies within 1–2 hours</span></div>
+          </div>
+          <div class="form-info-item">
+            <div class="form-info-icon fii-teal"><i class="fa-solid fa-phone"></i></div>
+            <div><strong>Give Us a Call</strong><span>Monday to Saturday, 8am – 7pm</span></div>
+          </div>
+          <div class="form-info-item">
+            <div class="form-info-icon fii-green"><i class="fa-solid fa-envelope"></i></div>
+            <div><strong><a href="mailto:info@evercarehomeservice.com">Email Us</a></strong><span>We respond to all emails within 24 hours</span></div>
+          </div>
+          <div class="form-info-item">
+            <div class="form-info-icon fii-blue"><i class="fa-solid fa-location-dot"></i></div>
+            <div><strong>Central Massachusetts</strong><span>Worcester, Shrewsbury, Auburn, Holden &amp; surrounding areas</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NOTE: Replace YOUR_FORM_ID with your Formspree form ID before going live -->
+      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contact-form" novalidate>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" name="first_name" placeholder="Jane" autocomplete="given-name" required>
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" name="last_name" placeholder="Smith" autocomplete="family-name" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" name="phone" id="phone-input" placeholder="(508) 000-0000" autocomplete="tel" inputmode="numeric" required>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" name="email" placeholder="jane@email.com" autocomplete="email" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>City / Town</label>
+            <select name="city" autocomplete="address-level2" required>
+              <option value="">Select your area</option>
+              <option>Worcester</option><option>Shrewsbury</option><option>Auburn</option>
+              <option>Holden</option><option>Leicester</option><option>Millbury</option>
+              <option>Grafton</option><option>Northborough</option><option>Southborough</option>
+              <option>Spencer</option><option>West Boylston</option><option>Marlborough</option>
+              <option>Other nearby area</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Service Needed</label>
+            <select name="service">
+              <option value="">What can we help with?</option>
+              <option value="house-cleaning">House Cleaning</option>
+              <option value="deep-cleaning">Deep Cleaning</option>
+              <option value="move-cleaning">Move-In / Move-Out Cleaning</option>
+              <option value="commercial-cleaning">Commercial Cleaning</option>
+              <option value="home-care">In-Home Care Assistance</option>
+              <option value="dementia-care">Dementia / Alzheimer's Support</option>
+              <option value="both">Both Care &amp; Cleaning</option>
+              <option value="other">Not Sure / Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Tell Us What You Need</label>
+          <textarea name="message" placeholder="A few details help us prepare — e.g. how many rooms, how many hours of care, how often, any special requests." style="min-height:130px"></textarea>
+        </div>
+
+        <div id="form-error" style="display:none;background:rgba(220,50,50,.08);border:1.5px solid rgba(220,50,50,.2);border-radius:10px;padding:12px 16px;color:#b91c1c;font-size:.85rem;margin-bottom:16px;text-align:center"></div>
+        <div id="form-success" style="display:none;background:rgba(52,183,136,.08);border:1.5px solid rgba(52,183,136,.25);border-radius:10px;padding:16px;color:var(--g1);font-size:.9rem;margin-bottom:16px;text-align:center"><i class="fa-solid fa-circle-check" style="margin-right:8px;color:var(--g2)"></i><strong>Message sent!</strong> We'll follow up with you shortly.</div>
+
+        <div style="text-align:center;padding:8px 0 16px;color:var(--muted);font-size:.82rem;display:flex;justify-content:center;gap:16px;flex-wrap:wrap">
+          <span>Free estimate</span><span style="color:rgba(74,96,112,.3)">•</span><span>No obligation</span><span style="color:rgba(74,96,112,.3)">•</span><span>Quick response</span>
+        </div>
+
+        <button type="submit" class="btn-submit"><i class="fa-solid fa-paper-plane"></i> Get My Free Estimate</button>
+        <div style="text-align:center;margin-top:12px">
+          <p style="font-size:.75rem;color:var(--muted)">Most requests receive a response within 1–2 hours during business hours.</p>
+          <p style="font-size:.75rem;color:rgba(74,96,112,.6);margin-top:4px"><i class="fa-solid fa-lock" style="margin-right:5px;color:var(--b3)"></i>Your information is 100% private and secure.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="faq" style="background:var(--white)">
+  <div class="container">
+    <div class="fi" style="text-align:center;margin-bottom:52px">
+      <div class="sec-tag center">Common Questions</div>
+      <h2 class="sec-title" style="text-align:center">Questions Before Reaching Out?</h2>
+      <div class="sec-line"></div>
+      <p class="sec-sub c">We've answered the most common questions below — if yours isn't here, just text us.</p>
+    </div>
+    <div class="faq-list fi">
+      <div class="faq-item">
+        <div class="faq-q"><h3>What are your business hours?</h3><div class="faq-arrow"><i class="fa-solid fa-chevron-down"></i></div></div>
+        <div class="faq-a">
+          We're available Monday through Saturday, 8am–7pm. Sunday we're closed, but texts sent over the weekend are always answered first thing Monday morning. You can text us anytime — we never leave a message without a reply.
+          <div style="display:flex;flex-direction:column;gap:8px;margin-top:14px">
+            <div style="display:flex;justify-content:space-between;padding:10px 14px;background:var(--cream2);border-radius:8px;font-size:.88rem"><span style="font-weight:600;color:var(--navy)">Monday – Friday</span><span style="color:var(--muted)">8:00 AM – 7:00 PM</span></div>
+            <div style="display:flex;justify-content:space-between;padding:10px 14px;background:var(--cream2);border-radius:8px;font-size:.88rem"><span style="font-weight:600;color:var(--navy)">Saturday</span><span style="color:var(--muted)">8:00 AM – 7:00 PM</span></div>
+            <div style="display:flex;justify-content:space-between;padding:10px 14px;background:var(--cream);border-radius:8px;font-size:.88rem"><span style="font-weight:600;color:var(--muted)">Sunday</span><span style="color:rgba(74,96,112,.5);font-style:italic">Closed — texts answered Monday</span></div>
+          </div>
+        </div>
+      </div>
+        <div class="faq-a">Text is by far the fastest. Send us a message at <a href="sms:+15087361263" style="color:var(--b2);font-weight:600">(508) 736-1263</a> and we typically respond within 1–2 hours during business hours. It's casual, easy, and you'll speak directly with our team.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><h3>Do you offer both care and cleaning services?</h3><div class="faq-arrow"><i class="fa-solid fa-chevron-down"></i></div></div>
+        <div class="faq-a">Yes — EverCare Home Services offers both certified in-home care for seniors and professional residential and commercial cleaning. Many families find it convenient to work with one trusted provider for both needs.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><h3>Is there any obligation when I reach out?</h3><div class="faq-arrow"><i class="fa-solid fa-chevron-down"></i></div></div>
+        <div class="faq-a">None at all. Every conversation starts with a free, no-pressure consultation. We'll listen to your needs and help you understand your options — no commitment, no forms, no rush.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><h3>How quickly can services begin?</h3><div class="faq-arrow"><i class="fa-solid fa-chevron-down"></i></div></div>
+        <div class="faq-a">In most cases we can schedule your first visit within a few days of your initial contact. We understand that families sometimes need support quickly and we always do our best to accommodate.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><h3>What areas do you serve?</h3><div class="faq-arrow"><i class="fa-solid fa-chevron-down"></i></div></div>
+        <div class="faq-a">We serve Worcester and surrounding communities in Central Massachusetts including Shrewsbury, Auburn, Holden, Leicester, Millbury, Grafton, Northborough, Southborough, Spencer, West Boylston, and Marlborough. Not sure if your area is covered? Just ask — we may still be able to help.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><h3>How is pricing determined?</h3><div class="faq-arrow"><i class="fa-solid fa-chevron-down"></i></div></div>
+        <div class="faq-a">Every home and every care situation is different — so pricing is always based on the specific service, property size, and frequency needed. We don't believe in one-size-fits-all rates. After a brief conversation about your needs, we'll give you a clear, honest number with no hidden costs and no obligation to commit.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section id="cta-final">
+  <div class="cta-orb cta-orb-1"></div>
+  <div class="cta-orb cta-orb-2"></div>
+  <div class="cta-inner fi">
+    <div class="cta-eyebrow"><span></span> Let's Connect <span></span></div>
+    <h2>We're Ready to <em>Help You</em></h2>
+    <p class="cta-sub">Whether it's care for a loved one or cleaning for your space — reach out today. No pressure, no commitment — just an honest conversation about what you need.</p>
+    <p class="cta-accepting"><i class="fa-solid fa-circle-check"></i> Currently accepting new clients in Worcester and nearby communities</p>
+    <div class="cta-btns">
+      <a href="sms:+15087361263" class="btn-cta-sms"><i class="fa-solid fa-comment-sms"></i> Text Us Now</a>
+      <a href="tel:+15087361263" class="btn-cta-call"><i class="fa-solid fa-phone"></i> Call Us</a>
+    </div>
+    <div class="cta-trust">
+      <span class="cta-t"><i class="fa-solid fa-clock"></i> Fast response by text</span>
+      <span class="cta-sep"></span>
+      <span class="cta-t"><i class="fa-solid fa-shield-check"></i> No commitment required</span>
+      <span class="cta-sep"></span>
+      <span class="cta-t"><i class="fa-solid fa-location-dot"></i> Local to Central MA</span>
+    </div>
+  </div>
+</section>
+
+<!-- LOCAL SEO -->
+<section style="padding:72px 32px;background:var(--cream)">
+  <div class="container">
+    <div style="max-width:900px;margin:0 auto" class="fi">
+      <div class="sec-tag">Service Area</div>
+      <h2 style="font-family:var(--serif);font-size:clamp(1.6rem,2.8vw,2.2rem);color:var(--navy);margin-bottom:16px;font-weight:700">Home Care and Cleaning Services in Worcester, Massachusetts</h2>
+      <p style="color:var(--muted);font-size:.95rem;line-height:1.85;margin-bottom:10px">EverCare Home Services supports families and businesses across Worcester and Central Massachusetts with professional cleaning and compassionate in-home care assistance.</p>
+      <p style="color:var(--muted);font-size:.95rem;line-height:1.85;margin-bottom:28px">If you're nearby and need reliable support, reach out today — our local team is happy to help.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:10px">
+        <span style="padding:8px 18px;background:var(--white);border:1.5px solid rgba(68,135,191,.15);border-radius:100px;font-size:.82rem;font-weight:600;color:var(--b1);display:flex;align-items:center;gap:7px"><i class="fa-solid fa-location-dot" style="color:var(--b2);font-size:.75rem"></i>Worcester</span>
+        <span style="padding:8px 18px;background:var(--white);border:1.5px solid rgba(68,135,191,.15);border-radius:100px;font-size:.82rem;font-weight:600;color:var(--b1);display:flex;align-items:center;gap:7px"><i class="fa-solid fa-location-dot" style="color:var(--b2);font-size:.75rem"></i>Shrewsbury</span>
+        <span style="padding:8px 18px;background:var(--white);border:1.5px solid rgba(68,135,191,.15);border-radius:100px;font-size:.82rem;font-weight:600;color:var(--b1);display:flex;align-items:center;gap:7px"><i class="fa-solid fa-location-dot" style="color:var(--b2);font-size:.75rem"></i>Auburn</span>
+        <span style="padding:8px 18px;background:var(--white);border:1.5px solid rgba(68,135,191,.15);border-radius:100px;font-size:.82rem;font-weight:600;color:var(--b1);display:flex;align-items:center;gap:7px"><i class="fa-solid fa-location-dot" style="color:var(--b2);font-size:.75rem"></i>Holden</span>
+        <span style="padding:8px 18px;background:var(--white);border:1.5px solid rgba(68,135,191,.15);border-radius:100px;font-size:.82rem;font-weight:600;color:var(--b1);display:flex;align-items:center;gap:7px"><i class="fa-solid fa-location-dot" style="color:var(--b2);font-size:.75rem"></i>Leicester</span>
+        <span style="padding:8px 18px;background:var(--white);border:1.5px solid rgba(68,135,191,.15);border-radius:100px;font-size:.82rem;font-weight:600;color:var(--b1);display:flex;align-items:center;gap:7px"><i class="fa-solid fa-location-dot" style="color:var(--b2);font-size:.75rem"></i>Millbury</span>
+        <span style="padding:8px 18px;background:var(--white);border:1.5px solid rgba(68,135,191,.15);border-radius:100px;font-size:.82rem;font-weight:600;color:var(--b1);display:flex;align-items:center;gap:7px"><i class="fa-solid fa-location-dot" style="color:var(--b2);font-size:.75rem"></i>Grafton</span>
+        <span style="padding:8px 18px;background:var(--white);border:1.5px solid rgba(68,135,191,.15);border-radius:100px;font-size:.82rem;font-weight:600;color:var(--b1);display:flex;align-items:center;gap:7px"><i class="fa-solid fa-location-dot" style="color:var(--b2);font-size:.75rem"></i>Northborough</span>
+        <span style="padding:8px 18px;background:var(--white);border:1.5px solid rgba(68,135,191,.15);border-radius:100px;font-size:.82rem;font-weight:600;color:var(--b1);display:flex;align-items:center;gap:7px"><i class="fa-solid fa-location-dot" style="color:var(--b2);font-size:.75rem"></i>Spencer</span>
+        <span style="padding:8px 18px;background:var(--white);border:1.5px solid rgba(68,135,191,.15);border-radius:100px;font-size:.82rem;font-weight:600;color:var(--b1);display:flex;align-items:center;gap:7px"><i class="fa-solid fa-location-dot" style="color:var(--b2);font-size:.75rem"></i>West Boylston</span>
+        <span style="padding:8px 18px;background:var(--white);border:1.5px solid rgba(68,135,191,.15);border-radius:100px;font-size:.82rem;font-weight:600;color:var(--b1);display:flex;align-items:center;gap:7px"><i class="fa-solid fa-location-dot" style="color:var(--b2);font-size:.75rem"></i>Marlborough</span>
+        <span style="padding:8px 18px;background:linear-gradient(135deg,rgba(68,135,191,.1),rgba(82,183,136,.08));border:1.5px dashed rgba(68,135,191,.25);border-radius:100px;font-size:.82rem;font-weight:600;color:var(--muted);display:flex;align-items:center;gap:7px"><i class="fa-solid fa-plus" style="font-size:.7rem"></i>And nearby areas</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div style="margin-bottom:4px">
+        <img src="/assets/logo.svg" alt="EverCare Home Services" style="height:220px;width:auto;display:block">
+      </div>
+      <p>Compassionate in-home care and professional cleaning services for families and businesses across Central Massachusetts.</p>
+      <p class="footer-cities">Serving: Worcester · Shrewsbury · Auburn · Holden · Leicester · Millbury · Grafton · Northborough · Spencer · West Boylston · Marlborough</p>
+      <div class="footer-socials">
+        <a class="soc-btn" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a class="soc-btn" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a class="soc-btn" href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Site</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="/evercare-care">In-Home Senior Care</a></li>
+        <li><a href="/evercare-care">Alzheimer's Support</a></li>
+        <li><a href="/cleaning-services">Residential Cleaning</a></li>
+        <li><a href="/cleaning-services">Deep Cleaning</a></li>
+        <li><a href="/cleaning-services">Move-In / Move-Out</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="https://maps.google.com/?q=Worcester,+Massachusetts" target="_blank" rel="noopener"><i class="fa-solid fa-location-dot" style="color:var(--b3);margin-right:8px"></i>Worcester, Massachusetts</a></li>
+        <li><a href="mailto:info@evercarehomeservice.com"><i class="fa-solid fa-envelope" style="color:var(--g3);margin-right:8px"></i>Email Us</a></li>
+        <li><a href="tel:+15087361263"><i class="fa-solid fa-phone" style="color:var(--b3);margin-right:8px"></i>Call Us</a></li>
+        <li><a href="sms:+15087361263"><i class="fa-solid fa-comment-sms" style="color:var(--b3);margin-right:8px"></i>Text us anytime</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div style="display:flex;flex-direction:column;gap:4px">
+      <span>© 2026 EverCare Home Services. All rights reserved.</span>
+      <span style="font-size:.75rem;color:rgba(255,255,255,.25)">In-Home Care &amp; Cleaning Services · Worcester, Massachusetts</span>
+    </div>
+    <div>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<!-- CONTACT WIDGET -->
+<div id="contact-widget">
+  <div id="widget-panel">
+    <div class="widget-header">
+      <div class="widget-header-top">
+        <div class="widget-avatar"><i class="fa-solid fa-comments"></i></div>
+        <div>
+          <div class="widget-name">How can we help?</div>
+          <div class="widget-status"><span class="widget-dot"></span> Typically replies within 1–2 hours</div>
+        </div>
+      </div>
+    </div>
+    <div class="widget-options">
+      <a href="sms:+15087361263&body=Hi! I'd like to learn more about EverCare's services." class="widget-btn wb-sms">
+        <div class="widget-btn-icon"><i class="fa-solid fa-comment-sms"></i></div>
+        <div><span class="wb-label">Text Us</span><span class="wb-sub">Fastest way to reach us</span></div>
+      </a>
+      <a href="tel:+15087361263" class="widget-btn wb-call">
+        <div class="widget-btn-icon"><i class="fa-solid fa-phone"></i></div>
+        <div><span class="wb-label">Call Us</span></div>
+      </a>
+      <a href="mailto:info@evercarehomeservice.com" class="widget-btn wb-email">
+        <div class="widget-btn-icon"><i class="fa-solid fa-envelope"></i></div>
+        <div><span class="wb-label">Email Us</span></div>
+      </a>
+    </div>
+  </div>
+  <div id="widget-row">
+    <div id="widget-label">
+      <span class="wl-main">Need Help?</span>
+      <span class="wl-sub">Fast response · No pressure</span>
+    </div>
+    <button id="widget-toggle" aria-label="Contact EverCare">
+      <span class="icon-open"><i class="fa-solid fa-comments"></i></span>
+      <span class="icon-close"><i class="fa-solid fa-xmark"></i></span>
+    </button>
+  </div>
+</div>
+
+<script>
+  // Nav scroll
+  window.addEventListener('scroll', function() {
+    document.getElementById('header').classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // Hamburger
+  document.getElementById('hamburger').addEventListener('click', function() {
+    var menu = document.getElementById('mobile-menu');
+    var icon = this.querySelector('i');
+    menu.classList.toggle('open');
+    icon.classList.toggle('fa-bars', !menu.classList.contains('open'));
+    icon.classList.toggle('fa-xmark', menu.classList.contains('open'));
+  });
+  document.querySelectorAll('#mobile-menu a').forEach(function(a) {
+    a.addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.remove('open');
+      var icon = document.querySelector('#hamburger i');
+      if (icon) { icon.classList.replace('fa-xmark', 'fa-bars'); }
+    });
+  });
+
+  // Contact widget
+  var wPanel = document.getElementById('widget-panel');
+  var wToggle = document.getElementById('widget-toggle');
+  var wLabel = document.getElementById('widget-label');
+  if (wToggle) {
+    wToggle.addEventListener('click', function() {
+      wToggle.classList.toggle('active');
+      if (wToggle.classList.contains('active')) {
+        wPanel.style.display = 'block';
+        setTimeout(function(){ wPanel.classList.add('open'); }, 10);
+        if (wLabel) wLabel.classList.add('hidden');
+      } else {
+        wPanel.classList.remove('open');
+        setTimeout(function(){ wPanel.style.display = 'none'; }, 300);
+      }
+    });
+    document.addEventListener('click', function(e) {
+      var cw = document.getElementById('contact-widget');
+      if (cw && !cw.contains(e.target) && wToggle.classList.contains('active')) {
+        wToggle.classList.remove('active');
+        wPanel.classList.remove('open');
+        setTimeout(function(){ wPanel.style.display = 'none'; }, 300);
+      }
+    });
+    function pulseWidget() {
+      if (!wToggle.classList.contains('active')) {
+        wToggle.classList.remove('pulse');
+        void wToggle.offsetWidth;
+        wToggle.classList.add('pulse');
+      }
+    }
+    setTimeout(function(){ pulseWidget(); setInterval(pulseWidget, 8000); }, 3000);
+  }
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(function(q) {
+    q.addEventListener('click', function() {
+      var item = this.closest('.faq-item');
+      var isOpen = item.classList.contains('open');
+      // Close all
+      document.querySelectorAll('.faq-item.open').forEach(function(i) {
+        i.classList.remove('open');
+        var chevron = i.querySelector('.fa-chevron-down');
+        if (chevron) chevron.style.transform = 'rotate(0deg)';
+      });
+      // Open clicked if it was closed
+      if (!isOpen) {
+        item.classList.add('open');
+        var chevron = item.querySelector('.fa-chevron-down');
+        if (chevron) chevron.style.transform = 'rotate(180deg)';
+      }
+    });
+  });
+
+  // Scroll reveal — bulletproof
+  try {
+    document.body.classList.add('reveal-ready');
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) { e.target.classList.add('vis'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.01, rootMargin: '0px 0px -20px 0px' });
+    document.querySelectorAll('.fi').forEach(function(el) { io.observe(el); });
+    setTimeout(function() {
+      document.querySelectorAll('.fi:not(.vis)').forEach(function(el) {
+        if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('vis');
+      });
+    }, 300);
+  } catch(e) {
+    document.body.classList.remove('reveal-ready');
+  }
+
+  // Active nav
+  (function() {
+    var path = window.location.pathname;
+    document.querySelectorAll('.nav-links a:not(.btn-nav)').forEach(function(a) {
+      var href = a.getAttribute('href');
+      if (href && href !== '/' && path.startsWith(href)) a.classList.add('nav-active');
+      else if (href === '/' && path === '/') a.classList.add('nav-active');
+    });
+  })();
+</script>
+</body>
+</html>

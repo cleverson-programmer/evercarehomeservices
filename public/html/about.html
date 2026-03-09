@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="apple-touch-icon" href="/favicon-192.png">
+  <title>About Us | EverCare Home Services | Worcester, MA</title>
+  <meta name="description" content="Meet the founders of EverCare Home Services — Renan and Lalesca. A family-founded company built on trust, delivering professional cleaning and certified in-home care across Worcester and Central Massachusetts.">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://evercarehomeservice.com/about">
+  <meta property="og:title" content="About EverCare | Our Story & Mission | Worcester, MA">
+  <meta property="og:description" content="EverCare Home Services was founded by Renan and Lalesca with a mission to bring professional, trustworthy care to every home in Worcester, MA.">
+  <meta property="og:image" content="https://storage.googleapis.com/uxpilot-auth.appspot.com/f27249cb76-630079eb8143fe714781.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://storage.googleapis.com/uxpilot-auth.appspot.com/f27249cb76-630079eb8143fe714781.png">
+  <link rel="canonical" href="https://evercarehomeservice.com/about">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "EverCare Home Services",
+    "url": "https://evercarehomeservice.com",
+    "logo": "https://www.evercarehomeservice.com/logo.png",
+    "description": "Family-founded company providing professional in-home senior care and residential cleaning services across Worcester and Central Massachusetts.",
+    "telephone": "+15087361263",
+    "email": "info@evercarehomeservice.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Worcester",
+      "addressRegion": "MA",
+      "addressCountry": "US"
+    },
+    "areaServed": [
+      "Worcester", "Shrewsbury", "Auburn", "Holden", "Leicester",
+      "Millbury", "Grafton", "Northborough", "Southborough",
+      "Spencer", "West Boylston", "Marlborough"
+    ],
+    "founder": [
+      {
+        "@type": "Person",
+        "name": "Renan Lopes Amaro",
+        "jobTitle": "Co-Founder",
+        "worksFor": { "@type": "Organization", "name": "EverCare Home Services" }
+      },
+      {
+        "@type": "Person",
+        "name": "Lalesca Fernanda de Almeida",
+        "jobTitle": "Co-Founder",
+        "worksFor": { "@type": "Organization", "name": "EverCare Home Services" }
+      }
+    ],
+    "sameAs": []
+  }
+  </script>
+  <style>
+    :root {
+      --b1: #2a5f8f; --b2: #4487bf; --b3: #56c2c1; --b4: #a8d8ea;
+      --g1: #1e5c38; --g2: #2f7a57; --g3: #52b788; --g4: #a8d8bc;
+      --navy: #0d1e2e; --navy2: #1c3350;
+      --white: #ffffff; --cream: #f4f8fc; --cream2: #e8f2f8;
+      --text: #1a2e3d; --muted: #4a6070;
+      --serif: 'Playfair Display', Georgia, serif;
+      --sans: 'Inter', system-ui, sans-serif;
+      --sh: 0 6px 32px rgba(68,135,191,.12);
+      --sh2: 0 20px 60px rgba(68,135,191,.18);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--sans); color: var(--text); background: var(--white); overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+    h1,h2,h3,h4 { font-family: var(--serif); line-height: 1.2; letter-spacing: -.01em; font-weight: 700; }
+    ::selection { background: var(--b3); color: #fff; }
+
+    /* SCROLL REVEAL */
+    .fi { opacity: 1; transform: none; transition: opacity .65s ease, transform .65s ease; }
+    body.reveal-ready .fi { opacity: 0; transform: translateY(24px); }
+    body.reveal-ready .fi.vis { opacity: 1; transform: none; }
+
+    /* NAV */
+    #header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: transparent; border-bottom: 1px solid transparent; transition: background .4s, box-shadow .4s, border-color .4s; overflow: visible; }
+    #header.scrolled { background: #fff; box-shadow: 0 4px 24px rgba(13,30,46,.08); }
+    .nav-inner { max-width: 1260px; margin: 0 auto; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; height: 110px; }
+    .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,.85); font-size: .8rem; font-weight: 600; text-decoration: none; letter-spacing: .06em; text-transform: uppercase; transition: color .2s; }
+    .nav-links a:hover, .nav-links a.nav-active { color: #fff; } #header.scrolled .nav-links a { color: var(--muted); } #header.scrolled .nav-links a:hover, #header.scrolled .nav-links a.nav-active { color: var(--b2); }
+    .nav-links a.nav-active { position: relative; }
+    .nav-links a.nav-active::after { content: ''; position: absolute; bottom: -4px; left: 0; right: 0; height: 2px; border-radius: 2px; background: linear-gradient(90deg, var(--b2), var(--b3)); }
+    .nav-phone { color: var(--b2) !important; font-size: .82rem !important; font-weight: 700 !important; }
+    .btn-nav { background:linear-gradient(135deg,var(--b2),var(--g3)); color: #fff !important; padding: 11px 24px; border-radius: 100px; font-weight: 700 !important; font-size: .82rem !important; text-decoration: none; box-shadow:0 4px 16px rgba(68,135,191,.35); transition: all .25s; }
+    .btn-nav:hover { transform: translateY(-2px); box-shadow:0 8px 24px rgba(68,135,191,.5); }
+    #hamburger { display: none; background: none; border: none; cursor: pointer; color: rgba(255,255,255,.9); font-size: 1.7rem; padding: 4px 8px; line-height: 1; transition: color .2s, transform .2s; } #header.scrolled #hamburger { color: var(--navy); }
+    #mobile-menu { display: block; max-height: 0; overflow: hidden; opacity: 0; position: absolute; top: 110px; left: 0; right: 0; background: var(--white); padding: 0 24px; box-shadow: 0 8px 32px rgba(13,30,46,.12); border-top: 2px solid var(--b2); transition: max-height .35s ease, opacity .25s ease, padding .35s ease; }
+    #mobile-menu.open { max-height: 540px; opacity: 1; padding: 16px 24px 28px; }
+    #mobile-menu a { display: block; padding: 14px 0; font-weight: 600; color: var(--navy); text-decoration: none; border-bottom: 1px solid rgba(0,0,0,.06); font-size: .95rem; letter-spacing: .04em; text-transform: uppercase; transition: color .2s; }
+    #mobile-menu a:hover { color: var(--b2); }
+    #mobile-menu .btn-nav { display: block; margin-top: 16px !important; text-align: center; padding: 16px 24px; font-size: 1rem; border-radius: 100px; color: #fff !important; border-bottom: none; text-transform: none; }
+    @media(max-width:900px) { .nav-links,.nav-phone,.btn-nav { display: none; } #hamburger { display: block; } }
+
+    /* HERO */
+    #hero { min-height: 56vh; position: relative; display: flex; align-items: center; overflow: hidden; padding-top: 0; background: linear-gradient(135deg, var(--navy) 0%, #0e2a3d 50%, #0a1f18 100%); }
+    .hero-dots { position: absolute; inset: 0; background-image: radial-gradient(circle, rgba(255,255,255,.04) 1px, transparent 1px); background-size: 28px 28px; }
+    .hero-orb-1 { position: absolute; width: 500px; height: 500px; border-radius: 50%; background: radial-gradient(circle, rgba(68,135,191,.18), transparent 70%); top: -150px; right: -100px; pointer-events: none; }
+    .hero-orb-2 { position: absolute; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(82,183,136,.15), transparent 70%); bottom: -100px; left: -80px; pointer-events: none; }
+    .hero-content { position: relative; z-index: 2; max-width: 1260px; margin: 0 auto; padding: 110px 32px 60px; width: 100%; text-align: center; }
+    .hero-eyebrow { display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,.1); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,.2); border-radius: 100px; padding: 8px 20px; color: rgba(255,255,255,.8); font-size: .78rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 28px; }
+    #hero h1 { font-size: clamp(2.6rem, 5vw, 4rem); color: #fff; font-weight: 700; margin-bottom: 20px; }
+    #hero h1 em { font-style: italic; background: linear-gradient(135deg, var(--b4), var(--g4)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .hero-sub { color: rgba(255,255,255,.65); font-size: 1.1rem; line-height: 1.8; max-width: 560px; margin: 0 auto; font-weight: 300; }
+
+    /* WAVE */
+    .wave { line-height: 0; overflow: hidden; }
+    .wave svg { display: block; width: 100%; }
+
+    /* COMMON */
+    .sec { padding: 96px 32px; }
+    .container { max-width: 1260px; margin: 0 auto; }
+    .sec-tag { display: inline-flex; align-items: center; gap: 10px; font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--b3); margin-bottom: 14px; }
+    .sec-tag::before, .sec-tag::after { content: ''; height: 2px; width: 24px; border-radius: 2px; background: var(--b2); }
+    .sec-tag.center { justify-content: center; }
+    .sec-title { font-size: clamp(1.9rem, 3.5vw, 2.9rem); color: var(--navy); margin-bottom: 14px; font-weight: 700; }
+    .sec-sub { color: var(--muted); font-size: 1rem; line-height: 1.75; max-width: 620px; }
+
+    /* STORY SECTION */
+    #story { background: var(--cream); }
+    .story-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; max-width: 1260px; margin: 0 auto; }
+    .story-left h2 { font-size: clamp(1.9rem, 3.5vw, 2.8rem); color: var(--navy); margin-bottom: 20px; }
+    .story-left p { color: var(--muted); font-size: 1rem; line-height: 1.85; margin-bottom: 18px; }
+    .story-values { display: flex; flex-direction: column; gap: 12px; margin-top: 28px; }
+    .story-val { display: flex; align-items: center; gap: 12px; font-size: .92rem; color: var(--text); font-weight: 500; }
+    .story-val i { color: var(--b3); font-size: 1rem; width: 20px; text-align: center; }
+    .story-right { background: linear-gradient(135deg, var(--navy), #0e2a3d 60%, #0a1f18 100%); border-radius: 28px; padding: 52px 44px; color: #fff; box-shadow: var(--sh2); position: relative; overflow: hidden; }
+    .story-right::before { content: ''; position: absolute; top: -60px; right: -60px; width: 240px; height: 240px; border-radius: 50%; background: rgba(68,135,191,.12); }
+    .story-right::after { content: ''; position: absolute; bottom: -40px; left: -40px; width: 180px; height: 180px; border-radius: 50%; background: rgba(82,183,136,.1); }
+    .story-right-inner { position: relative; z-index: 1; }
+    .story-right h3 { font-family: var(--serif); font-size: 1.5rem; color: #fff; margin-bottom: 20px; font-weight: 700; }
+    .story-stat { display: flex; align-items: center; gap: 18px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.1); border-radius: 14px; padding: 18px 22px; margin-bottom: 14px; transition: all .25s; }
+    .story-stat:hover { background: rgba(255,255,255,.12); border-color: rgba(82,183,136,.3); }
+    .story-stat-icon { width: 44px; height: 44px; border-radius: 12px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 1rem; color: #fff; }
+    .ssi1 { background: linear-gradient(135deg, var(--b2), var(--b3)); }
+    .ssi2 { background: linear-gradient(135deg, var(--g1), var(--g3)); }
+    .ssi3 { background: linear-gradient(135deg, var(--b1), var(--g2)); }
+    .story-stat strong { display: block; color: #fff; font-size: .9rem; font-weight: 600; }
+    .story-stat span { color: rgba(255,255,255,.55); font-size: .8rem; }
+
+    /* TEAM SECTION */
+    #team { background: var(--white); }
+    .team-header { text-align: center; max-width: 640px; margin: 0 auto 64px; }
+    .team-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; max-width: 960px; margin: 0 auto; }
+    .team-card { background: var(--cream); border-radius: 28px; overflow: hidden; border: 2px solid transparent; transition: all .3s cubic-bezier(.4,0,.2,1); }
+    .team-card:hover { transform: translateY(-8px); box-shadow: var(--sh2); border-color: rgba(86,194,193,.2); }
+    .team-card-top { padding: 44px 40px 36px; text-align: center; position: relative; }
+    .team-avatar { width: 110px; height: 110px; border-radius: 50%; margin: 0 auto 24px; display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-size: 2.4rem; font-weight: 700; color: #fff; box-shadow: 0 8px 28px rgba(68,135,191,.35); border: 4px solid rgba(255,255,255,.3); }
+    .av-renan { background: linear-gradient(135deg, var(--b1), var(--b2)); }
+    .av-lalesca { background: linear-gradient(135deg, var(--g1), var(--g2)); }
+    .team-card h3 { font-family: var(--serif); font-size: 1.6rem; color: var(--navy); font-weight: 700; margin-bottom: 6px; }
+    .team-role { font-size: .82rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 16px; }
+    .team-role.blue { color: var(--b2); }
+    .team-role.green { color: var(--g2); }
+    .team-card-body { padding: 0 40px 44px; }
+    .team-card p { color: var(--muted); font-size: .92rem; line-height: 1.8; margin-bottom: 20px; }
+    .team-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .team-tag { padding: 6px 14px; border-radius: 100px; font-size: .78rem; font-weight: 600; }
+    .team-tag.blue { background: rgba(68,135,191,.1); color: var(--b1); border: 1px solid rgba(68,135,191,.2); }
+    .team-tag.green { background: rgba(82,183,136,.1); color: var(--g1); border: 1px solid rgba(82,183,136,.2); }
+
+    /* TOGETHER BANNER */
+    .together-banner { max-width: 960px; margin: 48px auto 0; background: linear-gradient(135deg, var(--b1), var(--b2) 50%, var(--g2)); border-radius: 24px; padding: 40px 44px; display: flex; align-items: center; gap: 28px; box-shadow: var(--sh2); }
+    .together-icon { width: 64px; height: 64px; border-radius: 18px; flex-shrink: 0; background: rgba(255,255,255,.15); display: flex; align-items: center; justify-content: center; font-size: 1.6rem; color: #fff; }
+    .together-banner h3 { font-family: var(--serif); font-size: 1.3rem; color: #fff; margin-bottom: 8px; font-weight: 700; }
+    .together-banner p { color: rgba(255,255,255,.75); font-size: .92rem; line-height: 1.7; }
+
+    /* VALUES SECTION */
+    #values { background: var(--cream); }
+    .values-header { text-align: center; max-width: 640px; margin: 0 auto 64px; }
+    .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 1260px; margin: 0 auto; }
+    .value-card { background: var(--white); border-radius: 24px; padding: 40px 32px; border: 2px solid transparent; transition: all .3s cubic-bezier(.4,0,.2,1); position: relative; overflow: hidden; }
+    .value-card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--b2), var(--b3)); transform: scaleX(0); transition: transform .3s; transform-origin: left; }
+    .value-card:hover { transform: translateY(-6px); box-shadow: var(--sh2); border-color: rgba(86,194,193,.2); }
+    .value-card:hover::after { transform: scaleX(1); }
+    .value-icon { width: 72px; height: 72px; border-radius: 20px; margin-bottom: 24px; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; color: #fff; box-shadow: 0 6px 20px rgba(68,135,191,.25); }
+    .vi1 { background: linear-gradient(135deg, var(--b1), var(--b2)); }
+    .vi2 { background: linear-gradient(135deg, var(--b2), var(--b3)); }
+    .vi3 { background: linear-gradient(135deg, var(--g1), var(--g3)); }
+    .vi4 { background: linear-gradient(135deg, var(--g2), var(--b3)); }
+    .vi5 { background: linear-gradient(135deg, var(--b1), var(--g2)); }
+    .vi6 { background: linear-gradient(135deg, var(--b3), var(--g1)); }
+    .value-card h3 { font-family: var(--serif); font-size: 1.2rem; color: var(--navy); margin-bottom: 10px; font-weight: 700; }
+    .value-card p { color: var(--muted); font-size: .88rem; line-height: 1.7; }
+
+    /* COMMITMENT SECTION */
+    #commitment { background: var(--white); }
+    .commitment-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; max-width: 1260px; margin: 0 auto; }
+    .commitment-left h2 { font-size: clamp(1.9rem, 3.5vw, 2.8rem); color: var(--navy); margin-bottom: 20px; }
+    .commitment-left p { color: var(--muted); font-size: 1rem; line-height: 1.85; margin-bottom: 16px; }
+    .commitment-checks { display: flex; flex-direction: column; gap: 14px; margin-top: 28px; }
+    .commitment-check { display: flex; align-items: center; gap: 14px; background: var(--cream); border-radius: 12px; padding: 14px 18px; border: 1.5px solid rgba(68,135,191,.08); transition: all .25s; }
+    .commitment-check:hover { border-color: var(--b3); box-shadow: var(--sh); transform: translateX(4px); }
+    .check-dot { width: 32px; height: 32px; border-radius: 50%; flex-shrink: 0; background: linear-gradient(135deg, var(--b2), var(--b3)); display: flex; align-items: center; justify-content: center; color: #fff; font-size: .75rem; }
+    .commitment-check p { color: var(--text); font-size: .9rem; line-height: 1.55; }
+    .commitment-right { background: linear-gradient(135deg, var(--b1), var(--b2)); border-radius: 28px; padding: 52px 44px; color: #fff; box-shadow: var(--sh2); position: relative; overflow: hidden; }
+    .commitment-right::before { content: ''; position: absolute; top: -60px; right: -60px; width: 220px; height: 220px; border-radius: 50%; background: rgba(255,255,255,.06); }
+    .commitment-right-inner { position: relative; z-index: 1; }
+    .commitment-quote { font-family: var(--serif); font-size: 1.35rem; font-style: italic; color: rgba(255,255,255,.9); line-height: 1.75; margin-bottom: 32px; }
+    .commitment-sig { display: flex; align-items: center; gap: 14px; }
+    .commitment-avatars { display: flex; }
+    .commitment-avatars .av { width: 48px; height: 48px; border-radius: 50%; border: 3px solid rgba(255,255,255,.3); display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-size: 1rem; font-weight: 700; color: #fff; }
+    .commitment-avatars .av:last-child { margin-left: -14px; }
+    .av-r { background: rgba(255,255,255,.2); }
+    .av-l { background: rgba(255,255,255,.15); }
+    .commitment-sig-text strong { display: block; color: #fff; font-size: .92rem; font-weight: 700; }
+    .commitment-sig-text span { color: rgba(255,255,255,.55); font-size: .78rem; }
+
+    /* CTA FINAL */
+    #cta-final { background: linear-gradient(135deg, var(--navy) 0%, #0e2a3d 50%, #0a1f18 100%); padding: 120px 32px; position: relative; overflow: hidden; text-align: center; }
+    .cta-orb { position: absolute; border-radius: 50%; filter: blur(80px); pointer-events: none; }
+    .cta-orb-1 { width: 500px; height: 500px; background: rgba(68,135,191,.12); top: -120px; right: -100px; }
+    .cta-orb-2 { width: 500px; height: 500px; background: rgba(82,183,136,.1); bottom: -120px; left: -100px; }
+    .cta-inner { position: relative; z-index: 2; max-width: 700px; margin: 0 auto; }
+    .cta-eyebrow { display: inline-flex; align-items: center; gap: 10px; color: rgba(255,255,255,.5); font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 24px; }
+    .cta-eyebrow span { display: inline-block; width: 24px; height: 2px; border-radius: 2px; background: linear-gradient(90deg, var(--b3), var(--g3)); }
+    #cta-final h2 { font-size: clamp(2.4rem, 5vw, 3.6rem); color: #fff; font-weight: 700; margin-bottom: 20px; }
+    #cta-final h2 em { font-style: italic; background: linear-gradient(135deg, var(--b4), var(--g4)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .cta-sub { color: rgba(255,255,255,.6); font-size: 1.05rem; line-height: 1.75; margin-bottom: 44px; font-weight: 300; }
+    .cta-btns { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-bottom: 28px; }
+    .btn-cta-sms { display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, var(--b2), var(--g3)); color: #fff; padding: 20px 40px; border-radius: 16px; font-weight: 700; font-size: 1.05rem; text-decoration: none; box-shadow: 0 8px 30px rgba(68,135,191,.5); transition: all .25s; }
+    .btn-cta-sms:hover { transform: translateY(-3px); box-shadow: 0 14px 40px rgba(68,135,191,.65); }
+    .btn-cta-call { display: inline-flex; align-items: center; gap: 10px; background: var(--white); color: var(--navy); padding: 20px 40px; border-radius: 16px; font-weight: 700; font-size: 1.05rem; text-decoration: none; box-shadow: 0 8px 30px rgba(0,0,0,.15); transition: all .25s; }
+    .btn-cta-call i { color: var(--b2); }
+    .btn-cta-call:hover { transform: translateY(-3px); }
+    .cta-trust { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 20px; color: rgba(255,255,255,.4); font-size: .8rem; }
+    .cta-t { display: flex; align-items: center; gap: 7px; }
+    .cta-t i { color: var(--b4); }
+    .cta-sep { width: 4px; height: 4px; border-radius: 50%; background: rgba(255,255,255,.2); }
+
+    /* TRUST BAR */
+    #trust-bar { background: var(--navy2); padding: 18px 32px; }
+    .trust-bar-inner { max-width: 1260px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+    .trust-row { display: flex; align-items: center; justify-content: center; gap: 10px 36px; flex-wrap: wrap; }
+    .trust-item { display: flex; align-items: center; gap: 9px; color: rgba(255,255,255,.7); font-size: .8rem; font-weight: 500; white-space: nowrap; }
+    .trust-item i { color: var(--b4); font-size: .85rem; }
+    .trust-div { width: 1px; height: 18px; background: rgba(255,255,255,.12); }
+    @media(max-width:600px) { .trust-div { display: none; } }
+
+    /* TESTIMONIALS */
+    #testimonials { background: var(--cream); }
+    .testi-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-top: 52px; }
+    .testi-card { background: var(--white); border-radius: 18px; padding: 32px; border: 1.5px solid rgba(68,135,191,.08); transition: all .3s; display: flex; flex-direction: column; }
+    .testi-card:hover { transform: translateY(-4px); box-shadow: var(--sh); }
+    .testi-stars { color: #f4a623; font-size: .9rem; letter-spacing: 2px; margin-bottom: 14px; }
+    .testi-quote { font-size: .88rem; color: var(--muted); line-height: 1.8; font-style: italic; flex: 1; margin: 0 0 20px; }
+    .testi-footer { display: flex; align-items: center; gap: 12px; margin-top: auto; }
+    .testi-avatar { width: 42px; height: 42px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-size: 1rem; color: #fff; font-weight: 700; flex-shrink: 0; }
+    .ta1 { background: linear-gradient(135deg, var(--b2), var(--b3)); }
+    .ta2 { background: linear-gradient(135deg, var(--g2), var(--g3)); }
+    .ta3 { background: linear-gradient(135deg, var(--b1), var(--g2)); }
+    .testi-info { flex: 1; }
+    .testi-info strong { display: block; font-size: .88rem; color: var(--navy); font-family: var(--sans); font-weight: 600; }
+    .testi-info span { font-size: .76rem; color: var(--muted); display: block; margin-top: 2px; }
+    .testi-source { font-size: .75rem; color: var(--b2); font-weight: 600; display: flex; align-items: center; gap: 5px; white-space: nowrap; }
+    @media(max-width:860px) { .testi-grid { grid-template-columns: 1fr; max-width: 500px; margin-left: auto; margin-right: auto; } }
+
+    /* FOOTER */
+    footer { background: #060d12; color: rgba(255,255,255,.45); padding: 72px 32px 32px; }
+    .footer-grid { max-width: 1260px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+    .footer-brand p { font-size: .88rem; line-height: 1.75; margin-top: 14px; max-width: 280px; }
+    .footer-cities { font-size: .78rem; color: rgba(255,255,255,.28); margin-top: 10px; line-height: 1.6; }
+    .footer-socials { display: flex; gap: 10px; margin-top: 20px; }
+    .soc-btn { width: 38px; height: 38px; border-radius: 50%; background: rgba(255,255,255,.08); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,.5); text-decoration: none; font-size: .85rem; transition: all .2s; }
+    .soc-btn:hover { background: linear-gradient(135deg, var(--b2), var(--g3)); color: #fff; }
+    .footer-col h4 { color: #fff; font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 18px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col a { color: rgba(255,255,255,.4); text-decoration: none; font-size: .88rem; transition: color .2s; }
+    .footer-col a:hover { color: var(--b4); }
+    .footer-bottom { max-width: 1260px; margin: 0 auto; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.07); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-size: .8rem; }
+    .footer-bottom a { color: rgba(255,255,255,.35); text-decoration: none; margin-left: 20px; transition: color .2s; }
+    .footer-bottom a:hover { color: var(--b4); }
+
+    /* WIDGET */
+    #contact-widget{position:fixed;bottom:28px;right:28px;z-index:200;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+    #widget-panel{background:#fff;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.18);width:320px;overflow:hidden;display:none;transform:scale(.9) translateY(10px);opacity:0;transition:all .3s cubic-bezier(.34,1.56,.64,1);transform-origin:bottom right;max-height:calc(100vh - 120px);overflow-y:auto}
+    #widget-panel.open{display:block;transform:scale(1) translateY(0);opacity:1}
+    .widget-header{background:linear-gradient(135deg,var(--b2),var(--g3));padding:20px}
+    .widget-header-top{display:flex;align-items:center;gap:12px}
+    .widget-avatar{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:1.2rem;color:#fff;flex-shrink:0}
+    .widget-name{color:#fff;font-weight:700;font-size:.95rem}
+    .widget-status{color:rgba(255,255,255,.72);font-size:.74rem;display:flex;align-items:center;gap:6px;margin-top:3px}
+    .widget-dot{width:7px;height:7px;border-radius:50%;background:#4ade80;display:inline-block;flex-shrink:0}
+    .widget-options{padding:12px;display:flex;flex-direction:column;gap:8px}
+    .widget-btn{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:12px;text-decoration:none;transition:all .2s;border:1.5px solid transparent}
+    .widget-btn:hover{transform:translateX(3px)}
+    .wb-sms{background:rgba(68,135,191,.07);border-color:rgba(68,135,191,.12)}
+    .wb-sms:hover{background:rgba(68,135,191,.12);border-color:rgba(68,135,191,.25)}
+    .wb-call{background:rgba(82,183,136,.07);border-color:rgba(82,183,136,.12)}
+    .wb-call:hover{background:rgba(82,183,136,.12);border-color:rgba(82,183,136,.25)}
+    .wb-email{background:rgba(42,95,143,.05);border-color:rgba(42,95,143,.1)}
+    .wb-email:hover{background:rgba(42,95,143,.1);border-color:rgba(42,95,143,.22)}
+    .widget-btn-icon{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:.95rem;color:#fff;flex-shrink:0}
+    .wb-sms .widget-btn-icon{background:linear-gradient(135deg,var(--b2),var(--b3))}
+    .wb-call .widget-btn-icon{background:linear-gradient(135deg,var(--g2),var(--g3))}
+    .wb-email .widget-btn-icon{background:linear-gradient(135deg,var(--b1),var(--b2))}
+    .wb-label{display:block;font-size:.86rem;font-weight:700;color:var(--text)}
+    .wb-sub{display:block;font-size:.74rem;color:var(--muted);margin-top:1px}
+    @keyframes widgetPulse{0%{box-shadow:0 8px 28px rgba(68,135,191,.55),0 0 0 0 rgba(68,135,191,.45)}70%{box-shadow:0 8px 28px rgba(68,135,191,.55),0 0 0 16px rgba(68,135,191,0)}100%{box-shadow:0 8px 28px rgba(68,135,191,.55),0 0 0 0 rgba(68,135,191,0)}}
+    #widget-toggle{width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,var(--b2),var(--g3));color:#fff;border:none;cursor:pointer;box-shadow:0 8px 28px rgba(68,135,191,.55);transition:transform .3s,box-shadow .3s;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0}
+    #widget-toggle:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(68,135,191,.7)}
+    #widget-toggle.pulse{animation:widgetPulse 2s ease-out}
+    .icon-open{display:flex}.icon-close{display:none}
+    #widget-toggle.active .icon-open{display:none}
+    #widget-toggle.active .icon-close{display:flex}
+    #widget-label{background:#fff;border-radius:12px;padding:10px 14px;box-shadow:0 4px 20px rgba(0,0,0,.12);transition:opacity .5s,transform .5s;pointer-events:none}
+    #widget-label.hidden{opacity:0;transform:translateX(8px)}
+    .wl-main{display:block;font-size:.85rem;font-weight:700;color:var(--text);white-space:nowrap}
+    .wl-sub{display:block;font-size:.72rem;color:var(--muted);white-space:nowrap;margin-top:2px}
+    #widget-row{display:flex;align-items:center;gap:12px}
+    @media(max-width:480px){#contact-widget{bottom:18px;right:14px}#widget-panel{width:calc(100vw - 28px)}#widget-label{display:none}#widget-toggle{width:54px;height:54px;font-size:1.25rem}}
+
+  
+    /* Mid-page CTA strip */
+    .mid-cta{background:linear-gradient(135deg,#eaf4fb 0%,#e8f7f0 100%);padding:36px 24px;text-align:center;border-top:1px solid rgba(68,135,191,.1);border-bottom:1px solid rgba(82,183,136,.1)}
+    .mid-cta-inner{max-width:600px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:14px}
+    .mid-cta p{color:var(--navy);font-size:1rem;margin:0;line-height:1.5}
+    .mid-cta strong{color:var(--b2)}
+    .btn-mid-cta{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(135deg,var(--b2),var(--g3));color:#fff;padding:15px 30px;border-radius:100px;font-weight:700;font-size:.93rem;text-decoration:none;box-shadow:0 6px 22px rgba(68,135,191,.38);transition:all .25s;white-space:nowrap}
+    .btn-mid-cta:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(68,135,191,.5)}
+    .mid-cta-sub{font-size:.82rem;color:var(--muted);margin:0}
+    @media(min-width:700px){.mid-cta-inner{flex-direction:row;justify-content:center;gap:24px;text-align:left}.mid-cta-inner p{flex:1}}
+
+    /* ── MOBILE FIXES ── */
+    @media(max-width:900px){
+      .nav-links,.nav-phone,.btn-nav{display:none}
+      #hamburger{display:block}
+      .sec{padding:64px 20px}
+      .values-grid{grid-template-columns:1fr!important}
+      .hero-content{padding:0 20px}
+    }
+    @media(max-width:600px){
+      .sec{padding:48px 16px}
+      .trust-row{gap:8px 20px}
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<header id="header">
+  <div class="nav-inner">
+    <a href="/" style="display:flex;align-items:center;text-decoration:none">
+      <img src="/logo.svg" alt="EverCare Home Services" style="height:220px;width:auto;display:block">
+    </a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/services">Services</a></li>
+      <li><a href="/about" class="nav-active">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="tel:+15087361263" class="nav-phone"><i class="fa-solid fa-phone" style="margin-right:6px"></i> Call Us</a></li>
+      <li><a href="/contact" class="btn-nav">Get a Free Estimate</a></li>
+    </ul>
+    <button id="hamburger"><i class="fa-solid fa-bars"></i></button>
+  </div>
+  <div id="mobile-menu">
+    <a href="/">Home</a>
+    <a href="/services">Services</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+    <a href="tel:+15087361263"><i class="fa-solid fa-phone" style="margin-right:8px;color:var(--b2)"></i> Call Us</a>
+    <a href="/contact" class="btn-nav">Get a Free Estimate</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-dots"></div>
+  <div class="hero-orb-1"></div>
+  <div class="hero-orb-2"></div>
+  <div class="hero-content fi">
+    <div class="hero-eyebrow"><i class="fa-solid fa-heart"></i> Our Story</div>
+    <h1>One Mission. <em>Every Home.</em></h1>
+    <p class="hero-sub">EverCare was founded by a couple who believes that every home — and every family — deserves professional, trustworthy care. Delivered with heart, every time.</p>
+  </div>
+</section>
+
+<!-- WAVE hero → navy2 -->
+<div class="wave" style="background:transparent;margin-top:-60px;position:relative;z-index:1"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,70 800,0 1200,30 L1200,60 L0,60 Z" fill="var(--navy2)"/></svg></div>
+
+<!-- TRUST BAR -->
+<div id="trust-bar">
+  <div class="trust-bar-inner">
+    <div class="trust-row">
+      <div class="trust-item"><i class="fa-solid fa-shield-check"></i> Fully Insured & Bonded</div>
+      <div class="trust-div"></div>
+      <div class="trust-item"><i class="fa-solid fa-user-check"></i> Background-Checked Team</div>
+      <div class="trust-div"></div>
+      <div class="trust-item"><i class="fa-solid fa-file-contract"></i> No Long-Term Contracts</div>
+    </div>
+    <div class="trust-row">
+      <div class="trust-item"><i class="fa-solid fa-location-dot"></i> Locally Owned · Worcester, MA</div>
+      <div class="trust-div"></div>
+      <div class="trust-item"><i class="fa-solid fa-comments"></i> Free Consultation</div>
+    </div>
+  </div>
+</div>
+
+<!-- WAVE navy2 → cream -->
+<div class="wave" style="background:var(--navy2)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,0 800,60 1200,30 L1200,60 L0,60 Z" fill="var(--cream)"/></svg></div>
+
+<!-- STORY SECTION -->
+<section class="sec" id="story" style="background:var(--cream)">
+  <div class="story-inner fi">
+    <div class="story-left">
+      <div class="sec-tag">Who We Are</div>
+      <h2>A Family Business Built on <em style="font-style:italic;font-family:var(--serif)">Care</em></h2>
+      <p>EverCare Home Services was founded by Renan and Lalesca — a couple based in Worcester, Massachusetts who decided to build something together: a business that treats every client like a neighbor, not a contract.</p>
+      <p>We started with a simple belief — that people deserve to feel safe and supported in their own homes. Whether that means a spotless kitchen after a long week, or a compassionate caregiver by their side, EverCare is here to make it happen.</p>
+      <p>Every client gets our full attention. You're not a ticket in a queue. You're a family we've committed to — and that standard applies to every professional on our team.</p>
+      <div class="story-values">
+        <div class="story-val"><i class="fa-solid fa-circle-check"></i> Family-founded — built on personal values</div>
+        <div class="story-val"><i class="fa-solid fa-circle-check"></i> Locally rooted in Worcester, MA</div>
+        <div class="story-val"><i class="fa-solid fa-circle-check"></i> Licensed, insured, and background-checked</div>
+        <div class="story-val"><i class="fa-solid fa-circle-check"></i> Two services, one standard of quality</div>
+      </div>
+    </div>
+    <div class="story-right">
+      <div class="story-right-inner">
+        <h3>What Makes EverCare Different</h3>
+        <div class="story-stat">
+          <div class="story-stat-icon ssi1"><i class="fa-solid fa-users"></i></div>
+          <div><strong>Vetted Professionals</strong><span>Every team member is background-checked and accountable</span></div>
+        </div>
+        <div class="story-stat">
+          <div class="story-stat-icon ssi2"><i class="fa-solid fa-location-dot"></i></div>
+          <div><strong>Worcester Local</strong><span>We live and work in the same community we serve</span></div>
+        </div>
+        <div class="story-stat">
+          <div class="story-stat-icon ssi3"><i class="fa-solid fa-shield-check"></i></div>
+          <div><strong>One Standard for Everything</strong><span>Same professionalism in cleaning and care</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WAVE cream → white -->
+<div class="wave" style="background:var(--cream)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,70 800,0 1200,30 L1200,60 L0,60 Z" fill="var(--white)"/></svg></div>
+
+<!-- TEAM SECTION -->
+<section class="sec" id="team" style="background:var(--white)">
+  <div class="container">
+    <div class="team-header fi">
+      <div class="sec-tag center">Meet the Team</div>
+      <h2 class="sec-title" style="text-align:center">The People Behind <em style="font-style:italic;font-family:var(--serif)">Every Visit</em></h2>
+      <p class="sec-sub" style="text-align:center;margin:0 auto">Every EverCare professional is personally vetted by our founders — background-checked, trained to our standards, and accountable to every family we serve.</p>
+    </div>
+    <div class="team-grid fi">
+
+      <!-- RENAN -->
+      <div class="team-card">
+        <div class="team-card-top">
+          <div class="team-avatar av-renan">R</div>
+          <h3>Renan Lopes Amaro</h3>
+          <div class="team-role blue">Co-Founder · EverCare</div>
+          <p style="color:var(--muted);font-size:.88rem;line-height:1.6">Dedicated to making sure every client receives consistent, high-quality service — whether it's a clean home or dependable daily care.</p>
+        </div>
+        <div class="team-card-body">
+          <p>Renan leads EverCare's operations with a focus on consistency and accountability. He sets the standards, builds the processes, and makes sure every client receives the quality they were promised — no shortcuts, no excuses.</p>
+          <div class="team-tags">
+            <span class="team-tag blue">Professional Cleaning</span>
+            <span class="team-tag blue">In-Home Care</span>
+            <span class="team-tag blue">Client Relations</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- LALESCA -->
+      <div class="team-card">
+        <div class="team-card-top">
+          <div class="team-avatar av-lalesca">L</div>
+          <h3>Lalesca Fernanda de Almeida</h3>
+          <div class="team-role green">Co-Founder · EverCare</div>
+          <p style="color:var(--muted);font-size:.88rem;line-height:1.6">Passionate about delivering care and cleanliness that actually makes a difference in people's daily lives and gives families peace of mind.</p>
+        </div>
+        <div class="team-card-body">
+          <p>Lalesca shapes the culture and care standards at EverCare. Her attention to detail and genuine warmth define what every client should feel — and what every team member is trained to deliver.</p>
+          <div class="team-tags">
+            <span class="team-tag green">Senior Care</span>
+            <span class="team-tag green">Residential Cleaning</span>
+            <span class="team-tag green">Quality & Warmth</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- TOGETHER BANNER -->
+    <div class="together-banner fi">
+      <div class="together-icon"><i class="fa-solid fa-rocket"></i></div>
+      <div>
+        <h3>Built to Grow. Built to Last.</h3>
+        <p>EverCare was founded with a clear vision: start strong, expand thoughtfully, and bring the same high standards to more families, more communities, and more homes — across Central Massachusetts and beyond.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="mid-cta">
+  <div class="mid-cta-inner fi">
+    <p>Want to work with a team you can trust? <strong>Get a free estimate today</strong>.</p>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex-shrink:0">
+      <a href="sms:+15087361263" class="btn-mid-cta"><i class="fa-solid fa-comment-sms"></i> Text for a Free Estimate</a>
+      <span class="mid-cta-sub"><i class="fa-solid fa-clock"></i> Same-day response · No obligation · Fully insured</span>
+    </div>
+  </div>
+</div>
+
+<!-- WAVE white → cream -->
+<div class="wave" style="background:var(--white)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,0 800,60 1200,30 L1200,60 L0,60 Z" fill="var(--cream)"/></svg></div>
+
+<!-- VALUES SECTION -->
+<section class="sec" id="values" style="background:var(--cream)">
+  <div class="container">
+    <div class="values-header fi">
+      <div class="sec-tag center">What We Believe</div>
+      <h2 class="sec-title" style="text-align:center">The Values That <em style="font-style:italic;font-family:var(--serif)">Drive Us</em></h2>
+      <p class="sec-sub" style="text-align:center;margin:0 auto">These aren't slogans on a wall. They're the standard behind every visit — and what every client can count on from EverCare.</p>
+    </div>
+    <div class="values-grid fi">
+      <div class="value-card">
+        <div class="value-icon vi1"><i class="fa-solid fa-handshake"></i></div>
+        <h3>Trustworthiness</h3>
+        <p>We enter people's homes — that's a privilege we take seriously. Every member of our team is background-checked, licensed, and accountable.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon vi2"><i class="fa-solid fa-heart-pulse"></i></div>
+        <h3>Genuine Compassion</h3>
+        <p>We don't just clean homes or assist seniors — we care about the people living in them. Every interaction is personal, not transactional.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon vi3"><i class="fa-solid fa-star"></i></div>
+        <h3>Consistent Quality</h3>
+        <p>You should get the same excellent service on the 10th visit as on the first. We don't let standards slip over time.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon vi4"><i class="fa-solid fa-comments"></i></div>
+        <h3>Clear Communication</h3>
+        <p>We respond fast, explain everything clearly, and never leave you wondering. Questions are always welcome — we prefer honesty over silence.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon vi5"><i class="fa-solid fa-location-dot"></i></div>
+        <h3>Community First</h3>
+        <p>We're not a national franchise. We're Worcester locals, and we invest in the well-being of the community we call home.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon vi6"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3>Accountability</h3>
+        <p>If something isn't right, we make it right. No excuses, no runaround. You deserve a company that stands behind its work.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WAVE cream → white -->
+<div class="wave" style="background:var(--cream)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,70 800,0 1200,30 L1200,60 L0,60 Z" fill="var(--white)"/></svg></div>
+
+<!-- COMMITMENT SECTION -->
+<section class="sec" id="commitment" style="background:var(--white)">
+  <div class="commitment-inner fi">
+    <div class="commitment-left">
+      <div class="sec-tag">Our Promise</div>
+      <h2>What You Can <em style="font-style:italic;font-family:var(--serif)">Always Expect</em> from Us</h2>
+      <p>We're a new company, but our standards aren't. Every client gets the same attention, the same professionalism, and the same respect from day one.</p>
+      <div class="commitment-checks">
+        <div class="commitment-check">
+          <div class="check-dot"><i class="fa-solid fa-check"></i></div>
+          <p>Only vetted, background-checked professionals — you'll always know who's coming to your home</p>
+        </div>
+        <div class="commitment-check">
+          <div class="check-dot"><i class="fa-solid fa-check"></i></div>
+          <p>Transparent pricing — what we quote is what you pay, no hidden fees</p>
+        </div>
+        <div class="commitment-check">
+          <div class="check-dot"><i class="fa-solid fa-check"></i></div>
+          <p>Fast communication — we respond within 1–2 hours by text</p>
+        </div>
+        <div class="commitment-check">
+          <div class="check-dot"><i class="fa-solid fa-check"></i></div>
+          <p>No long-term contracts — we earn your trust visit by visit</p>
+        </div>
+        <div class="commitment-check">
+          <div class="check-dot"><i class="fa-solid fa-check"></i></div>
+          <p>Free consultation with no pressure to commit</p>
+        </div>
+      </div>
+    </div>
+    <div class="commitment-right">
+      <div class="commitment-right-inner">
+        <p class="commitment-quote">"We started EverCare because we believe every home deserves professional, reliable support — and every family deserves to know who they're letting through the door."</p>
+        <div class="commitment-sig">
+          <div class="commitment-avatars">
+            <div class="av av-r">R</div>
+            <div class="av av-l">L</div>
+          </div>
+          <div class="commitment-sig-text">
+            <strong>Renan & Lalesca</strong>
+            <span>Founders, EverCare Home Services</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WAVE white → cream -->
+<div class="wave" style="background:var(--white)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,0 800,60 1200,30 L1200,60 L0,60 Z" fill="var(--cream)"/></svg></div>
+
+<!-- TESTIMONIALS -->
+<section class="sec" id="testimonials" style="background:var(--cream)">
+  <div class="container">
+    <div class="values-header fi">
+      <div class="sec-tag center">Client Reviews</div>
+      <h2 class="sec-title" style="text-align:center">What Families Are <em style="font-style:italic;font-family:var(--serif)">Saying</em></h2>
+      <p class="sec-sub" style="text-align:center;margin:0 auto">Real experiences from real families in Worcester and Central Massachusetts.</p>
+    </div>
+    <div class="testi-grid fi">
+
+      <!-- Testimonial 1 -->
+      <div class="testi-card">
+        <div class="testi-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="testi-quote">"EverCare has been a game changer for our family. My mother is 82 and lives alone — having a team we can trust in her home gives us so much peace of mind. Professional, caring, and always on time."</p>
+        <div class="testi-footer">
+          <div class="testi-avatar ta1">
+            <!-- Replace with: <img src="photo.jpg" alt="Sandra M."> -->
+            S
+          </div>
+          <div class="testi-info">
+            <strong>Sandra M.</strong>
+            <span>Worcester, MA</span>
+          </div>
+          <div class="testi-source"><i class="fa-brands fa-google"></i> Google</div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testi-card">
+        <div class="testi-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="testi-quote">"I hired EverCare for a deep clean before selling my house and they exceeded every expectation. The place looked brand new. Honest pricing, no surprises, and genuinely nice people to work with."</p>
+        <div class="testi-footer">
+          <div class="testi-avatar ta2">
+            <!-- Replace with: <img src="photo.jpg" alt="James R."> -->
+            J
+          </div>
+          <div class="testi-info">
+            <strong>James R.</strong>
+            <span>Shrewsbury, MA</span>
+          </div>
+          <div class="testi-source"><i class="fa-brands fa-google"></i> Google</div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testi-card">
+        <div class="testi-stars">
+          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <p class="testi-quote">"What sets EverCare apart is how much they actually care. They respond fast, show up prepared, and treat my dad with real dignity. I finally feel like I found a company I can count on long term."</p>
+        <div class="testi-footer">
+          <div class="testi-avatar ta3">
+            <!-- Replace with: <img src="photo.jpg" alt="Patricia L."> -->
+            P
+          </div>
+          <div class="testi-info">
+            <strong>Patricia L.</strong>
+            <span>Auburn, MA</span>
+          </div>
+          <div class="testi-source"><i class="fa-brands fa-google"></i> Google</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="mid-cta">
+  <div class="mid-cta-inner fi">
+    <p>Ready to experience the EverCare difference? <strong>Reach out for a free, no-pressure estimate.</strong></p>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex-shrink:0">
+      <a href="sms:+15087361263" class="btn-mid-cta"><i class="fa-solid fa-comment-sms"></i> Text for a Free Estimate</a>
+      <span class="mid-cta-sub"><i class="fa-solid fa-clock"></i> Same-day response · No obligation · Fully insured</span>
+    </div>
+  </div>
+</div>
+
+<!-- WAVE cream → navy -->
+<div class="wave" style="background:var(--cream)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,70 800,0 1200,30 L1200,60 L0,60 Z" fill="var(--navy)"/></svg></div>
+
+<!-- CTA FINAL -->
+<section id="cta-final">
+  <div class="cta-orb cta-orb-1"></div>
+  <div class="cta-orb cta-orb-2"></div>
+  <div class="cta-inner fi">
+    <div class="cta-eyebrow"><span></span> Ready to get started? <span></span></div>
+    <h2>Let's Talk About <em>Your Home</em></h2>
+    <p class="cta-sub">Cleaning, care, or both — reach out and we'll find the right fit for your family. No pressure, no commitment, just an honest conversation with real people.</p>
+    <div class="cta-btns">
+      <a href="sms:+15087361263" class="btn-cta-sms"><i class="fa-solid fa-comment-sms"></i> Text Us Now</a>
+      <a href="tel:+15087361263" class="btn-cta-call"><i class="fa-solid fa-phone"></i> Call Us</a>
+    </div>
+    <div class="cta-trust">
+      <span class="cta-t"><i class="fa-solid fa-clock"></i> Fast response by text</span>
+      <span class="cta-sep"></span>
+      <span class="cta-t"><i class="fa-solid fa-shield-check"></i> No commitment required</span>
+      <span class="cta-sep"></span>
+      <span class="cta-t"><i class="fa-solid fa-location-dot"></i> Local to Central MA</span>
+    </div>
+  </div>
+</section>
+
+<!-- WAVE navy → footer -->
+<div class="wave" style="background:var(--navy)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,0 800,60 1200,30 L1200,60 L0,60 Z" fill="#060d12"/></svg></div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div style="margin-bottom:4px">
+        <img src="/assets/logo.svg" alt="EverCare Home Services" style="height:220px;width:auto;display:block">
+      </div>
+      <p>Compassionate in-home care and professional cleaning services for families and businesses across Central Massachusetts.</p>
+      <p class="footer-cities">Serving: Worcester · Shrewsbury · Auburn · Holden · Leicester · Millbury · Grafton · Northborough · Spencer · West Boylston · Marlborough</p>
+      <div class="footer-socials">
+        <a class="soc-btn" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a class="soc-btn" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a class="soc-btn" href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Site</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="/evercare-care">In-Home Senior Care</a></li>
+        <li><a href="/evercare-care">Alzheimer's Support</a></li>
+        <li><a href="/cleaning-services">Residential Cleaning</a></li>
+        <li><a href="/cleaning-services">Deep Cleaning</a></li>
+        <li><a href="/cleaning-services">Move-In / Move-Out</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="https://maps.google.com/?q=Worcester,+Massachusetts" target="_blank" rel="noopener"><i class="fa-solid fa-location-dot" style="color:var(--b3);margin-right:8px"></i>Worcester, Massachusetts</a></li>
+        <li><a href="mailto:info@evercarehomeservice.com"><i class="fa-solid fa-envelope" style="color:var(--g3);margin-right:8px"></i>Email Us</a></li>
+        <li><a href="tel:+15087361263"><i class="fa-solid fa-phone" style="color:var(--b3);margin-right:8px"></i>Call Us</a></li>
+        <li><a href="sms:+15087361263"><i class="fa-solid fa-comment-sms" style="color:var(--b3);margin-right:8px"></i>Text us anytime</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div style="display:flex;flex-direction:column;gap:4px">
+      <span>© 2026 EverCare Home Services. All rights reserved.</span>
+      <span style="font-size:.75rem;color:rgba(255,255,255,.25)">In-Home Care & Cleaning Services · Worcester, Massachusetts</span>
+    </div>
+    <div>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<!-- CONTACT WIDGET -->
+<div id="contact-widget">
+  <div id="widget-panel">
+    <div class="widget-header">
+      <div class="widget-header-top">
+        <div class="widget-avatar"><i class="fa-solid fa-comments"></i></div>
+        <div>
+          <div class="widget-name">How can we help?</div>
+          <div class="widget-status"><span class="widget-dot"></span> Typically replies within 1–2 hours</div>
+        </div>
+      </div>
+    </div>
+    <div class="widget-options">
+      <a href="sms:+15087361263&body=Hi! I'd like to learn more about EverCare's services." class="widget-btn wb-sms">
+        <div class="widget-btn-icon"><i class="fa-solid fa-comment-sms"></i></div>
+        <div><span class="wb-label">Text Us</span><span class="wb-sub">Fastest way to reach us</span></div>
+      </a>
+      <a href="tel:+15087361263" class="widget-btn wb-call">
+        <div class="widget-btn-icon"><i class="fa-solid fa-phone"></i></div>
+        <div><span class="wb-label">Call Us</span></div>
+      </a>
+      <a href="mailto:info@evercarehomeservice.com" class="widget-btn wb-email">
+        <div class="widget-btn-icon"><i class="fa-solid fa-envelope"></i></div>
+        <div><span class="wb-label">Email Us</span></div>
+      </a>
+    </div>
+  </div>
+  <div id="widget-row">
+    <div id="widget-label">
+      <span class="wl-main">Need Help?</span>
+      <span class="wl-sub">Fast response · No pressure</span>
+    </div>
+    <button id="widget-toggle" aria-label="Contact EverCare">
+      <span class="icon-open"><i class="fa-solid fa-comments"></i></span>
+      <span class="icon-close"><i class="fa-solid fa-xmark"></i></span>
+    </button>
+  </div>
+</div>
+
+<script>
+  // Nav scroll
+  window.addEventListener('scroll', function() {
+    document.getElementById('header').classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // Hamburger
+  document.getElementById('hamburger').addEventListener('click', function() {
+    var menu = document.getElementById('mobile-menu');
+    var icon = this.querySelector('i');
+    menu.classList.toggle('open');
+    icon.classList.toggle('fa-bars', !menu.classList.contains('open'));
+    icon.classList.toggle('fa-xmark', menu.classList.contains('open'));
+  });
+  document.querySelectorAll('#mobile-menu a').forEach(function(a) {
+    a.addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.remove('open');
+      var icon = document.querySelector('#hamburger i');
+      if (icon) { icon.classList.replace('fa-xmark', 'fa-bars'); }
+    });
+  });
+
+  // Contact widget
+  var wPanel = document.getElementById('widget-panel');
+  var wToggle = document.getElementById('widget-toggle');
+  var wLabel = document.getElementById('widget-label');
+  if (wToggle) {
+    wToggle.addEventListener('click', function() {
+      wToggle.classList.toggle('active');
+      if (wToggle.classList.contains('active')) {
+        wPanel.style.display = 'block';
+        setTimeout(function(){ wPanel.classList.add('open'); }, 10);
+        if (wLabel) wLabel.classList.add('hidden');
+      } else {
+        wPanel.classList.remove('open');
+        setTimeout(function(){ wPanel.style.display = 'none'; }, 300);
+      }
+    });
+    document.addEventListener('click', function(e) {
+      var cw = document.getElementById('contact-widget');
+      if (cw && !cw.contains(e.target) && wToggle.classList.contains('active')) {
+        wToggle.classList.remove('active');
+        wPanel.classList.remove('open');
+        setTimeout(function(){ wPanel.style.display = 'none'; }, 300);
+      }
+    });
+    function pulseWidget() {
+      if (!wToggle.classList.contains('active')) {
+        wToggle.classList.remove('pulse');
+        void wToggle.offsetWidth;
+        wToggle.classList.add('pulse');
+      }
+    }
+    setTimeout(function(){ pulseWidget(); setInterval(pulseWidget, 8000); }, 3000);
+  }
+
+  // Scroll reveal
+  try {
+    document.body.classList.add('reveal-ready');
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) { e.target.classList.add('vis'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.01, rootMargin: '0px 0px -20px 0px' });
+    document.querySelectorAll('.fi').forEach(function(el) { io.observe(el); });
+    setTimeout(function() {
+      document.querySelectorAll('.fi:not(.vis)').forEach(function(el) {
+        if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('vis');
+      });
+    }, 300);
+  } catch(e) {
+    document.body.classList.remove('reveal-ready');
+  }
+
+  // Active nav
+  (function() {
+    var path = window.location.pathname;
+    document.querySelectorAll('.nav-links a').forEach(function(a) {
+      var href = a.getAttribute('href');
+      if (href && href !== '/' && path.startsWith(href)) a.classList.add('nav-active');
+      else if (href === '/' && path === '/') a.classList.add('nav-active');
+    });
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+  <link rel="apple-touch-icon" href="/favicon-192.png">
+  <title>Professional Cleaning Services Worcester MA | EverCare</title>
+  <meta name="description" content="EverCare provides professional residential and commercial cleaning services in Worcester and Central Massachusetts. Licensed, insured, background-checked team.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "EverCare Home Services – Cleaning",
+    "description": "Professional residential and commercial cleaning services in Worcester and Central Massachusetts.",
+    "url": "https://evercarehomeservice.com",
+    "telephone": "+15087361263",
+    "email": "info@evercarehomeservice.com",
+    "address": {"@type":"PostalAddress","addressLocality":"Worcester","addressRegion":"MA","addressCountry":"US"},
+    "areaServed": ["Worcester","Shrewsbury","Auburn","Holden","Leicester","Millbury","Grafton","Northborough","Southborough","Spencer","West Boylston","Marlborough"],
+    "serviceType": "Residential & Commercial Cleaning",
+    "priceRange": "$$"
+  }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --b1: #1e5c38; --b2: #2f7a57; --b3: #52b788; --b4: #a8d8bc; --g3: #52b788;
+      --navy: #0d2218; --navy2: #152d1f;
+      --white: #ffffff; --cream: #f2f8f4; --cream2: #e0f0e8;
+      --text: #1a3028; --muted: #4a6a58;
+      --serif: 'Playfair Display', Georgia, serif;
+      --sans: 'Inter', system-ui, sans-serif;
+      --sh: 0 6px 32px rgba(47,122,87,.12);
+      --sh2: 0 20px 60px rgba(47,122,87,.18);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--sans); color: var(--text); background: var(--white); overflow-x: hidden; }
+    h1,h2,h3,h4 { font-family: 'Playfair Display', Georgia, serif; line-height: 1.2; letter-spacing: -.01em; font-weight: 700; }
+    em.serif-em { font-style: italic; font-weight: 600; }
+    ::selection { background: var(--b3); color: #fff; }
+
+    /* NAV */
+    #header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: transparent; border-bottom: 1px solid transparent; transition: background .4s, box-shadow .4s, border-color .4s; overflow: visible; }
+    #header.scrolled { background: #fff; box-shadow: 0 4px 24px rgba(13,30,46,.08); }
+    .nav-inner { max-width: 1260px; margin: 0 auto; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; height: 110px; }
+    .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,.85); font-size: .8rem; font-weight: 600; text-decoration: none; letter-spacing: .06em; text-transform: uppercase; transition: color .2s; }
+    .nav-links a:hover, .nav-links a.nav-active { color: #fff; } #header.scrolled .nav-links a { color: var(--muted); } #header.scrolled .nav-links a:hover, #header.scrolled .nav-links a.nav-active { color: var(--b2); }
+    .nav-links a.nav-active { position: relative; }
+    .nav-links a.nav-active::after { content: ''; position: absolute; bottom: -4px; left: 0; right: 0; height: 2px; border-radius: 2px; background: linear-gradient(90deg, var(--b2), var(--b3)); }
+    .nav-phone { color: var(--b2) !important; font-size: .82rem !important; font-weight: 700 !important; }
+    .btn-nav { background:linear-gradient(135deg,var(--b2),var(--g3)); color: #fff !important; padding: 11px 24px; border-radius: 100px; font-weight: 700 !important; font-size: .82rem !important; text-decoration: none; box-shadow:0 4px 16px rgba(68,135,191,.35); transition: all .25s; }
+    .btn-nav:hover { transform: translateY(-2px); box-shadow:0 8px 24px rgba(68,135,191,.5); }
+    #hamburger { display: none; background: none; border: none; cursor: pointer; color: rgba(255,255,255,.9); font-size: 1.7rem; padding: 4px 8px; line-height: 1; transition: color .2s, transform .2s; } #header.scrolled #hamburger { color: var(--navy); }
+    #mobile-menu { display: block; max-height: 0; overflow: hidden; opacity: 0; position: absolute; top: 110px; left: 0; right: 0; background: var(--white); padding: 0 24px; box-shadow: 0 8px 32px rgba(13,30,46,.12); border-top: 2px solid var(--b2); transition: max-height .35s ease, opacity .25s ease, padding .35s ease; }
+    #mobile-menu.open { max-height: 540px; opacity: 1; padding: 16px 24px 28px; }
+    #mobile-menu a { display: block; padding: 14px 0; font-weight: 600; color: var(--navy); text-decoration: none; border-bottom: 1px solid rgba(0,0,0,.06); font-size: .95rem; letter-spacing: .04em; text-transform: uppercase; transition: color .2s; }
+    #mobile-menu a:hover { color: var(--b2); }
+    #mobile-menu .btn-nav { display: block; margin-top: 16px !important; text-align: center; padding: 16px 24px; font-size: 1rem; border-radius: 100px; color: #fff !important; border-bottom: none; text-transform: none; }
+    @media(max-width:900px) { .nav-links,.nav-phone,.btn-nav { display: none; } #hamburger { display: block; } }
+
+    /* HERO */
+    #hero { min-height: 100vh; position: relative; display: flex; align-items: center; overflow: hidden; padding-top: 0; }
+    .hero-bg { position: absolute; inset: 0; z-index: 0; }
+    .hero-bg img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(120deg, rgba(8,22,14,.95) 0%, rgba(15,55,30,.85) 55%, rgba(40,100,65,.50) 100%); }
+    .hero-dots { position: absolute; inset: 0; z-index: 1; background-image: radial-gradient(circle, rgba(255,255,255,.05) 1px, transparent 1px); background-size: 28px 28px; }
+    .hero-content { position: relative; z-index: 2; max-width: 1260px; margin: 0 auto; padding: 110px 32px 60px; width: 100%; }
+    .hero-badges { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 32px; }
+    .badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,.15); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,.25); border-radius: 100px; padding: 7px 16px; color: #fff; font-size: .78rem; font-weight: 600; letter-spacing: .04em; }
+    .badge i { color: var(--b4); }
+    #hero h1 { font-size: clamp(3.2rem, 5.5vw, 5.2rem); color: #fff; font-weight: 700; max-width: 600px; margin-bottom: 24px; line-height: 1.08; }
+    .hero-sub { color: rgba(255,255,255,.88); font-size: 1.15rem; line-height: 1.75; max-width: 580px; margin-bottom: 14px; font-weight: 300; }
+    .hero-local { display: inline-flex; align-items: center; gap: 8px; color: var(--b4); font-size: .88rem; font-weight: 500; margin-bottom: 36px; }
+    .hero-local i { font-size: .8rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 20px; }
+    .btn-hero-primary { display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, var(--b2), var(--b3)); color: #fff; padding: 18px 36px; border-radius: 14px; font-weight: 700; font-size: 1.05rem; text-decoration: none; box-shadow: 0 8px 30px rgba(47,122,87,.5); transition: all .25s; }
+    .btn-hero-primary:hover { transform: translateY(-3px); box-shadow: 0 14px 40px rgba(47,122,87,.6); }
+    .btn-hero-secondary { display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,.15); backdrop-filter: blur(8px); color: #fff; padding: 18px 36px; border-radius: 14px; font-weight: 600; font-size: 1.05rem; text-decoration: none; border: 2px solid rgba(255,255,255,.35); transition: all .25s; }
+    .btn-hero-secondary:hover { background: rgba(255,255,255,.25); }
+    .hero-note { color: rgba(255,255,255,.6); font-size: .84rem; }
+    .hero-note i { color: var(--b4); margin-right: 6px; }
+    .scroll-ind { position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); color: rgba(255,255,255,.4); font-size: 1.1rem; animation: bounce 2s infinite; }
+    @keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(8px)} }
+
+    /* WAVE */
+    .wave { line-height: 0; overflow: hidden; }
+    .wave svg { display: block; width: 100%; }
+
+    /* COMMON */
+    .sec { padding: 96px 32px; }
+    .container { max-width: 1260px; margin: 0 auto; }
+    .sec-tag { display: inline-flex; align-items: center; gap: 10px; font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--b3); margin-bottom: 14px; }
+    .sec-tag::before, .sec-tag::after { content: ''; height: 2px; width: 24px; border-radius: 2px; background: var(--b2); }
+    .sec-tag.center { justify-content: center; }
+    .sec-title { font-size: clamp(1.9rem, 3.5vw, 2.9rem); color: var(--navy); margin-bottom: 14px; font-weight: 700; }
+    .sec-line { width: 52px; height: 4px; border-radius: 4px; background: linear-gradient(90deg, var(--b2), var(--b3)); margin: 0 auto 20px; }
+    .sec-sub { color: var(--muted); font-size: 1rem; line-height: 1.75; max-width: 620px; }
+    .sec-sub.c { margin: 0 auto; }
+    /* SCROLL REVEAL — visível por padrão, animação é progressive enhancement */
+    .fi { opacity: 1; transform: none; transition: opacity .65s ease, transform .65s ease; }
+    body.reveal-ready .fi { opacity: 0; transform: translateY(24px); }
+    body.reveal-ready .fi.vis { opacity: 1; transform: none; }
+
+    /* ABOUT */
+    #about { background: var(--cream); }
+    .about-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+    .about-left h2 { font-size: clamp(1.9rem,3.5vw,2.8rem); color: var(--navy); margin-bottom: 20px; }
+    .about-left p { color: var(--muted); font-size: 1rem; line-height: 1.8; margin-bottom: 16px; }
+    .about-values { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
+    .about-val { display: flex; align-items: center; gap: 12px; font-size: .92rem; color: var(--text); font-weight: 500; }
+    .about-val i { color: var(--b3); font-size: 1rem; width: 20px; text-align: center; }
+    .about-right { background: linear-gradient(135deg, var(--b1), var(--b2)); border-radius: 28px; padding: 48px 40px; color: #fff; box-shadow: var(--sh2); position: relative; overflow: hidden; }
+    .about-right::before { content: ''; position: absolute; top: -60px; right: -60px; width: 220px; height: 220px; border-radius: 50%; background: rgba(255,255,255,.06); }
+    .about-right::after { content: ''; position: absolute; bottom: -40px; left: -40px; width: 160px; height: 160px; border-radius: 50%; background: rgba(255,255,255,.04); }
+    .about-right-inner { position: relative; z-index: 1; }
+    .about-quote { font-family: var(--serif); font-size: 1.25rem; font-style: italic; color: rgba(255,255,255,.9); line-height: 1.75; margin-bottom: 28px; }
+    .about-sig { display: flex; align-items: center; gap: 14px; }
+    .about-av { width: 52px; height: 52px; border-radius: 50%; background: rgba(255,255,255,.2); border: 2px solid rgba(255,255,255,.3); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; color: #fff; }
+    .about-sig-name { font-weight: 700; color: #fff; font-size: .95rem; }
+    .about-sig-role { font-size: .78rem; color: rgba(255,255,255,.65); }
+
+    /* TRUST */
+    #trust { background: var(--white); position: relative; overflow: hidden; }
+    #trust::before { content: ''; position: absolute; inset: 0; background-image: linear-gradient(rgba(47,122,87,.025) 1px, transparent 1px); background-size: 100% 44px; }
+    .trust-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 24px; }
+    .trust-card { background: var(--cream); border-radius: 24px; padding: 40px 28px; text-align: center; border: 2px solid transparent; transition: all .3s cubic-bezier(.4,0,.2,1); position: relative; overflow: hidden; }
+    .trust-card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--b2), var(--b3)); transform: scaleX(0); transition: transform .3s; transform-origin: left; }
+    .trust-card:hover { transform: translateY(-8px); box-shadow: var(--sh2); border-color: rgba(82,183,136,.2); }
+    .trust-card:hover::after { transform: scaleX(1); }
+    .trust-icon { width: 88px; height: 88px; border-radius: 50%; margin: 0 auto 24px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: #fff; box-shadow: 0 8px 24px rgba(47,122,87,.3); }
+    .ti1{background:linear-gradient(135deg,var(--b1),var(--b2))} .ti2{background:linear-gradient(135deg,var(--b2),var(--b3))} .ti3{background:linear-gradient(135deg,var(--b3),var(--b2))} .ti4{background:linear-gradient(135deg,var(--b1),var(--b3))}
+    .trust-card h3 { font-family: var(--serif); font-size: 1.3rem; color: var(--navy); margin-bottom: 10px; font-weight: 700; }
+    .trust-card p { color: var(--muted); font-size: .88rem; line-height: 1.68; }
+
+    /* WHO WE CLEAN */
+    #who { background: var(--cream); }
+    .who-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+    .who-card { background: var(--white); border-radius: 18px; padding: 28px 24px; border: 1.5px solid rgba(47,122,87,.1); display: flex; align-items: flex-start; gap: 16px; transition: all .25s; }
+    .who-card:hover { border-color: var(--b3); box-shadow: var(--sh); transform: translateY(-3px); }
+    .who-icon { width: 48px; height: 48px; border-radius: 12px; flex-shrink: 0; background: linear-gradient(135deg, var(--b2), var(--b3)); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: #fff; }
+    .who-card h3 { font-family: var(--serif); font-size: 1.1rem; color: var(--navy); margin-bottom: 6px; font-weight: 700; }
+    .who-card p { color: var(--muted); font-size: .86rem; line-height: 1.6; }
+
+    /* CONSIDER */
+    #consider { background: var(--white); }
+    .consider-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+    .consider-left h2 { font-size: clamp(1.8rem,3vw,2.6rem); color: var(--navy); margin-bottom: 16px; }
+    .consider-left p { color: var(--muted); font-size: 1rem; line-height: 1.75; margin-bottom: 32px; }
+    .checklist { display: flex; flex-direction: column; gap: 12px; }
+    .check-item { display: flex; align-items: flex-start; gap: 14px; background: var(--cream); border-radius: 12px; padding: 14px 18px; border: 1.5px solid rgba(47,122,87,.08); transition: all .25s; }
+    .check-item:hover { border-color: var(--b3); box-shadow: var(--sh); transform: translateX(4px); }
+    .check-icon { width: 30px; height: 30px; border-radius: 50%; flex-shrink: 0; background: linear-gradient(135deg, var(--b2), var(--b3)); display: flex; align-items: center; justify-content: center; color: #fff; font-size: .75rem; }
+    .check-item p { color: var(--text); font-size: .9rem; line-height: 1.55; }
+    .consider-right { background: linear-gradient(135deg, var(--b1), var(--b2)); border-radius: 28px; padding: 48px 40px; color: #fff; box-shadow: var(--sh2); position: relative; overflow: hidden; }
+    .consider-right::before { content: ''; position: absolute; top: -60px; right: -60px; width: 200px; height: 200px; border-radius: 50%; background: rgba(255,255,255,.07); }
+    .consider-right h3 { font-family: var(--serif); font-size: 1.7rem; margin-bottom: 16px; font-weight: 700; }
+    .consider-right p { color: rgba(255,255,255,.8); font-size: .95rem; line-height: 1.75; margin-bottom: 28px; }
+    .btn-outline-white { display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,.18); border: 2px solid rgba(255,255,255,.35); color: #fff; padding: 14px 28px; border-radius: 12px; font-weight: 700; font-size: .9rem; text-decoration: none; transition: all .25s; }
+    .btn-outline-white:hover { background: rgba(255,255,255,.28); border-color: rgba(255,255,255,.6); }
+
+    /* SERVICES */
+    #services { background: var(--cream); }
+    .services-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+    .svc-card { background: var(--white); border-radius: 24px; padding: 38px 30px; border: 2px solid transparent; position: relative; overflow: hidden; transition: all .3s cubic-bezier(.4,0,.2,1); }
+    .svc-card::before { content: ''; position: absolute; top: 0; right: 0; width: 90px; height: 90px; border-radius: 0 24px 0 90%; background: linear-gradient(135deg, rgba(47,122,87,.08), transparent); }
+    .svc-card:hover { transform: translateY(-6px); box-shadow: var(--sh2); border-color: rgba(82,183,136,.3); }
+    .svc-icon { width: 68px; height: 68px; border-radius: 18px; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; color: #fff; margin-bottom: 20px; box-shadow: 0 6px 20px rgba(47,122,87,.25); transition: transform .3s; }
+    .svc-card:hover .svc-icon { transform: scale(1.1); }
+    .si1{background:linear-gradient(135deg,var(--b1),var(--b2))} .si2{background:linear-gradient(135deg,var(--b2),var(--b3))} .si3{background:linear-gradient(135deg,var(--b3),var(--b2))} .si4{background:linear-gradient(135deg,var(--b1),var(--b3))} .si5{background:linear-gradient(135deg,var(--b2),var(--b1))} .si6{background:linear-gradient(135deg,var(--b3),var(--b1))}
+    .svc-card h3 { font-family: var(--serif); font-size: 1.22rem; color: var(--navy); margin-bottom: 10px; font-weight: 700; }
+    .svc-card p { color: var(--muted); font-size: .88rem; line-height: 1.7; }
+
+    /* INCLUDES */
+    #includes { background: var(--white); }
+    .includes-inner { display: grid; grid-template-columns: 1fr 1.2fr; gap: 64px; align-items: center; }
+    .includes-left h2 { font-size: clamp(1.8rem,3vw,2.6rem); color: var(--navy); margin-bottom: 16px; }
+    .includes-left p { color: var(--muted); font-size: 1rem; line-height: 1.75; margin-bottom: 32px; }
+    .includes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .inc-item { display: flex; align-items: center; gap: 10px; background: var(--cream); border-radius: 10px; padding: 12px 16px; font-size: .88rem; color: var(--text); font-weight: 500; border: 1.5px solid rgba(47,122,87,.08); transition: all .2s; }
+    .inc-item:hover { border-color: var(--b3); background: var(--cream2); }
+    .inc-item i { color: var(--b3); font-size: .85rem; flex-shrink: 0; }
+    .includes-note { background: var(--cream); border-left: 4px solid var(--b2); border-radius: 0 12px 12px 0; padding: 20px 24px; color: var(--muted); font-size: .9rem; line-height: 1.7; margin-top: 24px; }
+
+    /* TEAM */
+    #caregiver { background: var(--navy); position: relative; overflow: hidden; }
+    #caregiver::before { content: ''; position: absolute; inset: 0; background-image: radial-gradient(circle, rgba(82,183,136,.05) 1px, transparent 1px); background-size: 28px 28px; }
+    .caregiver-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; position: relative; z-index: 1; }
+    .caregiver-left h2 { color: #fff; font-size: clamp(1.9rem,3.5vw,2.8rem); margin-bottom: 20px; }
+    .caregiver-left .lead { color: rgba(255,255,255,.75); font-size: 1.05rem; line-height: 1.8; margin-bottom: 32px; }
+    .cred-list { display: flex; flex-direction: column; gap: 14px; }
+    .cred-item { display: flex; align-items: center; gap: 14px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.1); border-radius: 12px; padding: 14px 18px; transition: all .25s; }
+    .cred-item:hover { background: rgba(255,255,255,.12); border-color: rgba(82,183,136,.3); }
+    .cred-icon { width: 40px; height: 40px; border-radius: 10px; flex-shrink: 0; background: linear-gradient(135deg, var(--b2), var(--b3)); display: flex; align-items: center; justify-content: center; color: #fff; font-size: .9rem; }
+    .cred-item strong { display: block; color: #fff; font-size: .9rem; font-weight: 600; }
+    .cred-item span { color: rgba(255,255,255,.55); font-size: .8rem; }
+    .caregiver-right { background: rgba(255,255,255,.07); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,.15); border-radius: 28px; padding: 44px 36px; }
+    .caregiver-tag { display: inline-flex; align-items: center; gap: 8px; background: rgba(82,183,136,.15); border: 1px solid rgba(82,183,136,.3); border-radius: 100px; padding: 6px 16px; color: var(--b4); font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 24px; }
+    .caregiver-right h3 { font-family: var(--serif); font-size: 1.8rem; color: #fff; margin-bottom: 6px; font-weight: 700; }
+    .caregiver-right .ctitle { color: var(--b4); font-size: .88rem; margin-bottom: 20px; font-weight: 500; }
+    .caregiver-right p { color: rgba(255,255,255,.7); font-size: .92rem; line-height: 1.8; margin-bottom: 28px; }
+    .cg-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .cg-tag { background: rgba(47,122,87,.2); border: 1px solid rgba(47,122,87,.3); color: var(--b4); border-radius: 100px; padding: 6px 14px; font-size: .78rem; font-weight: 600; }
+
+    /* STANDARDS */
+    #standards { background: var(--cream); }
+    .standards-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 24px; }
+    .std-card { background: var(--white); border-radius: 20px; padding: 32px 24px; text-align: center; border: 1.5px solid rgba(47,122,87,.1); transition: all .3s; }
+    .std-card:hover { transform: translateY(-5px); box-shadow: var(--sh2); border-color: var(--b3); }
+    .std-icon { width: 64px; height: 64px; border-radius: 16px; margin: 0 auto 18px; background: linear-gradient(135deg, var(--b2), var(--b3)); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: #fff; box-shadow: 0 6px 20px rgba(47,122,87,.25); }
+    .std-card h3 { font-family: var(--serif); font-size: 1.1rem; color: var(--navy); margin-bottom: 10px; font-weight: 700; }
+    .std-card p { color: var(--muted); font-size: .84rem; line-height: 1.65; }
+
+    /* PROCESS */
+    #process { background: var(--white); }
+    .process-steps { display: grid; grid-template-columns: repeat(4,1fr); gap: 24px; position: relative; }
+    .process-line { position: absolute; top: 64px; left: 12%; right: 12%; height: 3px; background: linear-gradient(90deg, var(--b1), var(--b2), var(--b3)); border-radius: 3px; z-index: 0; }
+    .process-step { text-align: center; position: relative; z-index: 1; }
+    .step-icon { width: 128px; height: 128px; border-radius: 28px; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 2.8rem; color: #fff; box-shadow: 0 12px 36px rgba(47,122,87,.25); transition: transform .3s; }
+    .process-step:hover .step-icon { transform: scale(1.08) rotate(-2deg); }
+    .ps1{background:linear-gradient(135deg,var(--b1),var(--b2))} .ps2{background:linear-gradient(135deg,var(--b2),var(--b3))} .ps3{background:linear-gradient(135deg,var(--b3),var(--b2))} .ps4{background:linear-gradient(135deg,var(--b1),var(--b3))}
+    .step-box { background: var(--cream); border-radius: 18px; padding: 24px 20px; box-shadow: var(--sh); }
+    .step-box h3 { font-family: var(--serif); font-size: 1.2rem; color: var(--navy); margin-bottom: 8px; font-weight: 700; }
+    .step-box p { color: var(--muted); font-size: .84rem; line-height: 1.65; }
+
+    /* REVIEWS */
+    #reviews { background: var(--cream); }
+    .reviews-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+    .review-card { background: var(--white); border: 1.5px solid rgba(47,122,87,.1); border-radius: 22px; padding: 32px; transition: all .3s; }
+    .review-card:hover { border-color: var(--b3); transform: translateY(-5px); box-shadow: var(--sh2); }
+    .stars { color: var(--b2); font-size: .9rem; letter-spacing: 3px; margin-bottom: 16px; }
+    .review-text { font-family: var(--serif); font-size: 1.05rem; font-style: italic; color: var(--text); line-height: 1.75; margin-bottom: 20px; }
+    .review-author { display: flex; align-items: center; gap: 12px; padding-top: 18px; border-top: 1px solid rgba(47,122,87,.1); }
+    .author-av { width: 40px; height: 40px; border-radius: 50%; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: .82rem; color: #fff; }
+    .av1{background:linear-gradient(135deg,var(--b1),var(--b2))} .av2{background:linear-gradient(135deg,var(--b2),var(--b3))} .av3{background:linear-gradient(135deg,var(--b3),var(--b1))}
+    .author-name { font-weight: 600; color: var(--b2); font-size: .88rem; }
+    .author-loc { font-size: .77rem; color: var(--muted); }
+
+    /* COST */
+    #cost { background: var(--white); }
+    .cost-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
+    .cost-card { background: var(--cream); border-radius: 24px; padding: 40px 30px; text-align: center; border: 2px solid transparent; transition: all .3s; }
+    .cost-card:hover { border-color: var(--b3); box-shadow: var(--sh2); transform: translateY(-6px); }
+    .cost-icon { width: 72px; height: 72px; border-radius: 50%; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 1.7rem; color: #fff; box-shadow: 0 6px 20px rgba(47,122,87,.25); }
+    .ci1{background:linear-gradient(135deg,var(--b1),var(--b2))} .ci2{background:linear-gradient(135deg,var(--b2),var(--b3))} .ci3{background:linear-gradient(135deg,var(--b3),var(--b1))}
+    .cost-card h3 { font-family: var(--serif); font-size: 1.25rem; color: var(--navy); margin-bottom: 10px; font-weight: 700; }
+    .cost-card p { color: var(--muted); font-size: .88rem; line-height: 1.7; }
+    .cost-note { text-align: center; margin-top: 36px; background: var(--cream2); border-radius: 16px; padding: 24px 32px; border-left: 4px solid var(--b2); color: var(--muted); font-size: .92rem; line-height: 1.7; }
+
+    /* FAQ */
+    #faq { background: var(--cream); }
+    .faq-list { max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+    .faq-item { background: var(--white); border-radius: 16px; border: 1.5px solid rgba(47,122,87,.1); overflow: hidden; transition: border-color .2s; }
+    .faq-item.open { border-color: var(--b3); }
+    .faq-q { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 28px; cursor: pointer; user-select: none; }
+    .faq-q h3 { font-family: var(--serif); font-size: 1.1rem; color: var(--navy); font-weight: 700; }
+    .faq-arrow { width: 36px; height: 36px; border-radius: 50%; flex-shrink: 0; background: var(--cream); display: flex; align-items: center; justify-content: center; color: var(--b2); font-size: .8rem; transition: all .3s; }
+    .faq-item.open .faq-arrow { background: var(--b2); color: #fff; transform: rotate(180deg); }
+    .faq-a { max-height: 0; overflow: hidden; padding: 0 28px; color: var(--muted); font-size: .92rem; line-height: 1.75; transition: max-height .4s ease, padding .3s ease; }
+    .faq-item.open .faq-a { max-height: 300px; padding: 0 28px 22px; }
+
+    /* AREAS */
+    #areas { background: var(--white); }
+    .areas-card { background: var(--cream); border-radius: 28px; border: 2px solid rgba(47,122,87,.1); padding: 48px; box-shadow: var(--sh); }
+    .areas-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-bottom: 28px; }
+    .area-pill { display: flex; align-items: center; gap: 10px; padding: 14px 18px; border-radius: 12px; background: var(--white); border: 1.5px solid rgba(47,122,87,.15); font-weight: 600; color: var(--navy); font-size: .88rem; transition: all .22s; }
+    .area-pill:hover { border-color: var(--b3); background: rgba(82,183,136,.05); transform: translateY(-2px); box-shadow: var(--sh); }
+    .area-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--b3); flex-shrink: 0; }
+    .areas-note { text-align: center; color: var(--muted); font-size: .9rem; line-height: 1.7; }
+
+    /* CTA */
+    #contact { background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 50%, #071410 100%); padding: 120px 32px; position: relative; overflow: hidden; text-align: center; }
+    .cta-orb { position: absolute; border-radius: 50%; filter: blur(80px); pointer-events: none; }
+    .cta-orb-1 { width: 500px; height: 500px; background: rgba(82,183,136,.1); top: -120px; right: -100px; }
+    .cta-orb-2 { width: 500px; height: 500px; background: rgba(47,122,87,.1); bottom: -120px; left: -100px; }
+    .cta-inner { position: relative; z-index: 2; max-width: 800px; margin: 0 auto; }
+    #contact h2 { font-size: clamp(2.4rem,5vw,4rem); color: #fff; font-weight: 700; margin-bottom: 20px; }
+    #contact h2 em { font-style: italic; color: var(--b4); }
+    .cta-sub { color: rgba(255,255,255,.65); font-size: 1.1rem; line-height: 1.75; margin-bottom: 48px; font-weight: 300; }
+    .cta-box { background: rgba(255,255,255,.08); backdrop-filter: blur(16px); border: 2px solid rgba(255,255,255,.15); border-radius: 28px; padding: 48px; max-width: 680px; margin: 0 auto; }
+    .cta-buttons { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; margin-bottom: 28px; }
+    .btn-cta-main { display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, var(--b2), var(--b3)); color: #fff; padding: 20px 40px; border-radius: 16px; font-weight: 700; font-size: 1.05rem; text-decoration: none; box-shadow: 0 8px 30px rgba(47,122,87,.5); transition: all .25s; }
+    .btn-cta-main:hover { transform: translateY(-3px); box-shadow: 0 14px 40px rgba(47,122,87,.6); }
+    .btn-cta-phone { display: inline-flex; align-items: center; gap: 10px; background: var(--white); color: var(--navy); padding: 20px 40px; border-radius: 16px; font-weight: 700; font-size: 1.05rem; text-decoration: none; box-shadow: 0 8px 30px rgba(0,0,0,.15); transition: all .25s; }
+    .btn-cta-phone i { color: var(--b2); }
+    .btn-cta-phone:hover { transform: translateY(-3px); }
+    .cta-trust-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 20px; color: rgba(255,255,255,.55); font-size: .82rem; }
+    .cta-t { display: flex; align-items: center; gap: 7px; }
+    .cta-t i { color: var(--b4); }
+    .cta-sep { width: 4px; height: 4px; border-radius: 50%; background: rgba(255,255,255,.2); }
+    .cta-foot { color: rgba(255,255,255,.35); font-size: .78rem; margin-top: 20px; }
+
+    /* FOOTER */
+    footer { background: #070f0a; color: rgba(255,255,255,.45); padding: 72px 32px 32px; }
+    .footer-grid { max-width: 1260px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1.4fr; gap: 48px; margin-bottom: 48px; }
+    .footer-brand p { font-size: .88rem; line-height: 1.75; margin-top: 14px; max-width: 280px; }
+    .footer-socials { display: flex; gap: 10px; margin-top: 20px; }
+    .soc-btn { width: 38px; height: 38px; border-radius: 50%; background: rgba(255,255,255,.08); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,.5); text-decoration: none; font-size: .85rem; transition: all .2s; }
+    .soc-btn:hover { background: var(--b3); color: #fff; }
+    .footer-col h4 { color: #fff; font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 18px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col a { color: rgba(255,255,255,.4); text-decoration: none; font-size: .88rem; transition: color .2s; }
+    .footer-col a:hover { color: var(--b4); }
+    .fi-wrap { display: flex; flex-direction: column; gap: 10px; }
+    .fi-wrap input { width: 100%; padding: 12px 16px; border-radius: 10px; border: 1.5px solid rgba(255,255,255,.1); background: rgba(255,255,255,.06); color: #fff; font-size: .88rem; outline: none; transition: border-color .2s; }
+    .fi-wrap input::placeholder { color: rgba(255,255,255,.25); }
+    .fi-wrap input:focus { border-color: var(--b3); }
+    .fi-wrap button { width: 100%; padding: 12px; border-radius: 10px; border: none; cursor: pointer; background: linear-gradient(135deg, var(--b2), var(--b3)); color: #fff; font-weight: 700; font-size: .88rem; transition: opacity .2s; }
+    .fi-wrap button:hover { opacity: .85; }
+    .footer-bottom { max-width: 1260px; margin: 0 auto; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.07); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-size: .8rem; }
+    .footer-bottom a { color: rgba(255,255,255,.35); text-decoration: none; margin-left: 20px; transition: color .2s; }
+    .footer-bottom a:hover { color: var(--b4); }
+
+    
+
+    /* WIDGET */
+    #contact-widget{position:fixed;bottom:28px;right:28px;z-index:200;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+    #widget-panel{background:#fff;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.18);width:320px;overflow:hidden;display:none;transform:scale(.9) translateY(10px);opacity:0;transition:all .3s cubic-bezier(.34,1.56,.64,1);transform-origin:bottom right;max-height:calc(100vh - 120px);overflow-y:auto}
+    #widget-panel.open{display:block;transform:scale(1) translateY(0);opacity:1}
+    .widget-header{background:linear-gradient(135deg,var(--b2),var(--g3));padding:20px}
+    .widget-header-top{display:flex;align-items:center;gap:12px}
+    .widget-avatar{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:1.2rem;color:#fff;flex-shrink:0}
+    .widget-name{color:#fff;font-weight:700;font-size:.95rem}
+    .widget-status{color:rgba(255,255,255,.72);font-size:.74rem;display:flex;align-items:center;gap:6px;margin-top:3px}
+    .widget-dot{width:7px;height:7px;border-radius:50%;background:#4ade80;display:inline-block;flex-shrink:0}
+    .widget-options{padding:12px;display:flex;flex-direction:column;gap:8px}
+    .widget-btn{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:12px;text-decoration:none;transition:all .2s;border:1.5px solid transparent}
+    .widget-btn:hover{transform:translateX(3px)}
+    .wb-sms{background:rgba(68,135,191,.07);border-color:rgba(68,135,191,.12)}
+    .wb-sms:hover{background:rgba(68,135,191,.12);border-color:rgba(68,135,191,.25)}
+    .wb-call{background:rgba(82,183,136,.07);border-color:rgba(82,183,136,.12)}
+    .wb-call:hover{background:rgba(82,183,136,.12);border-color:rgba(82,183,136,.25)}
+    .wb-email{background:rgba(42,95,143,.05);border-color:rgba(42,95,143,.1)}
+    .wb-email:hover{background:rgba(42,95,143,.1);border-color:rgba(42,95,143,.22)}
+    .widget-btn-icon{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:.95rem;color:#fff;flex-shrink:0}
+    .wb-sms .widget-btn-icon{background:linear-gradient(135deg,var(--b2),var(--b3))}
+    .wb-call .widget-btn-icon{background:linear-gradient(135deg,var(--g2),var(--g3))}
+    .wb-email .widget-btn-icon{background:linear-gradient(135deg,var(--b1),var(--b2))}
+    .wb-label{display:block;font-size:.86rem;font-weight:700;color:var(--text)}
+    .wb-sub{display:block;font-size:.74rem;color:var(--muted);margin-top:1px}
+    @keyframes widgetPulse{0%{box-shadow:0 8px 28px rgba(68,135,191,.55),0 0 0 0 rgba(68,135,191,.45)}70%{box-shadow:0 8px 28px rgba(68,135,191,.55),0 0 0 16px rgba(68,135,191,0)}100%{box-shadow:0 8px 28px rgba(68,135,191,.55),0 0 0 0 rgba(68,135,191,0)}}
+    #widget-toggle{width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,var(--b2),var(--g3));color:#fff;border:none;cursor:pointer;box-shadow:0 8px 28px rgba(68,135,191,.55);transition:transform .3s,box-shadow .3s;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0}
+    #widget-toggle:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(68,135,191,.7)}
+    #widget-toggle.pulse{animation:widgetPulse 2s ease-out}
+    .icon-open{display:flex}.icon-close{display:none}
+    #widget-toggle.active .icon-open{display:none}
+    #widget-toggle.active .icon-close{display:flex}
+    #widget-label{background:#fff;border-radius:12px;padding:10px 14px;box-shadow:0 4px 20px rgba(0,0,0,.12);transition:opacity .5s,transform .5s;pointer-events:none}
+    #widget-label.hidden{opacity:0;transform:translateX(8px)}
+    .wl-main{display:block;font-size:.85rem;font-weight:700;color:var(--text);white-space:nowrap}
+    .wl-sub{display:block;font-size:.72rem;color:var(--muted);white-space:nowrap;margin-top:2px}
+    #widget-row{display:flex;align-items:center;gap:12px}
+    @media(max-width:480px){#contact-widget{bottom:18px;right:14px}#widget-panel{width:calc(100vw - 28px)}#widget-label{display:none}#widget-toggle{width:54px;height:54px;font-size:1.25rem}}
+
+    /* RESPONSIVE */
+    @media(max-width:1024px) {
+      .trust-grid,.services-grid,.standards-grid,.cost-grid { grid-template-columns: repeat(2,1fr); }
+      .process-steps { grid-template-columns: repeat(2,1fr); }
+      .process-line { display: none; }
+      .about-inner,.consider-inner,.caregiver-inner,.includes-inner { grid-template-columns: 1fr; gap: 40px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media(max-width:768px) {
+      .nav-links,.nav-phone,.btn-nav { display: none; }
+      #hamburger { display: block; }
+      .trust-grid,.services-grid,.reviews-grid,.standards-grid,.cost-grid,.who-grid { grid-template-columns: 1fr; }
+      .areas-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+      .process-steps { grid-template-columns: 1fr; }
+      .cta-box { padding: 28px 20px; }
+      .footer-grid { grid-template-columns: 1fr; }
+      
+      .sec { padding: 64px 20px; }
+      .includes-grid { grid-template-columns: 1fr; }
+      .hero-content { padding: 40px 20px; }
+      #hero h1 { font-size: clamp(2.4rem,9vw,3.4rem); line-height: 1.12; }
+      .hero-sub { font-size: 1rem; }
+      #contact-widget { bottom: 20px; right: 16px; }
+      #widget-toggle { padding: 11px 16px; }
+      .toggle-sub { display: none; }
+    }
+  
+    .fa-chevron-down { transition: transform .25s ease; }
+  
+    /* Mid-page CTA strip */
+    .mid-cta{background:linear-gradient(135deg,#eaf4fb 0%,#e8f7f0 100%);padding:36px 24px;text-align:center;border-top:1px solid rgba(68,135,191,.1);border-bottom:1px solid rgba(82,183,136,.1)}
+    .mid-cta-inner{max-width:600px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:14px}
+    .mid-cta p{color:var(--navy);font-size:1rem;margin:0;line-height:1.5}
+    .mid-cta strong{color:var(--b2)}
+    .btn-mid-cta{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(135deg,var(--b2),var(--g3));color:#fff;padding:15px 30px;border-radius:100px;font-weight:700;font-size:.93rem;text-decoration:none;box-shadow:0 6px 22px rgba(68,135,191,.38);transition:all .25s;white-space:nowrap}
+    .btn-mid-cta:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(68,135,191,.5)}
+    .mid-cta-sub{font-size:.82rem;color:var(--muted);margin:0}
+    @media(min-width:700px){.mid-cta-inner{flex-direction:row;justify-content:center;gap:24px;text-align:left}.mid-cta-inner p{flex:1}}
+
+  </style>
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://evercarehomeservice.com/cleaning">
+  <meta property="og:title" content="Professional Cleaning Services Worcester MA | EverCare">
+  <meta property="og:image" content="https://storage.googleapis.com/uxpilot-auth.appspot.com/f27249cb76-630079eb8143fe714781.png">
+  <meta property="og:description" content="Licensed, insured, and background-checked cleaning team serving Worcester and Central Massachusetts. Residential, deep clean, move-in/out, commercial.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Professional Cleaning Services Worcester MA | EverCare">
+  <meta name="twitter:description" content="Licensed, background-checked cleaning team serving Worcester, MA. Get a free estimate today.">
+  <link rel="canonical" href="https://evercarehomeservice.com/cleaning">
+</head>
+<body>
+
+<!-- NAV -->
+<header id="header">
+  <div class="nav-inner">
+    <a href="/" style="display:flex;align-items:center;text-decoration:none">
+      <img src="/logo.svg" alt="EverCare Home Services" style="height:220px;width:auto;display:block">
+    </a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/services" class="nav-active">Services</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="tel:+15087361263" class="nav-phone"><i class="fa-solid fa-phone" style="margin-right:6px"></i> Call Us</a></li>
+      <li><a href="/contact" class="btn-nav">Get a Free Estimate</a></li>
+    </ul>
+    <button id="hamburger"><i class="fa-solid fa-bars"></i></button>
+  </div>
+  <div id="mobile-menu">
+    <a href="/">Home</a>
+    <a href="/services">Services</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+    <a href="tel:+15087361263"><i class="fa-solid fa-phone" style="margin-right:8px;color:var(--b2)"></i> Call Us</a>
+    <a href="/contact" class="btn-nav">Get a Free Estimate</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg">
+    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b4eae50ae1-0a3efc792f6b3f9addec.png" alt="Professional cleaner working in a bright home in Worcester Massachusetts">
+  </div>
+  <div class="hero-dots"></div>
+  <div class="hero-content">
+    <div class="hero-badges">
+      <span class="badge"><i class="fa-solid fa-shield-halved"></i> Licensed &amp; Insured</span>
+      <span class="badge"><i class="fa-solid fa-user-check"></i> Background Checked</span>
+      <span class="badge"><i class="fa-solid fa-location-dot"></i> Worcester, MA</span>
+    </div>
+    <h1>Professional Cleaning for <em class="serif-em">Homes &amp; Businesses</em> in Central Massachusetts</h1>
+    <p class="hero-sub">A reliable, detail-oriented cleaning service built on trust — with trained professionals you can count on, every single visit.</p>
+    <div class="hero-local"><i class="fa-solid fa-location-dot"></i> Proudly serving Worcester, Shrewsbury, Auburn, Holden &amp; surrounding areas</div>
+    <div class="hero-actions">
+      <a href="sms:+15087361263" class="btn-hero-primary"><i class="fa-solid fa-comment-sms"></i> Text Us for a Free Estimate</a>
+      <a href="tel:+15087361263" class="btn-hero-secondary"><i class="fa-solid fa-phone"></i> Call Us</a>
+    </div>
+    <p class="hero-note"><i class="fa-solid fa-clock"></i> Same-day response by text or call · Free estimates · No obligation</p>
+  </div>
+  <div class="scroll-ind"><i class="fa-solid fa-chevron-down"></i></div>
+</section>
+
+<div class="wave" style="background:transparent;margin-top:-60px;position:relative;z-index:1"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,70 800,0 1200,30 L1200,60 L0,60 Z" fill="var(--cream)"/></svg></div>
+
+<!-- ABOUT -->
+<section class="sec" id="about" style="background:var(--cream)">
+  <div class="container">
+    <div class="about-inner fi">
+      <div class="about-left">
+        <div class="sec-tag">Our Story</div>
+        <h2 class="sec-title">A Local, <em class="serif-em">Family-Focused</em> Cleaning Service</h2>
+        <p>EverCare Cleaning was built with one simple goal: to give homeowners and businesses in Central Massachusetts a cleaning service they can genuinely trust.</p>
+        <p>We are not a large franchise. We are a dedicated, local team built on real relationships, careful attention to detail, and a deep commitment to every client we serve. When you contact EverCare, you speak directly with the people doing the work — not a call center.</p>
+        <p>We understand that inviting someone into your home or business takes trust. That's why we believe in transparency, open communication, and treating every space with the same care we'd give our own.</p>
+        <div class="about-values">
+          <div class="about-val"><i class="fa-solid fa-check-circle"></i> Local to Central Massachusetts — we know this community</div>
+          <div class="about-val"><i class="fa-solid fa-check-circle"></i> Direct contact with your cleaning team at all times</div>
+          <div class="about-val"><i class="fa-solid fa-check-circle"></i> Service built around your property's real needs</div>
+          <div class="about-val"><i class="fa-solid fa-check-circle"></i> Honest, no-pressure conversations from the first contact</div>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="about-right-inner">
+          <p class="about-quote">"Every home and business deserves to feel clean, fresh, and cared for. That's exactly what we set out to deliver with EverCare Cleaning."</p>
+          <div class="about-sig">
+            <div class="about-av"><i class="fa-solid fa-broom"></i></div>
+            <div>
+              <div class="about-sig-name">EverCare Cleaning Team</div>
+              <div class="about-sig-role">Licensed &amp; Insured · Central Massachusetts</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wave" style="background:var(--cream)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,0 800,60 1200,30 L1200,60 L0,60 Z" fill="var(--white)"/></svg></div>
+
+<!-- WHY TRUST -->
+<section class="sec" id="trust" style="background:var(--white)">
+  <div class="container">
+    <div class="fi" style="text-align:center;margin-bottom:60px">
+      <div class="sec-tag center">Why Choose EverCare</div>
+      <h2 class="sec-title" style="text-align:center">Why Clients in Central MA <em class="serif-em">Trust</em> EverCare</h2>
+      <div class="sec-line"></div>
+      <p class="sec-sub c">Professional, trained, and personally invested in the cleanliness, safety, and satisfaction of every property we serve.</p>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-card fi"><div class="trust-icon ti1"><i class="fa-solid fa-user-check"></i></div><h3>Background-Checked Team</h3><p>Every team member is fully background-checked before entering a client's home or business. Your safety is non-negotiable.</p></div>
+      <div class="trust-card fi" style="transition-delay:.1s"><div class="trust-icon ti2"><i class="fa-solid fa-magnifying-glass"></i></div><h3>Meticulous Attention to Detail</h3><p>We don't rush. Every corner, surface, and overlooked spot gets the care and attention it deserves.</p></div>
+      <div class="trust-card fi" style="transition-delay:.2s"><div class="trust-icon ti3"><i class="fa-solid fa-clipboard-list"></i></div><h3>Custom Cleaning Plans</h3><p>No two spaces are alike. Your plan is tailored to your property type, size, and specific priorities.</p></div>
+      <div class="trust-card fi" style="transition-delay:.3s"><div class="trust-icon ti4"><i class="fa-solid fa-comments"></i></div><h3>Always Reachable</h3><p>Clients can reach us directly by text or call — with fast, honest responses every single time.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="wave" style="background:var(--white)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,70 800,0 1200,30 L1200,60 L0,60 Z" fill="var(--cream)"/></svg></div>
+
+<!-- WHO WE CLEAN -->
+<section class="sec" id="who" style="background:var(--cream)">
+  <div class="container">
+    <div class="fi" style="text-align:center;margin-bottom:52px">
+      <div class="sec-tag center">Who We Clean For</div>
+      <h2 class="sec-title" style="text-align:center">Who We Clean For</h2>
+      <div class="sec-line"></div>
+      <p class="sec-sub c">From busy families to growing businesses, EverCare provides reliable cleaning services tailored to each type of property.</p>
+    </div>
+    <div class="who-grid fi">
+      <div class="who-card"><div class="who-icon"><i class="fa-solid fa-house"></i></div><div><h3>Homeowners</h3><p>Regular or deep cleaning for houses of any size — keeping your home spotless without lifting a finger.</p></div></div>
+      <div class="who-card"><div class="who-icon"><i class="fa-solid fa-building"></i></div><div><h3>Offices &amp; Businesses</h3><p>Professional cleaning for offices, retail spaces, and commercial properties on your schedule.</p></div></div>
+      <div class="who-card"><div class="who-icon"><i class="fa-solid fa-boxes-packing"></i></div><div><h3>Move-In / Move-Out</h3><p>Thorough cleaning for properties before or after a move — get your deposit back or start fresh.</p></div></div>
+      <div class="who-card"><div class="who-icon"><i class="fa-solid fa-calendar-check"></i></div><div><h3>Recurring Clients</h3><p>Weekly, bi-weekly, or monthly maintenance cleaning for clients who want consistent results.</p></div></div>
+      <div class="who-card"><div class="who-icon"><i class="fa-solid fa-building-user"></i></div><div><h3>Airbnb &amp; Rentals</h3><p>Turnover cleaning for short-term rentals — fast, reliable, and guest-ready every time.</p></div></div>
+      <div class="who-card"><div class="who-icon"><i class="fa-solid fa-star-of-life"></i></div><div><h3>Post-Construction Cleaning</h3><p>Deep cleaning after renovations or construction — removing dust, debris, and residue thoroughly.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="wave" style="background:var(--cream)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,0 800,60 1200,30 L1200,60 L0,60 Z" fill="var(--white)"/></svg></div>
+
+<!-- CONSIDER -->
+<section class="sec" id="consider" style="background:var(--white)">
+  <div class="container">
+    <div class="consider-inner fi">
+      <div class="consider-left">
+        <div class="sec-tag">Is It Time to Call?</div>
+        <h2>Signs It's Time for a Professional Clean</h2>
+        <p>You might be overdue for a professional cleaning service if any of these sound familiar. A clean space improves air quality, reduces stress, and makes your home or workplace genuinely better.</p>
+        <div class="checklist">
+          <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div><p>Cleaning feels overwhelming or is constantly pushed back</p></div>
+          <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div><p>Dust, grime, or odors building up in hard-to-reach areas</p></div>
+          <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div><p>Preparing for guests, events, or a property inspection</p></div>
+          <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div><p>Moving in or out and needing a full reset</p></div>
+          <div class="check-item"><div class="check-icon"><i class="fa-solid fa-check"></i></div><p>A busy schedule that leaves no time for thorough cleaning</p></div>
+        </div>
+      </div>
+      <div class="consider-right">
+        <div style="position:relative;z-index:1">
+          <h3>A Clean Space Changes Everything</h3>
+          <p>Whether it's your home, your office, or a rental property — a professionally cleaned space feels better, looks better, and makes a lasting impression. We take that seriously on every visit.</p>
+          <a href="sms:+15087361263" class="btn-outline-white"><i class="fa-solid fa-comment-sms"></i> Text Us — It's That Easy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wave" style="background:var(--white)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,70 800,0 1200,30 L1200,60 L0,60 Z" fill="var(--cream)"/></svg></div>
+
+<!-- SERVICES -->
+<section class="sec" id="services" style="background:var(--cream)">
+  <div class="container">
+    <div class="fi" style="text-align:center;margin-bottom:56px">
+      <div class="sec-tag center">What We Offer</div>
+      <h2 class="sec-title" style="text-align:center">Our Cleaning Services</h2>
+      <div class="sec-line"></div>
+      <p class="sec-sub c">Professional cleaning solutions for homes, businesses, and everything in between — tailored to your needs.</p>
+    </div>
+    <div class="services-grid fi">
+      <div class="svc-card"><div class="svc-icon si1"><i class="fa-solid fa-house-circle-check"></i></div><h3>Residential Cleaning</h3><p>Regular home cleaning that keeps your living spaces consistently fresh, tidy, and welcoming — on your schedule.</p></div>
+      <div class="svc-card" style="transition-delay:.1s"><div class="svc-icon si2"><i class="fa-solid fa-soap"></i></div><h3>Deep Cleaning</h3><p>A thorough, top-to-bottom clean covering every corner, appliance, and surface — ideal as a one-time reset or seasonal service.</p></div>
+      <div class="svc-card" style="transition-delay:.2s"><div class="svc-icon si3"><i class="fa-solid fa-building-circle-check"></i></div><h3>Commercial Cleaning</h3><p>Reliable cleaning for offices, retail spaces, and workplaces — keeping your team and clients in a clean, professional environment.</p></div>
+      <div class="svc-card"><div class="svc-icon si4"><i class="fa-solid fa-boxes-packing"></i></div><h3>Move-In / Move-Out</h3><p>Complete property cleaning before or after a move — leaving the space spotless and ready for its next chapter.</p></div>
+      <div class="svc-card" style="transition-delay:.1s"><div class="svc-icon si5"><i class="fa-solid fa-door-open"></i></div><h3>Airbnb Turnover</h3><p>Fast, reliable turnover cleaning for short-term rentals — ensuring every guest walks into a guest-ready space.</p></div>
+      <div class="svc-card" style="transition-delay:.2s"><div class="svc-icon si6"><i class="fa-solid fa-hammer"></i></div><h3>Post-Construction</h3><p>Detailed cleaning after renovations — removing dust, debris, and residue so your newly finished space looks its best.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="wave" style="background:var(--cream)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,0 800,60 1200,30 L1200,60 L0,60 Z" fill="var(--white)"/></svg></div>
+
+<!-- INCLUDES -->
+<section class="sec" id="includes" style="background:var(--white)">
+  <div class="container">
+    <div class="includes-inner fi">
+      <div class="includes-left">
+        <div class="sec-tag">What's Included</div>
+        <h2>What Our Standard Cleaning Covers</h2>
+        <p>Every visit follows a detailed cleaning checklist so nothing gets missed. Here's a sample of what's included in our standard residential clean — commercial and deep cleans include additional tasks discussed during your consultation.</p>
+        <div class="includes-grid">
+          <div class="inc-item"><i class="fa-solid fa-check"></i> Kitchen surfaces &amp; counters</div>
+          <div class="inc-item"><i class="fa-solid fa-check"></i> Stovetop &amp; sink</div>
+          <div class="inc-item"><i class="fa-solid fa-check"></i> Bathroom scrubbing &amp; sanitizing</div>
+          <div class="inc-item"><i class="fa-solid fa-check"></i> Toilet, tub &amp; shower</div>
+          <div class="inc-item"><i class="fa-solid fa-check"></i> Vacuuming all floors &amp; rugs</div>
+          <div class="inc-item"><i class="fa-solid fa-check"></i> Mopping hard floors</div>
+          <div class="inc-item"><i class="fa-solid fa-check"></i> Dusting surfaces &amp; furniture</div>
+          <div class="inc-item"><i class="fa-solid fa-check"></i> Mirrors &amp; glass surfaces</div>
+          <div class="inc-item"><i class="fa-solid fa-check"></i> Trash removal</div>
+          <div class="inc-item"><i class="fa-solid fa-check"></i> Baseboards &amp; light fixtures</div>
+        </div>
+        <div class="includes-note"><i class="fa-solid fa-circle-info" style="color:var(--b2);margin-right:8px"></i>Add-ons like interior appliance cleaning, window washing, and cabinet cleaning are available — just ask during your consultation.</div>
+      </div>
+      <div class="fi">
+        <div style="background:linear-gradient(135deg,var(--b1),var(--b2));border-radius:28px;padding:48px 40px;color:#fff;box-shadow:var(--sh2);position:relative;overflow:hidden">
+          <div style="position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,.06)"></div>
+          <div style="position:relative;z-index:1">
+            <div style="font-size:3rem;margin-bottom:20px"><i class="fa-solid fa-broom"></i></div>
+            <h3 style="font-family:var(--serif);font-size:1.6rem;color:#fff;margin-bottom:16px;font-weight:700">We bring everything needed</h3>
+            <p style="color:rgba(255,255,255,.8);font-size:.95rem;line-height:1.75;margin-bottom:28px">Our team arrives fully equipped with professional-grade supplies and tools. You don't need to provide anything — just tell us when you need us.</p>
+            <div style="display:flex;flex-direction:column;gap:12px">
+              <div style="display:flex;align-items:center;gap:12px;color:rgba(255,255,255,.85);font-size:.9rem"><i class="fa-solid fa-check" style="color:var(--b4)"></i> Professional cleaning products</div>
+              <div style="display:flex;align-items:center;gap:12px;color:rgba(255,255,255,.85);font-size:.9rem"><i class="fa-solid fa-check" style="color:var(--b4)"></i> All equipment &amp; tools included</div>
+              <div style="display:flex;align-items:center;gap:12px;color:rgba(255,255,255,.85);font-size:.9rem"><i class="fa-solid fa-check" style="color:var(--b4)"></i> Eco-friendly options available</div>
+              <div style="display:flex;align-items:center;gap:12px;color:rgba(255,255,255,.85);font-size:.9rem"><i class="fa-solid fa-check" style="color:var(--b4)"></i> Fully insured for your protection</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="mid-cta">
+  <div class="mid-cta-inner fi">
+    <p>Sounds like what you need? <strong>Text us for a free estimate</strong> — we'll get back to you the same day.</p>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex-shrink:0">
+      <a href="sms:+15087361263" class="btn-mid-cta"><i class="fa-solid fa-comment-sms"></i> Text for a Free Estimate</a>
+      <span class="mid-cta-sub"><i class="fa-solid fa-clock"></i> Same-day response · No obligation · Fully insured</span>
+    </div>
+  </div>
+</div>
+
+<div class="wave" style="background:var(--white)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,0 800,60 1200,30 L1200,60 L0,60 Z" fill="var(--navy)"/></svg></div>
+
+<!-- TEAM -->
+<section class="sec" id="team" style="background:var(--navy);padding-top:80px;padding-bottom:80px">
+  <div class="container">
+    <div class="caregiver-inner fi">
+      <div class="caregiver-left">
+        <div class="sec-tag" style="color:var(--b4)">Meet the Team</div>
+        <h2 class="caregiver-left" style="color:#fff;font-size:clamp(1.9rem,3.5vw,2.8rem);margin-bottom:20px;font-family:var(--serif);font-weight:700">Trained Professionals You Can Trust in Your Home</h2>
+        <p class="lead">Our cleaning professionals are background-checked, trained in our detailed cleaning system, and committed to delivering consistent results — every visit, no exceptions.</p>
+        <div class="cred-list">
+          <div class="cred-item"><div class="cred-icon"><i class="fa-solid fa-user-shield"></i></div><div><strong>Fully Background Checked</strong><span>Every team member is vetted before entering any client property</span></div></div>
+          <div class="cred-item"><div class="cred-icon"><i class="fa-solid fa-graduation-cap"></i></div><div><strong>Professionally Trained</strong><span>Trained in residential and commercial cleaning standards and techniques</span></div></div>
+          <div class="cred-item"><div class="cred-icon"><i class="fa-solid fa-shield-halved"></i></div><div><strong>Licensed &amp; Insured</strong><span>Fully covered so you're protected on every visit</span></div></div>
+          <div class="cred-item"><div class="cred-icon"><i class="fa-solid fa-clock"></i></div><div><strong>Reliable &amp; Punctual</strong><span>We show up on time and stay until the job is done right</span></div></div>
+        </div>
+      </div>
+      <div class="caregiver-right">
+        <div class="caregiver-tag"><i class="fa-solid fa-star"></i> EverCare Cleaning Team</div>
+        <h3>EverCare Cleaners</h3>
+        <div class="ctitle">Professional Cleaning · Central Massachusetts</div>
+        <div style="display:flex;align-items:center;gap:14px;margin-bottom:20px">
+          <div style="width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.15);border:2px solid rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.2rem"><i class="fa-solid fa-broom"></i></div>
+          <div>
+            <div style="font-weight:700;color:#fff;font-size:.95rem">EverCare Home Services</div>
+            <div style="font-size:.78rem;color:rgba(255,255,255,.55)">Worcester, Massachusetts</div>
+          </div>
+        </div>
+        <p>Our cleaning team brings professional training, a structured cleaning system, and genuine care to every visit. We believe great cleaning starts with great standards — and we hold ourselves to them on every job we take.</p>
+        <p>When you work with EverCare, you're not getting a rotating crew of strangers. You build a working relationship with a consistent team that knows your space.</p>
+        <div class="cg-tags">
+          <span class="cg-tag">Professionally Trained</span>
+          <span class="cg-tag">Background Checked</span>
+          <span class="cg-tag">Licensed &amp; Insured</span>
+          <span class="cg-tag">CPR Certified</span>
+          <span class="cg-tag">Central MA Local</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wave" style="background:var(--navy)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,0 800,60 1200,30 L1200,60 L0,60 Z" fill="var(--cream)"/></svg></div>
+
+<!-- STANDARDS -->
+<section class="sec" id="standards" style="background:var(--cream)">
+  <div class="container">
+    <div class="fi" style="text-align:center;margin-bottom:60px">
+      <div class="sec-tag center">Our Commitment</div>
+      <h2 class="sec-title" style="text-align:center">Our Professional Standards &amp; Commitment</h2>
+      <div class="sec-line"></div>
+      <p class="sec-sub c">EverCare holds itself to the highest standards. Every visit is carried out with professionalism, reliability, and genuine care for the spaces we serve.</p>
+    </div>
+    <div class="standards-grid fi">
+      <div class="std-card"><div class="std-icon"><i class="fa-solid fa-graduation-cap"></i></div><h3>Ongoing Training</h3><p>Our team regularly updates skills and techniques to provide the most effective cleaning practices available.</p></div>
+      <div class="std-card" style="transition-delay:.1s"><div class="std-icon"><i class="fa-solid fa-shield-halved"></i></div><h3>Fully Vetted</h3><p>Background checked, licensed, and insured — so clients have complete peace of mind from day one.</p></div>
+      <div class="std-card" style="transition-delay:.2s"><div class="std-icon"><i class="fa-solid fa-clock-rotate-left"></i></div><h3>Reliable &amp; Punctual</h3><p>We take every appointment seriously. If we say we'll be there, we will — on time, every time.</p></div>
+      <div class="std-card" style="transition-delay:.3s"><div class="std-icon"><i class="fa-solid fa-handshake-angle"></i></div><h3>Open Communication</h3><p>We maintain honest, respectful communication with every client — including follow-up after every visit.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="wave" style="background:var(--cream)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,70 800,0 1200,30 L1200,60 L0,60 Z" fill="var(--white)"/></svg></div>
+
+<!-- PROCESS -->
+<section class="sec" id="process" style="background:var(--white)">
+  <div class="container">
+    <div class="fi" style="text-align:center;margin-bottom:64px">
+      <div class="sec-tag center">Getting Started</div>
+      <h2 class="sec-title" style="text-align:center">How Our Cleaning Process Works</h2>
+      <div class="sec-line"></div>
+      <p class="sec-sub c">Starting service is simple and low-pressure. Here's exactly what happens after you reach out — no surprises, no hidden steps.</p>
+    </div>
+    <div class="process-steps fi">
+      <div class="process-line"></div>
+      <div class="process-step"><div class="step-icon ps1"><i class="fa-solid fa-comment-sms"></i></div><div class="step-box"><h3>Reach Out</h3><p>Text or call us to start a conversation. No forms, no pressure — just a real person ready to help.</p></div></div>
+      <div class="process-step"><div class="step-icon ps2"><i class="fa-solid fa-comments"></i></div><div class="step-box"><h3>We Discuss Your Needs</h3><p>We learn about your space, your priorities, and what type of cleaning would make the biggest difference for you.</p></div></div>
+      <div class="process-step"><div class="step-icon ps3"><i class="fa-solid fa-file-invoice"></i></div><div class="step-box"><h3>We Build Your Plan</h3><p>Together, we create a cleaning plan and schedule that fits your property, budget, and lifestyle.</p></div></div>
+      <div class="process-step"><div class="step-icon ps4"><i class="fa-solid fa-check-double"></i></div><div class="step-box"><h3>Cleaning Begins</h3><p>Your team arrives on time and delivers consistent, thorough results — staying in close contact with you throughout.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="wave" style="background:var(--white)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,0 800,60 1200,30 L1200,60 L0,60 Z" fill="var(--cream)"/></svg></div>
+
+<!-- TESTIMONIALS -->
+<section class="sec" id="reviews" style="background:var(--cream)">
+  <div class="container">
+    <div class="fi" style="text-align:center;margin-bottom:60px">
+      <div class="sec-tag center">Real Clients</div>
+      <h2 class="sec-title" style="text-align:center">What Clients in Central MA Say</h2>
+      <div class="sec-line"></div>
+      <p class="sec-sub c">Our clients trust us to deliver consistent results — here's what they say about working with EverCare.</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card fi"><div class="stars">★★★★★</div><p class="review-text">"EverCare has been cleaning our home for four months and we're absolutely impressed. They're consistent, detailed, and our house always looks better than we left it."</p><div class="review-author"><div class="author-av av1">RC</div><div><div class="author-name">Rachel C.</div><div class="author-loc">Grafton, MA</div></div></div></div>
+      <div class="review-card fi" style="transition-delay:.1s"><div class="stars">★★★★★</div><p class="review-text">"What I appreciate most is how easy it is to communicate. I text them about a change and get a response immediately. That kind of responsiveness is rare."</p><div class="review-author"><div class="author-av av2">BM</div><div><div class="author-name">Brian M.</div><div class="author-loc">Leicester, MA</div></div></div></div>
+      <div class="review-card fi" style="transition-delay:.2s"><div class="stars">★★★★★</div><p class="review-text">"We hired them for a move-out clean and they were incredible. The apartment looked spotless — we got our full deposit back without any issues."</p><div class="review-author"><div class="author-av av3">KS</div><div><div class="author-name">Karen S.</div><div class="author-loc">Millbury, MA</div></div></div></div>
+      <div class="review-card fi"><div class="stars">★★★★★</div><p class="review-text">"Our office has never looked this clean. The team is professional, thorough, and works around our schedule. I recommend them to every business owner I know."</p><div class="review-author"><div class="author-av av1">TF</div><div><div class="author-name">Tom F.</div><div class="author-loc">Shrewsbury, MA</div></div></div></div>
+      <div class="review-card fi" style="transition-delay:.1s"><div class="stars">★★★★★</div><p class="review-text">"They truly treat my home like it's their own. Every visit is thorough and the communication is excellent. EverCare is exactly what you want in a cleaning service."</p><div class="review-author"><div class="author-av av2">NW</div><div><div class="author-name">Nicole W.</div><div class="author-loc">Auburn, MA</div></div></div></div>
+      <div class="review-card fi" style="transition-delay:.2s"><div class="stars">★★★★★</div><p class="review-text">"Reliable, honest, and genuinely great at what they do. EverCare gave me the peace of mind that my Airbnb is always guest-ready without me having to worry about it."</p><div class="review-author"><div class="author-av av3">PD</div><div><div class="author-name">Paul D.</div><div class="author-loc">Northborough, MA</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="mid-cta">
+  <div class="mid-cta-inner fi">
+    <p>Join hundreds of satisfied clients. <strong>Request your free cleaning estimate</strong> today.</p>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex-shrink:0">
+      <a href="sms:+15087361263" class="btn-mid-cta"><i class="fa-solid fa-comment-sms"></i> Text for a Free Estimate</a>
+      <span class="mid-cta-sub"><i class="fa-solid fa-clock"></i> Same-day response · No obligation · Fully insured</span>
+    </div>
+  </div>
+</div>
+
+<div class="wave" style="background:var(--cream)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,70 800,0 1200,30 L1200,60 L0,60 Z" fill="var(--white)"/></svg></div>
+
+<!-- COST -->
+<section class="sec" id="cost" style="background:var(--white)">
+  <div class="container">
+    <div class="fi" style="text-align:center;margin-bottom:52px">
+      <div class="sec-tag center">Pricing</div>
+      <h2 class="sec-title" style="text-align:center">How Much Does Professional Cleaning Cost?</h2>
+      <div class="sec-line"></div>
+      <p class="sec-sub c">Every cleaning plan is customized — so pricing reflects exactly what your property needs. We discuss all details openly during your first conversation.</p>
+    </div>
+    <div class="cost-grid fi">
+      <div class="cost-card"><div class="cost-icon ci1"><i class="fa-solid fa-house"></i></div><h3>Flexible One-Time Cleans</h3><p>Schedule a single deep clean or move-in/out service — perfect for special occasions, preparing a property, or starting fresh.</p></div>
+      <div class="cost-card" style="transition-delay:.1s"><div class="cost-icon ci2"><i class="fa-solid fa-calendar-days"></i></div><h3>Regular Maintenance Plans</h3><p>Weekly or bi-weekly recurring visits that keep your home or business consistently clean — with scheduling built around you.</p></div>
+      <div class="cost-card" style="transition-delay:.2s"><div class="cost-icon ci3"><i class="fa-solid fa-building"></i></div><h3>Commercial Packages</h3><p>Custom packages for offices, businesses, and commercial spaces — with pricing based on size, frequency, and scope.</p></div>
+    </div>
+    <div class="cost-note fi">
+      <i class="fa-solid fa-circle-info" style="color:var(--b2);margin-right:10px"></i>
+      We don't believe in one-size-fits-all pricing. After a brief conversation about your space and needs, we'll put together a clear, honest plan with no hidden costs and no obligation to commit.
+    </div>
+  </div>
+</section>
+
+<div class="wave" style="background:var(--white)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,0 800,60 1200,30 L1200,60 L0,60 Z" fill="var(--cream)"/></svg></div>
+
+<!-- FAQ -->
+<section class="sec" id="faq" style="background:var(--cream)">
+  <div class="container">
+    <div class="fi" style="text-align:center;margin-bottom:52px">
+      <div class="sec-tag center">Common Questions</div>
+      <h2 class="sec-title" style="text-align:center">Common Questions About Our Cleaning Services</h2>
+      <div class="sec-line"></div>
+      <p class="sec-sub c">Honest answers to the questions clients ask us most often.</p>
+    </div>
+    <div class="faq-list fi">
+      <div class="faq-item">
+        <div class="faq-q"><h3>Do you bring your own supplies and equipment?</h3><div class="faq-arrow"><i class="fa-solid fa-chevron-down"></i></div></div>
+        <div class="faq-a">Yes. Our team arrives fully equipped with professional-grade cleaning products and all the tools needed to do the job right. You don't need to provide anything — just let us in.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><h3>Who will be cleaning my home or business?</h3><div class="faq-arrow"><i class="fa-solid fa-chevron-down"></i></div></div>
+        <div class="faq-a">With EverCare, you know exactly who is coming. We introduce our team before the first visit and work hard to maintain consistency. You won't be dealing with different people every time — you build a relationship with a dedicated, trained team.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><h3>Are your cleaners background checked and insured?</h3><div class="faq-arrow"><i class="fa-solid fa-chevron-down"></i></div></div>
+        <div class="faq-a">Yes. Every team member is fully background-checked before entering any client property. We are also fully licensed and insured — so you're always protected.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><h3>How quickly can cleaning begin after the first contact?</h3><div class="faq-arrow"><i class="fa-solid fa-chevron-down"></i></div></div>
+        <div class="faq-a">In many cases, we can schedule your first clean within a few days of your initial conversation. We understand that some clients need help quickly, and we do our best to accommodate.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><h3>What if I need to reschedule or cancel?</h3><div class="faq-arrow"><i class="fa-solid fa-chevron-down"></i></div></div>
+        <div class="faq-a">Life happens — we get it. Just let us know by text as soon as possible and we'll work with you to find a new time. We keep things flexible and don't make rescheduling difficult.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><h3>How do I get a cleaning estimate?</h3><div class="faq-arrow"><i class="fa-solid fa-chevron-down"></i></div></div>
+        <div class="faq-a">The easiest way is to send us a text at <a href="sms:+15087361263" style="color:var(--b2);font-weight:600">(508) 736-1263</a>. Tell us about your space and what you're looking for, and we'll respond quickly with an honest estimate — no pressure, no commitment required.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="mid-cta">
+  <div class="mid-cta-inner fi">
+    <p>Still have questions? <strong>Just text us</strong> — no scripts, just real answers.</p>
+    <div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex-shrink:0">
+      <a href="sms:+15087361263" class="btn-mid-cta"><i class="fa-solid fa-comment-sms"></i> Text for a Free Estimate</a>
+      <span class="mid-cta-sub"><i class="fa-solid fa-clock"></i> Fast response · Worcester & Central MA</span>
+    </div>
+  </div>
+</div>
+
+<div class="wave" style="background:var(--cream)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,0 800,60 1200,30 L1200,60 L0,60 Z" fill="var(--white)"/></svg></div>
+
+<!-- AREAS -->
+<section class="sec" id="areas" style="background:var(--white)">
+  <div class="container">
+    <div class="fi" style="text-align:center;margin-bottom:48px">
+      <div class="sec-tag center">Where We Serve</div>
+      <h2 class="sec-title" style="text-align:center">Areas We Serve in Central Massachusetts</h2>
+      <div class="sec-line"></div>
+      <p class="sec-sub c">EverCare is proud to serve homes and businesses across Central Massachusetts — local service from a local team that knows your community.</p>
+    </div>
+    <div class="areas-card fi">
+      <div class="areas-grid">
+        <div class="area-pill"><div class="area-dot"></div>Worcester</div>
+        <div class="area-pill"><div class="area-dot"></div>Shrewsbury</div>
+        <div class="area-pill"><div class="area-dot"></div>Auburn</div>
+        <div class="area-pill"><div class="area-dot"></div>Holden</div>
+        <div class="area-pill"><div class="area-dot"></div>Leicester</div>
+        <div class="area-pill"><div class="area-dot"></div>Millbury</div>
+        <div class="area-pill"><div class="area-dot"></div>Grafton</div>
+        <div class="area-pill"><div class="area-dot"></div>Northborough</div>
+        <div class="area-pill"><div class="area-dot"></div>Southborough</div>
+        <div class="area-pill"><div class="area-dot"></div>Spencer</div>
+        <div class="area-pill"><div class="area-dot"></div>West Boylston</div>
+        <div class="area-pill"><div class="area-dot"></div>Marlborough</div>
+      </div>
+      <p class="areas-note">Don't see your city? Contact us — we may still be able to help. We're always happy to discuss coverage for nearby areas across Central Massachusetts.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section id="contact">
+  <div class="cta-orb cta-orb-1"></div>
+  <div class="cta-orb cta-orb-2"></div>
+  <div class="cta-inner fi">
+    <div class="sec-tag center" style="color:var(--b4);justify-content:center;margin-bottom:20px">
+      <span style="display:inline-block;width:24px;height:2px;background:var(--b3);border-radius:2px"></span>
+      Let's Talk
+      <span style="display:inline-block;width:24px;height:2px;background:var(--b3);border-radius:2px"></span>
+    </div>
+    <h2>Get Your Free Cleaning Estimate <em>Today</em></h2>
+    <p class="cta-sub">Tell us about your space and we'll put together a clear, honest plan — no pressure, no forms, just a real conversation about your cleaning needs.</p>
+    <p style="color:var(--b4);font-size:.9rem;font-weight:600;margin-bottom:32px;letter-spacing:.02em"><i class="fa-solid fa-circle-check" style="margin-right:8px"></i>Currently accepting new cleaning clients in Worcester and nearby communities.</p>
+    <div class="cta-box">
+      <div class="cta-buttons">
+        <a href="sms:+15087361263" class="btn-cta-main"><i class="fa-solid fa-comment-sms"></i> Text Us for a Free Estimate</a>
+        <a href="tel:+15087361263" class="btn-cta-phone"><i class="fa-solid fa-phone"></i> Call Us</a>
+      </div>
+      <div class="cta-trust-row">
+        <span class="cta-t"><i class="fa-solid fa-clock"></i> Fast response by text</span>
+        <span class="cta-sep"></span>
+        <span class="cta-t"><i class="fa-solid fa-shield-check"></i> No commitment required</span>
+        <span class="cta-sep"></span>
+        <span class="cta-t"><i class="fa-solid fa-location-dot"></i> Local to Central MA</span>
+      </div>
+      <p class="cta-foot">Worcester, MA · Serving Central Massachusetts</p>
+    </div>
+  </div>
+</section>
+
+<!-- LOCAL SEO -->
+<section style="padding:72px 32px;background:var(--cream)">
+  <div class="container">
+    <div style="max-width:900px;margin:0 auto">
+      <div class="sec-tag">Service Area</div>
+      <h2 style="font-family:var(--serif);font-size:clamp(1.6rem,2.8vw,2.2rem);color:var(--navy);margin-bottom:16px;font-weight:700">Professional Cleaning Services in Worcester, Massachusetts</h2>
+      <p style="color:var(--muted);font-size:.95rem;line-height:1.85;margin-bottom:10px">EverCare provides residential and commercial cleaning for homes and businesses across Worcester and Central Massachusetts — licensed, insured, and background-checked.</p>
+      <p style="color:var(--muted);font-size:.95rem;line-height:1.85;margin-bottom:28px">If you're nearby and need reliable cleaning, reach out today — our local team is ready to help.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:10px">
+        <span style="padding:8px 18px;background:var(--white);border:1.5px solid rgba(68,135,191,.15);border-radius:100px;font-size:.82rem;font-weight:600;color:var(--b1);display:flex;align-items:center;gap:7px"><i class="fa-solid fa-location-dot" style="color:var(--b2);font-size:.75rem"></i>Worcester</span>
+        <span style="padding:8px 18px;background:var(--white);border:1.5px solid rgba(68,135,191,.15);border-radius:100px;font-size:.82rem;font-weight:600;color:var(--b1);display:flex;align-items:center;gap:7px"><i class="fa-solid fa-location-dot" style="color:var(--b2);font-size:.75rem"></i>Shrewsbury</span>
+        <span style="padding:8px 18px;background:var(--white);border:1.5px solid rgba(68,135,191,.15);border-radius:100px;font-size:.82rem;font-weight:600;color:var(--b1);display:flex;align-items:center;gap:7px"><i class="fa-solid fa-location-dot" style="color:var(--b2);font-size:.75rem"></i>Auburn</span>
+        <span style="padding:8px 18px;background:var(--white);border:1.5px solid rgba(68,135,191,.15);border-radius:100px;font-size:.82rem;font-weight:600;color:var(--b1);display:flex;align-items:center;gap:7px"><i class="fa-solid fa-location-dot" style="color:var(--b2);font-size:.75rem"></i>Holden</span>
+        <span style="padding:8px 18px;background:var(--white);border:1.5px solid rgba(68,135,191,.15);border-radius:100px;font-size:.82rem;font-weight:600;color:var(--b1);display:flex;align-items:center;gap:7px"><i class="fa-solid fa-location-dot" style="color:var(--b2);font-size:.75rem"></i>Leicester</span>
+        <span style="padding:8px 18px;background:var(--white);border:1.5px solid rgba(68,135,191,.15);border-radius:100px;font-size:.82rem;font-weight:600;color:var(--b1);display:flex;align-items:center;gap:7px"><i class="fa-solid fa-location-dot" style="color:var(--b2);font-size:.75rem"></i>Millbury</span>
+        <span style="padding:8px 18px;background:var(--white);border:1.5px solid rgba(68,135,191,.15);border-radius:100px;font-size:.82rem;font-weight:600;color:var(--b1);display:flex;align-items:center;gap:7px"><i class="fa-solid fa-location-dot" style="color:var(--b2);font-size:.75rem"></i>Grafton</span>
+        <span style="padding:8px 18px;background:var(--white);border:1.5px solid rgba(68,135,191,.15);border-radius:100px;font-size:.82rem;font-weight:600;color:var(--b1);display:flex;align-items:center;gap:7px"><i class="fa-solid fa-location-dot" style="color:var(--b2);font-size:.75rem"></i>Northborough</span>
+        <span style="padding:8px 18px;background:var(--white);border:1.5px solid rgba(68,135,191,.15);border-radius:100px;font-size:.82rem;font-weight:600;color:var(--b1);display:flex;align-items:center;gap:7px"><i class="fa-solid fa-location-dot" style="color:var(--b2);font-size:.75rem"></i>Spencer</span>
+        <span style="padding:8px 18px;background:var(--white);border:1.5px solid rgba(68,135,191,.15);border-radius:100px;font-size:.82rem;font-weight:600;color:var(--b1);display:flex;align-items:center;gap:7px"><i class="fa-solid fa-location-dot" style="color:var(--b2);font-size:.75rem"></i>West Boylston</span>
+        <span style="padding:8px 18px;background:var(--white);border:1.5px solid rgba(68,135,191,.15);border-radius:100px;font-size:.82rem;font-weight:600;color:var(--b1);display:flex;align-items:center;gap:7px"><i class="fa-solid fa-location-dot" style="color:var(--b2);font-size:.75rem"></i>Marlborough</span>
+        <span style="padding:8px 18px;background:linear-gradient(135deg,rgba(68,135,191,.1),rgba(82,183,136,.08));border:1.5px dashed rgba(68,135,191,.25);border-radius:100px;font-size:.82rem;font-weight:600;color:var(--muted);display:flex;align-items:center;gap:7px"><i class="fa-solid fa-plus" style="font-size:.7rem"></i>And nearby areas</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
+        <div style="width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--b2),var(--b3));display:flex;align-items:center;justify-content:center;color:#fff;font-size:1rem"><i class="fa-solid fa-broom"></i></div>
+        <span style="font-family:var(--serif);font-size:1.4rem;color:#fff;font-weight:700">EverCare</span>
+      </div>
+      <p>Professional residential and commercial cleaning for homes and businesses across Central Massachusetts. Licensed, insured, and trusted.</p>
+      <p style="font-size:.78rem;color:rgba(255,255,255,.28);margin-top:10px;line-height:1.6">Serving: Worcester · Shrewsbury · Auburn · Holden · Leicester · Millbury · Grafton · Northborough · Spencer · West Boylston · Marlborough</p>
+      <div class="footer-socials">
+        <a class="soc-btn" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a class="soc-btn" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a class="soc-btn" href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Site</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="/cleaning-services">Residential Cleaning</a></li>
+        <li><a href="/cleaning-services">Deep Cleaning</a></li>
+        <li><a href="/cleaning-services">Commercial Cleaning</a></li>
+        <li><a href="/cleaning-services">Move-In / Move-Out</a></li>
+        <li><a href="/cleaning-services">Airbnb Turnover</a></li>
+        <li><a href="/evercare-care">In-Home Senior Care</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="https://maps.google.com/?q=Worcester,+Massachusetts" target="_blank" rel="noopener"><i class="fa-solid fa-location-dot" style="color:var(--b3);margin-right:8px"></i>Worcester, Massachusetts</a></li>
+        <li><a href="mailto:info@evercarehomeservice.com"><i class="fa-solid fa-envelope" style="color:var(--b3);margin-right:8px"></i>Email Us</a></li>
+        <li><a href="tel:+15087361263"><i class="fa-solid fa-phone" style="color:var(--b3);margin-right:8px"></i>Call Us</a></li>
+        <li><a href="sms:+15087361263"><i class="fa-solid fa-comment-sms" style="color:var(--b3);margin-right:8px"></i>Text us anytime</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div style="display:flex;flex-direction:column;gap:4px">
+      <span>© 2026 EverCare Home Services. All rights reserved.</span>
+      <span style="font-size:.75rem;color:rgba(255,255,255,.25)">Professional Cleaning Services · Worcester, Massachusetts · Serving Central Massachusetts</span>
+    </div>
+    <div>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<!-- CONTACT WIDGET -->
+<div id="contact-widget">
+  <div id="widget-panel">
+    <div class="widget-header">
+      <div class="widget-header-top">
+        <div class="widget-avatar"><i class="fa-solid fa-comments"></i></div>
+        <div>
+          <div class="widget-name">How can we help?</div>
+          <div class="widget-status"><span class="widget-dot"></span> Typically replies within 1–2 hours</div>
+        </div>
+      </div>
+    </div>
+    <div class="widget-options">
+      <a href="sms:+15087361263&body=Hi! I'd like to learn more about EverCare's services." class="widget-btn wb-sms">
+        <div class="widget-btn-icon"><i class="fa-solid fa-comment-sms"></i></div>
+        <div><span class="wb-label">Text Us</span><span class="wb-sub">Fastest way to reach us</span></div>
+      </a>
+      <a href="tel:+15087361263" class="widget-btn wb-call">
+        <div class="widget-btn-icon"><i class="fa-solid fa-phone"></i></div>
+        <div><span class="wb-label">Call Us</span></div>
+      </a>
+      <a href="mailto:info@evercarehomeservice.com" class="widget-btn wb-email">
+        <div class="widget-btn-icon"><i class="fa-solid fa-envelope"></i></div>
+        <div><span class="wb-label">Email Us</span></div>
+      </a>
+    </div>
+  </div>
+  <div id="widget-row">
+    <div id="widget-label">
+      <span class="wl-main">Need Help?</span>
+      <span class="wl-sub">Fast response · No pressure</span>
+    </div>
+    <button id="widget-toggle" aria-label="Contact EverCare">
+      <span class="icon-open"><i class="fa-solid fa-comments"></i></span>
+      <span class="icon-close"><i class="fa-solid fa-xmark"></i></span>
+    </button>
+  </div>
+</div>
+
+<script>
+  // Nav scroll
+  window.addEventListener('scroll', function() {
+    document.getElementById('header').classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // Hamburger
+  document.getElementById('hamburger').addEventListener('click', function() {
+    var menu = document.getElementById('mobile-menu');
+    var icon = this.querySelector('i');
+    menu.classList.toggle('open');
+    icon.classList.toggle('fa-bars', !menu.classList.contains('open'));
+    icon.classList.toggle('fa-xmark', menu.classList.contains('open'));
+  });
+  document.querySelectorAll('#mobile-menu a').forEach(function(a) {
+    a.addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.remove('open');
+      var icon = document.querySelector('#hamburger i');
+      if (icon) { icon.classList.replace('fa-xmark', 'fa-bars'); }
+    });
+  });
+
+  // Contact widget
+  var wPanel = document.getElementById('widget-panel');
+  var wToggle = document.getElementById('widget-toggle');
+  var wLabel = document.getElementById('widget-label');
+  if (wToggle) {
+    wToggle.addEventListener('click', function() {
+      wToggle.classList.toggle('active');
+      if (wToggle.classList.contains('active')) {
+        wPanel.style.display = 'block';
+        setTimeout(function(){ wPanel.classList.add('open'); }, 10);
+        if (wLabel) wLabel.classList.add('hidden');
+      } else {
+        wPanel.classList.remove('open');
+        setTimeout(function(){ wPanel.style.display = 'none'; }, 300);
+      }
+    });
+    document.addEventListener('click', function(e) {
+      var cw = document.getElementById('contact-widget');
+      if (cw && !cw.contains(e.target) && wToggle.classList.contains('active')) {
+        wToggle.classList.remove('active');
+        wPanel.classList.remove('open');
+        setTimeout(function(){ wPanel.style.display = 'none'; }, 300);
+      }
+    });
+    function pulseWidget() {
+      if (!wToggle.classList.contains('active')) {
+        wToggle.classList.remove('pulse');
+        void wToggle.offsetWidth;
+        wToggle.classList.add('pulse');
+      }
+    }
+    setTimeout(function(){ pulseWidget(); setInterval(pulseWidget, 8000); }, 3000);
+  }
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      var item = btn.closest('.faq-item');
+      if (!item) return;
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(i) {
+        i.classList.remove('open');
+        var ch = i.querySelector('.fa-chevron-down');
+        if (ch) ch.style.transform = 'rotate(0deg)';
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        var ch = item.querySelector('.fa-chevron-down');
+        if (ch) ch.style.transform = 'rotate(180deg)';
+      }
+    });
+  });
+
+  // Scroll reveal — bulletproof
+  try {
+    document.body.classList.add('reveal-ready');
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) { e.target.classList.add('vis'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.01, rootMargin: '0px 0px -20px 0px' });
+    document.querySelectorAll('.fi').forEach(function(el) { io.observe(el); });
+    setTimeout(function() {
+      document.querySelectorAll('.fi:not(.vis)').forEach(function(el) {
+        if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add('vis');
+      });
+    }, 300);
+  } catch(e) {
+    document.body.classList.remove('reveal-ready');
+  }
+
+  // Active nav
+  (function() {
+    var path = window.location.pathname;
+    document.querySelectorAll('.nav-links a:not(.btn-nav)').forEach(function(a) {
+      var href = a.getAttribute('href');
+      if (href && href !== '/' && path.startsWith(href)) a.classList.add('nav-active');
+      else if (href === '/' && path === '/') a.classList.add('nav-active');
+    });
+  })();
+</script>
+</body>
+</html>

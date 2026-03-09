@@ -1,0 +1,20 @@
+./node_modules
+/dist
+/.env
+/.env.local
+/.env.development
+/package.json
+node_modules/
+node_modules
+# Ignore all log files
+*.log
+# Ignore all files in the logs directory
+logs/
+# Ignore all files in the temp directory
+temp/
+# Ignore all files in the build directory
+build/
+# Ignore all files in the dist directory
+dist/
+# Ignore all files in the coverage directory
+coverage/
