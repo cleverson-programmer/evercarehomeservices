@@ -3,7 +3,6 @@
 /.env
 /.env.local
 /.env.development
-/package.json
 node_modules/
 node_modules
 # Ignore all log files
