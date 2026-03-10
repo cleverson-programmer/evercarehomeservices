@@ -29,22 +29,25 @@ function esc(str) {
 
 function createTransporter() {
   return nodemailer.createTransport({
-    host:   process.env.EMAIL_HOST || 'smtp.gmail.com',
-    port:   parseInt(process.env.EMAIL_PORT, 10) || 587,
-    secure: parseInt(process.env.EMAIL_PORT, 10) === 465,
+    host: process.env.EMAIL_HOST,
+    port: Number(process.env.EMAIL_PORT),
+    secure: true,
     auth: {
       user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS,
+      pass: process.env.EMAIL_PASS
     },
+    tls: {
+      rejectUnauthorized: false
+    }
   });
 }
 
 // ─── Shared email wrapper ────────────────────────────────────────────────────
 function emailWrapper(bodyContent) {
-  const siteUrl = process.env.SITE_URL || 'https://evercarehomeservice.com';
+  const siteUrl = (process.env.SITE_URL || 'https://evercarehomeservice.com').replace(/\/$/, '');
   // Email clients cannot reach localhost — always use the production URL for the logo
-  const logoUrl = (process.env.SITE_URL && !process.env.SITE_URL.includes('localhost'))
-    ? process.env.SITE_URL
+  const logoUrl = (siteUrl && !siteUrl.includes('localhost'))
+    ? siteUrl
     : 'https://evercarehomeservice.com';
   return `<!DOCTYPE html>
 <html lang="en">
@@ -122,7 +125,7 @@ function emailWrapper(bodyContent) {
 
 // ─── Business notification email ─────────────────────────────────────────────
 function buildBusinessEmail(d) {
-  const siteUrl = process.env.SITE_URL || 'https://evercarehomeservice.com';
+  const siteUrl = (process.env.SITE_URL || 'https://evercarehomeservice.com').replace(/\/$/, '');
   const rows = [
     ['First Name',   d.first_name],
     ['Last Name',    d.last_name],
@@ -182,7 +185,7 @@ function buildBusinessEmail(d) {
 
 // ─── User confirmation email ─────────────────────────────────────────────────
 function buildUserEmail(d) {
-  const siteUrl = process.env.SITE_URL || 'https://evercarehomeservice.com';
+  const siteUrl = (process.env.SITE_URL || 'https://evercarehomeservice.com').replace(/\/$/, '');
 
   const summaryRows = [
     d.city    && ['City / Town', esc(d.city)],
