@@ -294,6 +294,22 @@
     .cta-sep { width: 4px; height: 4px; border-radius: 50%; background: rgba(255,255,255,.2); }
     .cta-foot { color: rgba(255,255,255,.35); font-size: .78rem; margin-top: 20px; }
 
+    /*novo section*/
+        .mid-cta-wrap{background:linear-gradient(135deg,#eaf4fb 0%,#e8f7f0 100%);position:relative;overflow:hidden}
+    .mid-cta{background:transparent;padding:32px 32px;text-align:center;position:relative;z-index:2}
+    .mid-cta-inner{max-width:640px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:16px}
+    .mid-cta-tag{display:inline-flex;align-items:center;gap:8px;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--b2);margin-bottom:4px}
+    .mid-cta-tag span{display:inline-block;width:16px;height:2px;background:var(--b2);border-radius:2px}
+    .mid-cta h3{font-family:var(--serif);font-size:clamp(1.2rem,2.4vw,1.55rem);color:var(--navy);line-height:1.25;margin-bottom:5px}
+    .mid-cta h3 em{font-style:italic;background:linear-gradient(135deg,var(--b2),var(--g3));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .mid-cta p{color:var(--muted);font-size:.9rem;margin:0;line-height:1.55}
+    .btn-mid-cta{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(135deg,var(--b2),var(--g3));color:#fff;padding:15px 30px;border-radius:100px;font-weight:700;font-size:.93rem;text-decoration:none;box-shadow:0 6px 22px rgba(68,135,191,.38);transition:all .25s;white-space:nowrap}
+    .btn-mid-cta:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(68,135,191,.5)}
+    .mid-cta-sub{font-size:.78rem;color:var(--muted);margin:0}
+    @media(min-width:700px){
+      .mid-cta-inner{flex-direction:row;justify-content:center;gap:28px;text-align:left}
+      .mid-cta-inner .mid-cta-text{flex:1}
+    }
     /* FOOTER */
     footer { background: #070f0a; color: rgba(255,255,255,.45); padding: 72px 32px 32px; }
     .footer-grid { max-width: 1260px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
@@ -386,7 +402,8 @@
     .fa-chevron-down { transition: transform .25s ease; }
   
     /* Mid-page CTA strip */
-    .mid-cta{background:linear-gradient(135deg,#eaf4fb 0%,#e8f7f0 100%);padding:36px 24px;text-align:center;border-top:1px solid rgba(68,135,191,.1);border-bottom:1px solid rgba(82,183,136,.1)}
+    .mid-cta-wrap{background:linear-gradient(135deg,#eaf4fb 0%,#e8f7f0 100%);position:relative;overflow:hidden}
+    .mid-cta{background:transparent;padding:36px 24px;text-align:center;position:relative;z-index:2}
     .mid-cta-inner{max-width:600px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:14px}
     .mid-cta p{color:var(--navy);font-size:1rem;margin:0;line-height:1.5}
     .mid-cta strong{color:var(--b2)}
@@ -412,14 +429,13 @@
 <header id="header">
   <div class="nav-inner">
     <a href="/" style="display:flex;align-items:center;text-decoration:none">
-      <img src="/assets/logo.svg" alt="EverCare Home Services" style="height:clamp(130px,17vw,220px);width:auto;display:block;flex-shrink:0">
+      <img src="../../assets/logo.svg" alt="EverCare Home Services" style="height:clamp(130px,17vw,220px);width:auto;display:block;flex-shrink:0">
     </a>
     <ul class="nav-links">
       <li><a href="/">Home</a></li>
       <li><a href="/services" class="nav-active">Services</a></li>
       <li><a href="/about">About</a></li>
       <li><a href="/contact">Contact</a></li>
-      <li><a href="tel:+15087361263" class="nav-phone"><i class="fa-solid fa-phone" style="margin-right:6px"></i> Call Us</a></li>
       <li><a href="/contact" class="btn-nav">Get a Free Estimate</a></li>
     </ul>
     <button id="hamburger"><i class="fa-solid fa-bars"></i></button>
@@ -429,7 +445,6 @@
     <a href="/services">Services</a>
     <a href="/about">About</a>
     <a href="/contact">Contact</a>
-    <a href="tel:+15087361263"><i class="fa-solid fa-phone" style="margin-right:8px;color:var(--b2)"></i> Call Us</a>
     <a href="/contact" class="btn-nav">Get a Free Estimate</a>
   </div>
 </header>
@@ -630,14 +645,22 @@
   </div>
 </section>
 
-<div class="mid-cta">
-  <div class="mid-cta-inner fi">
-    <p>Sounds like what you need? <strong>Text us for a free estimate</strong> — we'll get back to you the same day.</p>
-    <div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex-shrink:0">
-      <a href="sms:+15087361263" class="btn-mid-cta"><i class="fa-solid fa-comment-sms"></i> Text for a Free Estimate</a>
-      <span class="mid-cta-sub"><i class="fa-solid fa-clock"></i> Same-day response · No obligation · Fully insured</span>
+<div class="mid-cta-wrap">
+  <div class="wave"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:50px"><path d="M0,30 C400,0 800,60 1200,30 L1200,0 L0,0 Z" fill="var(--white)"/></svg></div>
+  <div class="mid-cta">
+    <div class="mid-cta-inner fi">
+      <div class="mid-cta-text">
+        <div class="mid-cta-tag"><span></span> Free Estimate <span></span></div>
+        <h3>Curious About Pricing <em>or Availability?</em></h3>
+        <p>Just send us a text — we respond fast and never pressure you.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex-shrink:0">
+        <a href="sms:+15087361263" class="btn-mid-cta"><i class="fa-solid fa-comment-sms"></i> Text for a Free Estimate</a>
+        <span class="mid-cta-sub"><i class="fa-solid fa-clock"></i> Same-day response · No obligation · Fully insured</span>
+      </div>
     </div>
   </div>
+  <div class="wave"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:50px"><path d="M0,30 C400,70 800,0 1200,30 L1200,60 L0,60 Z" fill="var(--white)"/></svg></div>
 </div>
 
 <div class="wave" style="background:var(--white)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,0 800,60 1200,30 L1200,60 L0,60 Z" fill="var(--navy)"/></svg></div>
@@ -745,17 +768,25 @@
   </div>
 </section>
 
-<div class="mid-cta">
-  <div class="mid-cta-inner fi">
-    <p>Join hundreds of satisfied clients. <strong>Request your free cleaning estimate</strong> today.</p>
-    <div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex-shrink:0">
-      <a href="sms:+15087361263" class="btn-mid-cta"><i class="fa-solid fa-comment-sms"></i> Text for a Free Estimate</a>
-      <span class="mid-cta-sub"><i class="fa-solid fa-clock"></i> Same-day response · No obligation · Fully insured</span>
+<div class="mid-cta-wrap">
+  <div class="wave"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:50px"><path d="M0,30 C400,0 800,60 1200,30 L1200,0 L0,0 Z" fill="var(--white)"/></svg></div>
+  <div class="mid-cta">
+    <div class="mid-cta-inner fi">
+      <div class="mid-cta-text">
+        <div class="mid-cta-tag"><span></span> Free Estimate <span></span></div>
+        <h3>Curious About Pricing <em>or Availability?</em></h3>
+        <p>Just send us a text — we respond fast and never pressure you.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex-shrink:0">
+        <a href="sms:+15087361263" class="btn-mid-cta"><i class="fa-solid fa-comment-sms"></i> Text for a Free Estimate</a>
+        <span class="mid-cta-sub"><i class="fa-solid fa-clock"></i> Same-day response · No obligation · Fully insured</span>
+      </div>
     </div>
   </div>
+  <div class="wave"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:50px"><path d="M0,30 C400,70 800,0 1200,30 L1200,60 L0,60 Z" fill="var(--white)"/></svg></div>
 </div>
 
-<div class="wave" style="background:var(--cream)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,70 800,0 1200,30 L1200,60 L0,60 Z" fill="var(--white)"/></svg></div>
+<!-- <div class="wave" style="background:var(--cream)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,70 800,0 1200,30 L1200,60 L0,60 Z" fill="var(--white)"/></svg></div> -->
 
 <!-- COST -->
 <section class="sec" id="cost" style="background:var(--white)">
@@ -818,17 +849,25 @@
   </div>
 </section>
 
-<div class="mid-cta">
-  <div class="mid-cta-inner fi">
-    <p>Still have questions? <strong>Just text us</strong> — no scripts, just real answers.</p>
-    <div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex-shrink:0">
-      <a href="sms:+15087361263" class="btn-mid-cta"><i class="fa-solid fa-comment-sms"></i> Text for a Free Estimate</a>
-      <span class="mid-cta-sub"><i class="fa-solid fa-clock"></i> Fast response · Worcester & Central MA</span>
+<div class="mid-cta-wrap">
+  <div class="wave"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:50px"><path d="M0,30 C400,0 800,60 1200,30 L1200,0 L0,0 Z" fill="var(--white)"/></svg></div>
+  <div class="mid-cta">
+    <div class="mid-cta-inner fi">
+      <div class="mid-cta-text">
+        <div class="mid-cta-tag"><span></span> Free Estimate <span></span></div>
+        <h3>Curious About Pricing <em>or Availability?</em></h3>
+        <p>Just send us a text — we respond fast and never pressure you.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex-shrink:0">
+        <a href="sms:+15087361263" class="btn-mid-cta"><i class="fa-solid fa-comment-sms"></i> Text for a Free Estimate</a>
+        <span class="mid-cta-sub"><i class="fa-solid fa-clock"></i> Same-day response · No obligation · Fully insured</span>
+      </div>
     </div>
   </div>
+  <div class="wave"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:50px"><path d="M0,30 C400,70 800,0 1200,30 L1200,60 L0,60 Z" fill="var(--white)"/></svg></div>
 </div>
 
-<div class="wave" style="background:var(--cream)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,0 800,60 1200,30 L1200,60 L0,60 Z" fill="var(--white)"/></svg></div>
+<!-- <div class="wave" style="background:var(--cream)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,0 800,60 1200,30 L1200,60 L0,60 Z" fill="var(--white)"/></svg></div> -->
 
 <!-- AREAS -->
 <section class="sec" id="areas" style="background:var(--white)">
