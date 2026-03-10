@@ -172,10 +172,12 @@
     @media(max-width:860px){.testi-grid{grid-template-columns:1fr;max-width:500px;margin-left:auto;margin-right:auto}}
 
     /* CTA FINAL */
+    /* DAQUI EFEITO BRILHO */
     .cta-final-wrap{background:linear-gradient(135deg,var(--navy) 0%,#0e2a3d 60%,#0a1f18 100%);position:relative;overflow:hidden}
-    .cta-final-wrap::before{content:'';position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(68,135,191,.15),transparent 70%);top:-200px;right:-100px;pointer-events:none}
-    .cta-final-wrap::after{content:'';position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(82,183,136,.12),transparent 70%);bottom:-150px;left:-80px;pointer-events:none}
+    #cta-final::before{content:'';position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(68,135,191,.15),transparent 70%);top:0;right:-100px;pointer-events:none}
+    #cta-final::after{content:'';position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(82,183,136,.12),transparent 70%);bottom:0;left:-80px;pointer-events:none}
     #cta-final{background:transparent;padding:96px 32px;text-align:center;position:relative}
+    /* ATE AQUI EFEITO BRILHO */
     .cta-inner{position:relative;z-index:1;max-width:660px;margin:0 auto}
     .cta-tag{display:inline-flex;align-items:center;gap:10px;font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--b3);margin-bottom:20px}
     .cta-tag span{display:inline-block;width:24px;height:2px;background:var(--b3);border-radius:2px}
@@ -293,7 +295,7 @@
 <header id="header">
   <div class="nav-inner">
     <a href="/" style="display:flex;align-items:center;text-decoration:none">
-      <img src="../assets/logo.svg" alt="EverCare Home Services" style="height:clamp(130px,17vw,220px);width:auto;display:block;flex-shrink:0">
+      <img src="../assets/logo.svg" alt="EverCare Home Services" style="height:clamp(220px,17vw,220px);width:auto;display:block;flex-shrink:0">
     </a>
     <ul class="nav-links">
       <li><a href="/" class="nav-active">Home</a></li>
@@ -452,7 +454,7 @@
 </div>
 
 <!-- WAVE white → cream -->
-<div class="wave" style="background:var(--white)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,0 800,60 1200,30 L1200,60 L0,60 Z" fill="var(--cream)"/></svg></div>
+<!-- <div class="wave" style="background:var(--white)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,0 800,60 1200,30 L1200,60 L0,60 Z" fill="var(--cream)"/></svg></div> -->
 
 <!-- WHY EVERCARE -->
 <section class="sec" id="why" style="background:var(--cream)">
