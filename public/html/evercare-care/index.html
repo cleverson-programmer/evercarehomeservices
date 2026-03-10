@@ -577,7 +577,7 @@
         footer { background: #0c1c2e; color: rgba(255,255,255,.45); padding: 72px 32px 32px; }
         .footer-grid {
             max-width: 1260px; margin: 0 auto;
-            display: grid; grid-template-columns: 2fr 1fr 1fr 1.4fr; gap: 48px; margin-bottom: 48px;
+            display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px;
         }
         .footer-brand p { font-size: .88rem; line-height: 1.75; margin-top: 14px; max-width: 280px; }
         .footer-socials { display: flex; gap: 10px; margin-top: 20px; }
@@ -713,7 +713,7 @@
 <header id="header">
     <div class="nav-inner">
         <a href="/" style="display:flex;align-items:center;text-decoration:none">
-          <img src="/logo.svg" alt="EverCare Home Services" style="height:220px;width:auto;display:block">
+          <img src="/assets/logo.svg" alt="EverCare Home Services" style="height:clamp(130px,17vw,220px);width:auto;display:block;flex-shrink:0">
         </a>
         <ul class="nav-links">
             <li><a href="/">Home</a></li>
@@ -1196,9 +1196,9 @@
             <p>Compassionate, certified in-home care for seniors across Central Massachusetts. Local, personal, and trusted.</p>
             <p style="font-size:.78rem;color:rgba(255,255,255,.28);margin-top:10px;line-height:1.6">Serving: Worcester · Shrewsbury · Auburn · Holden · Leicester · Millbury · Grafton · Northborough · Spencer · West Boylston · Marlborough</p>
             <div class="footer-socials">
-                <a class="soc-btn" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a class="soc-btn" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a class="soc-btn" href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a class="soc-btn" href="https://www.facebook.com/evercarehomeservice/" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="soc-btn" href="https://www.linkedin.com/company/evercare-home-service/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a class="soc-btn" href="https://www.instagram.com/homeservicesevercare/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
         <div class="footer-col">
@@ -1228,6 +1228,13 @@
                 <li><a href="/cdn-cgi/l/email-protection#11797e7c746274636778727462746774637270637451767c70787d3f727e7c"><i class="fa-solid fa-envelope" style="color:var(--b3);margin-right:8px"></i><span class="__cf_email__" data-cfemail="533b3c3e36203621253a303620362536213032213613343e323a3f7d303c3e">[email&#160;protected]</span></a></li>
                 <li><a href="tel:+15087361263"><i class="fa-solid fa-phone" style="color:var(--b3);margin-right:8px"></i>Call Us</a></li>
                 <li><a href="sms:+15087361263"><i class="fa-solid fa-comment-sms" style="color:var(--b3);margin-right:8px"></i>Text us anytime</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Policies</h4>
+            <ul>
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/terms">Terms of Service</a></li>
             </ul>
         </div>
     </div>
@@ -1264,9 +1271,9 @@
         <div class="widget-btn-icon"><i class="fa-solid fa-phone"></i></div>
         <div><span class="wb-label">Call Us</span></div>
       </a>
-      <a href="mailto:info@evercarehomeservice.com" class="widget-btn wb-email">
+      <a href="/contact#form-sec" class="widget-btn wb-email">
         <div class="widget-btn-icon"><i class="fa-solid fa-envelope"></i></div>
-        <div><span class="wb-label">Email Us</span></div>
+        <div><span class="wb-label">Email Us</span><span class="wb-sub">Fill out our contact form</span></div>
       </a>
     </div>
   </div>

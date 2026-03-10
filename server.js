@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const path = require('path');
 
@@ -7,6 +9,9 @@ const HTML_DIR = path.join(__dirname, 'public', 'html');
 
 // Serve static assets (CSS, JS, images, favicons)
 app.use(express.static(path.join(__dirname, 'public')));
+
+// API routes
+app.use('/api/send-email', require('./public/api/send-email'));
 
 // Route map: clean URL → HTML file (subdirectory/index.html structure)
 const routes = {
