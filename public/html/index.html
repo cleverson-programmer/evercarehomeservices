@@ -133,9 +133,6 @@
     .portal-bg{position:absolute;inset:0;z-index:0}
     .portal-bg img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
     .portal:hover .portal-bg img{transform:scale(1.06)}
-    .portal-bg::after{content:'';position:absolute;inset:0;transition:opacity .3s}
-    .portal.clean .portal-bg::after{background:linear-gradient(0deg,rgba(13,30,46,.9) 0%,rgba(42,95,143,.4) 60%,transparent 100%)}
-    .portal.care .portal-bg::after{background:linear-gradient(0deg,rgba(13,30,46,.9) 0%,rgba(30,92,56,.4) 60%,transparent 100%)}
     .portal-body{position:relative;z-index:1;padding:36px;width:100%}
     .portal-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.15);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.2);border-radius:100px;padding:6px 14px;color:rgba(255,255,255,.8);font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px}
     .portal-body h3{font-size:1.8rem;color:#fff;margin-bottom:8px}
@@ -178,7 +175,9 @@
     #cta-final::after{content:'';position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(82,183,136,.12),transparent 70%);bottom:0;left:-80px;pointer-events:none}
     #cta-final{background:transparent;padding:96px 32px;text-align:center;position:relative}
     /* ATE AQUI EFEITO BRILHO */
-    .cta-tag span{display:inline-block;width:24px;height:2px;background:var(--b3);border-radius:2px}
+    .cta-tag{display:inline-flex;align-items:center;gap:10px;font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:24px;background:linear-gradient(90deg,var(--b3),var(--g3));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;color:transparent}
+    .cta-tag span{display:inline-flex;align-items:center;justify-content:center;width:24px;height:2px;border-radius:2px;background:linear-gradient(90deg,var(--b3),var(--g3));position:relative}
+    .cta-tag span i{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:.64rem;background:linear-gradient(90deg,var(--b3),var(--g3));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;color:transparent}
     #cta-final h2{font-size:clamp(2rem,4vw,3rem);color:#fff;margin-bottom:16px}
     #cta-final h2 em{font-style:italic;background:linear-gradient(135deg,var(--b4),var(--g4));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
     .cta-sub{color:rgba(255,255,255,.55);font-size:.98rem;line-height:1.8;margin-bottom:10px}
@@ -272,8 +271,8 @@
     .mid-cta-wrap{background:linear-gradient(135deg,#eaf4fb 0%,#e8f7f0 100%);position:relative;overflow:hidden}
     .mid-cta{background:transparent;padding:32px 32px;text-align:center;position:relative;z-index:2}
     .mid-cta-inner{max-width:640px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:16px}
-    .mid-cta-tag{display:inline-flex;align-items:center;gap:8px;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--b2);margin-bottom:4px}
-    .mid-cta-tag span{display:inline-block;width:16px;height:2px;background:var(--b2);border-radius:2px}
+    .mid-mid-{display:inline-flex;align-items:center;gap:8px;font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--b2);margin-bottom:4px}
+    .mid-mid- span{display:inline-block;width:16px;height:2px;background:var(--b2);border-radius:2px}
     .mid-cta h3{font-family:var(--serif);font-size:clamp(1.2rem,2.4vw,1.55rem);color:var(--navy);line-height:1.25;margin-bottom:5px}
     .mid-cta h3 em{font-style:italic;background:linear-gradient(135deg,var(--b2),var(--g3));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
     .mid-cta p{color:var(--muted);font-size:.9rem;margin:0;line-height:1.55}
@@ -293,7 +292,7 @@
 <header id="header">
   <div class="nav-inner">
     <a href="/" style="display:flex;align-items:center;text-decoration:none">
-      <img src="/assets/logo.svg" alt="EverCare Home Services" style="height:clamp(130px,17vw,220px);width:auto;display:block;flex-shrink:0">
+      <img src="/assets/logo.svg" alt="EverCare Home Services" style="height:clamp(220px,17vw,220px);width:auto;display:block;flex-shrink:0">
     </a>
     <ul class="nav-links">
       <li><a href="/" class="nav-active">Home</a></li>
@@ -420,7 +419,7 @@
       </a>
       <a href="/evercare-care" class="portal clean">
         <div class="portal-bg">
-          <img src="../assets/home-care.jpeg" alt="In-home senior care Worcester MA" style="filter:hue-rotate(100deg) saturate(.2)">
+          <img src="../assets/home-care.jpeg" alt="In-home senior care Worcester MA">
         </div>
         <div class="portal-body">
           <div class="portal-tag"><i class="fa-solid fa-heart-pulse"></i> Care</div>
@@ -438,7 +437,7 @@
   <div class="mid-cta">
     <div class="mid-cta-inner fi">
       <div class="mid-cta-text">
-        <div class="mid-cta-tag"><span></span> Free Estimate <span></span></div>
+        <div class="mid-mid-"><span></span> Free Estimate <span></span></div>
         <h3>Curious About Pricing <em>or Availability?</em></h3>
         <p>Just send us a text — we respond fast and never pressure you.</p>
       </div>
@@ -448,11 +447,8 @@
       </div>
     </div>
   </div>
-  <div class="wave"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:50px"><path d="M0,30 C400,70 800,0 1200,30 L1200,60 L0,60 Z" fill="var(--white)"/></svg></div>
+  <div class="wave"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:50px"><path d="M0,30 C400,70 800,0 1200,30 L1200,60 L0,60 Z" fill="var(--cream)"/></svg></div>
 </div>
-
-<!-- WAVE white → cream -->
-<div class="wave" style="background:var(--white)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,0 800,60 1200,30 L1200,60 L0,60 Z" fill="var(--cream)"/></svg></div>
 
 <!-- WHY EVERCARE -->
 <section class="sec" id="why" style="background:var(--cream)">
@@ -545,7 +541,7 @@
   <div class="mid-cta">
     <div class="mid-cta-inner fi">
       <div class="mid-cta-text">
-        <div class="mid-cta-tag"><span></span> Free Estimate <span></span></div>
+        <div class="mid-mid-"><span></span> Free Estimate <span></span></div>
         <h3>Loved What You Read? <em>Reach Out Today.</em></h3>
         <p>Free, no-commitment estimate — we respond same-day.</p>
       </div>
@@ -555,12 +551,12 @@
       </div>
     </div>
   </div>
-  <div class="wave"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:50px"><path d="M0,30 C400,70 800,0 1200,30 L1200,60 L0,60 Z" fill="var(--white)"/></svg></div>
+  <!-- <div class="wave"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:50px"><path d="M0,30 C400,70 800,0 1200,30 L1200,60 L0,60 Z" fill="var(--white)"/></svg></div> -->
 </div>
 
 <!-- CTA FINAL -->
 <div class="cta-final-wrap">
-  <div class="wave"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,0 800,60 1200,30 L1200,0 L0,0 Z" fill="var(--white)"/></svg></div>
+  <div class="wave" style="background:linear-gradient(135deg,#eaf4fb 0%,#e8f7f0 100%)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,0 800,60 1200,30 L1200,0 L0,0 Z" fill="#eaf4fb"/></svg></div>
   <section id="cta-final">
     <div class="cta-inner fi">
       <div class="cta-tag"><span></span> Let's Talk <span></span></div>
