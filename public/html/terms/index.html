@@ -77,12 +77,86 @@
     .contact-box a{color:var(--b2);text-decoration:none;font-weight:600}
     .contact-box a:hover{color:var(--b3)}
 
-    /* FOOTER */
-    footer{background:#060d12;padding:56px 32px 0}
-    .footer-bottom{max-width:1260px;margin:0 auto;padding:20px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;border-top:1px solid rgba(255,255,255,.06)}
-    .footer-bottom span{color:rgba(255,255,255,.28);font-size:.78rem}
-    .footer-bottom a{color:rgba(255,255,255,.28);font-size:.78rem;text-decoration:none;margin-left:20px;transition:color .2s}
-    .footer-bottom a:hover{color:var(--b3)}
+        /* FOOTER */
+    footer { background: #1c3350; color: rgba(255,255,255,.45); padding: 72px 32px 32px; }
+    .footer-grid { max-width: 1260px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+    .footer-brand p { font-size: .88rem; line-height: 1.75; margin-top: 14px; max-width: 280px; }
+    .footer-cities { font-size: .78rem; color: rgba(255,255,255,.28); margin-top: 10px; line-height: 1.6; }
+    .footer-socials { display: flex; gap: 10px; margin-top: 20px; }
+    .soc-btn { width: 38px; height: 38px; border-radius: 50%; background: rgba(255,255,255,.08); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,.5); text-decoration: none; font-size: .85rem; transition: all .2s; }
+    .soc-btn:hover { background: linear-gradient(135deg, var(--b2), var(--g3)); color: #fff; }
+    .footer-col h4 { color: #fff; font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 18px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col a { color: rgba(255,255,255,.4); text-decoration: none; font-size: .88rem; transition: color .2s; }
+    .footer-col a:hover { color: var(--b4); }
+    .fi-wrap { display: flex; flex-direction: column; gap: 10px; }
+    .fi-wrap input { width: 100%; padding: 12px 16px; border-radius: 10px; border: 1.5px solid rgba(255,255,255,.1); background: rgba(255,255,255,.06); color: #fff; font-size: .88rem; outline: none; transition: border-color .2s; }
+    .fi-wrap input::placeholder { color: rgba(255,255,255,.25); }
+    .fi-wrap input:focus { border-color: var(--b3); }
+    .fi-wrap button { width: 100%; padding: 12px; border-radius: 10px; border: none; cursor: pointer; background: linear-gradient(135deg, var(--b2), var(--g3)); color: #fff; font-weight: 700; font-size: .88rem; transition: opacity .2s; }
+    .fi-wrap button:hover { opacity: .85; }
+    .footer-bottom { max-width: 1260px; margin: 0 auto; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.07); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-size: .8rem; }
+    .footer-bottom a { color: rgba(255,255,255,.35); text-decoration: none; margin-left: 20px; transition: color .2s; }
+    .footer-bottom a:hover { color: var(--b4); }
+
+    /* WIDGET */
+    #contact-widget{position:fixed;bottom:28px;right:28px;z-index:200;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+    #widget-panel{background:#fff;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.18);width:320px;overflow:hidden;display:none;transform:scale(.9) translateY(10px);opacity:0;transition:all .3s cubic-bezier(.34,1.56,.64,1);transform-origin:bottom right;max-height:calc(100vh - 120px);overflow-y:auto}
+    #widget-panel.open{display:block;transform:scale(1) translateY(0);opacity:1}
+    .widget-header{background:linear-gradient(135deg,var(--b2),var(--g3));padding:20px}
+    .widget-header-top{display:flex;align-items:center;gap:12px}
+    .widget-avatar{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;font-size:1.2rem;color:#fff;flex-shrink:0}
+    .widget-name{color:#fff;font-weight:700;font-size:.95rem}
+    .widget-status{color:rgba(255,255,255,.72);font-size:.74rem;display:flex;align-items:center;gap:6px;margin-top:3px}
+    .widget-dot{width:7px;height:7px;border-radius:50%;background:#4ade80;display:inline-block;flex-shrink:0}
+    .widget-options{padding:12px;display:flex;flex-direction:column;gap:8px}
+    .widget-btn{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:12px;text-decoration:none;transition:all .2s;border:1.5px solid transparent}
+    .widget-btn:hover{transform:translateX(3px)}
+    .wb-sms{background:rgba(68,135,191,.07);border-color:rgba(68,135,191,.12)}
+    .wb-sms:hover{background:rgba(68,135,191,.12);border-color:rgba(68,135,191,.25)}
+    .wb-call{background:rgba(82,183,136,.07);border-color:rgba(82,183,136,.12)}
+    .wb-call:hover{background:rgba(82,183,136,.12);border-color:rgba(82,183,136,.25)}
+    .wb-email{background:rgba(42,95,143,.05);border-color:rgba(42,95,143,.1)}
+    .wb-email:hover{background:rgba(42,95,143,.1);border-color:rgba(42,95,143,.22)}
+    .widget-btn-icon{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:.95rem;color:#fff;flex-shrink:0}
+    .wb-sms .widget-btn-icon{background:linear-gradient(135deg,var(--b2),var(--b3))}
+    .wb-call .widget-btn-icon{background:linear-gradient(135deg,var(--g2),var(--g3))}
+    .wb-email .widget-btn-icon{background:linear-gradient(135deg,var(--b1),var(--b2))}
+    .wb-label{display:block;font-size:.86rem;font-weight:700;color:var(--text)}
+    .wb-sub{display:block;font-size:.74rem;color:var(--muted);margin-top:1px}
+    @keyframes widgetPulse{0%{box-shadow:0 8px 28px rgba(68,135,191,.55),0 0 0 0 rgba(68,135,191,.45)}70%{box-shadow:0 8px 28px rgba(68,135,191,.55),0 0 0 16px rgba(68,135,191,0)}100%{box-shadow:0 8px 28px rgba(68,135,191,.55),0 0 0 0 rgba(68,135,191,0)}}
+    #widget-toggle{width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,var(--b2),var(--g3));color:#fff;border:none;cursor:pointer;box-shadow:0 8px 28px rgba(68,135,191,.55);transition:transform .3s,box-shadow .3s;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0}
+    #widget-toggle:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(68,135,191,.7)}
+    #widget-toggle.pulse{animation:widgetPulse 2s ease-out}
+    .icon-open{display:flex}.icon-close{display:none}
+    #widget-toggle.active .icon-open{display:none}
+    #widget-toggle.active .icon-close{display:flex}
+    #widget-label{background:#fff;border-radius:12px;padding:10px 14px;box-shadow:0 4px 20px rgba(0,0,0,.12);transition:opacity .5s,transform .5s;pointer-events:none}
+    #widget-label.hidden{opacity:0;transform:translateX(8px)}
+    .wl-main{display:block;font-size:.85rem;font-weight:700;color:var(--text);white-space:nowrap}
+    .wl-sub{display:block;font-size:.72rem;color:var(--muted);white-space:nowrap;margin-top:2px}
+    #widget-row{display:flex;align-items:center;gap:12px}
+    @media(max-width:480px){#contact-widget{bottom:18px;right:14px}#widget-panel{width:calc(100vw - 28px)}#widget-label{display:none}#widget-toggle{width:54px;height:54px;font-size:1.25rem}}
+
+    /* RESPONSIVE */
+    @media(max-width:1024px) {
+      .channels-grid { grid-template-columns: 1fr; gap: 20px; }
+      .form-inner,.hours-inner { grid-template-columns: 1fr; gap: 40px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media(max-width:768px) {
+      .nav-links,.nav-phone,.btn-nav { display: none; }
+      #hamburger { display: block; }
+      .channels-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .sec { padding: 64px 20px; }
+      #contact-widget { bottom: 20px; right: 16px; }
+      #widget-toggle { padding: 11px 16px; }
+      .toggle-sub { display: none; }
+    }
+  
+    .fa-chevron-down { transition: transform .25s ease; }
   </style>
 </head>
 <body>
@@ -120,10 +194,9 @@
     <h1>Terms of Service</h1>
     <p>The conditions under which EverCare Home Services provides cleaning and in-home care services.</p>
   </div>
+  <!-- WAVE navy2 → white -->
+  <div class="wave" style="position:absolute;bottom:-1px;left:0;width:100%;z-index:2"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,0 800,60 1200,30 L1200,60 L0,60 Z" fill="var(--white)"/></svg></div>
 </div>
-
-<!-- WAVE navy2 → white -->
-<div class="wave" style="background:var(--navy2)"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,0 800,60 1200,30 L1200,60 L0,60 Z" fill="var(--white)"/></svg></div>
 
 <!-- CONTENT -->
 <div class="content-wrap">
@@ -202,16 +275,109 @@
   </div>
 </div>
 
+<div class="wave"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,70 800,0 1200,30 L1200,60 L0,60 Z" fill="#1c3350"/></svg></div>
 <!-- FOOTER -->
 <footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div style="margin-bottom:4px">
+        <img src="../../assets/logo.svg" alt="EverCare Home Services" style="height:220px;width:auto;display:block">
+      </div>
+      <p>Compassionate in-home care and professional cleaning services for families and businesses across Central Massachusetts.</p>
+      <p class="footer-cities">Serving: Worcester · Shrewsbury · Auburn · Holden · Leicester · Millbury · Grafton · Northborough · Spencer · West Boylston · Marlborough</p>
+      <div class="footer-socials">
+        <a class="soc-btn" href="https://www.facebook.com/evercarehomeservice/" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+        <a class="soc-btn" href="https://www.linkedin.com/company/evercare-home-service/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a class="soc-btn" href="https://www.instagram.com/homeservicesevercare/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Site</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="/evercare-care">In-Home Senior Care</a></li>
+        <li><a href="/evercare-care">Alzheimer's Support</a></li>
+        <li><a href="/cleaning-services">Residential Cleaning</a></li>
+        <li><a href="/cleaning-services">Deep Cleaning</a></li>
+        <li><a href="/cleaning-services">Move-In / Move-Out</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="https://maps.google.com/?q=Worcester,+Massachusetts" target="_blank" rel="noopener"><i class="fa-solid fa-location-dot" style="color:var(--b3);margin-right:8px"></i>Worcester, Massachusetts</a></li>
+        <li><a href="mailto:info@evercarehomeservice.com"><i class="fa-solid fa-envelope" style="color:var(--g3);margin-right:8px"></i>Email Us</a></li>
+        <li><a href="tel:+15087361263"><i class="fa-solid fa-phone" style="color:var(--b3);margin-right:8px"></i>Call Us</a></li>
+        <li><a href="sms:+15087361263"><i class="fa-solid fa-comment-sms" style="color:var(--b3);margin-right:8px"></i>Text us anytime</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Policies</h4>
+      <ul>
+        <li><a href="/privacy">Privacy Policy</a></li>
+        <li><a href="/terms">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
   <div class="footer-bottom">
-    <span>© 2026 EverCare Home Services. All rights reserved.</span>
+    <div style="display:flex;flex-direction:column;gap:4px">
+      <span>© 2026 EverCare Home Services. All rights reserved.</span>
+      <span style="font-size:.75rem;color:rgba(255,255,255,.25)">In-Home Care &amp; Cleaning Services · Worcester, Massachusetts</span>
+    </div>
     <div>
       <a href="/privacy">Privacy Policy</a>
       <a href="/terms">Terms of Service</a>
     </div>
   </div>
 </footer>
+
+<!-- CONTACT WIDGET -->
+<div id="contact-widget">
+  <div id="widget-panel">
+    <div class="widget-header">
+      <div class="widget-header-top">
+        <div class="widget-avatar"><i class="fa-solid fa-comments"></i></div>
+        <div>
+          <div class="widget-name">How can we help?</div>
+          <div class="widget-status"><span class="widget-dot"></span> Typically replies within 1–2 hours</div>
+        </div>
+      </div>
+    </div>
+    <div class="widget-options">
+      <a href="sms:+15087361263&body=Hi! I'd like to learn more about EverCare's services." class="widget-btn wb-sms">
+        <div class="widget-btn-icon"><i class="fa-solid fa-comment-sms"></i></div>
+        <div><span class="wb-label">Text Us</span><span class="wb-sub">Fastest way to reach us</span></div>
+      </a>
+      <a href="tel:+15087361263" class="widget-btn wb-call">
+        <div class="widget-btn-icon"><i class="fa-solid fa-phone"></i></div>
+        <div><span class="wb-label">Call Us</span></div>
+      </a>
+      <a href="#form-sec" class="widget-btn wb-email" onclick="document.getElementById('widget-toggle').click();document.getElementById('form-sec').scrollIntoView({behavior:'smooth'});return false;">
+        <div class="widget-btn-icon"><i class="fa-solid fa-envelope"></i></div>
+        <div><span class="wb-label">Email Us</span><span class="wb-sub">Fill out our contact form</span></div>
+      </a>
+    </div>
+  </div>
+  <div id="widget-row">
+    <div id="widget-label">
+      <span class="wl-main">Need Help?</span>
+      <span class="wl-sub">Fast response · No pressure</span>
+    </div>
+    <button id="widget-toggle" aria-label="Contact EverCare">
+      <span class="icon-open"><i class="fa-solid fa-comments"></i></span>
+      <span class="icon-close"><i class="fa-solid fa-xmark"></i></span>
+    </button>
+  </div>
+</div>
+
 
 <script>
   document.getElementById('hamburger').addEventListener('click', function() {

@@ -632,6 +632,9 @@
             .process-line{display:none}
             .about-inner,.consider-inner,.caregiver-inner,.includes-inner{grid-template-columns:1fr;gap:40px}
             .footer-grid{grid-template-columns:1fr 1fr}
+            .footer-logo{grid-column:1/-1}
+            .footer-brand{grid-column:1/-1}
+            .footer-brand p{max-width:none}
         }
         @media(max-width:900px) {
             .nav-links,.nav-phone,.btn-nav{display:none} #hamburger{display:block}
@@ -643,7 +646,6 @@
             .areas-wrap{padding:0 4px}
             .process-steps{grid-template-columns:1fr}
             .cta-box{padding:28px 20px}
-            .footer-grid{grid-template-columns:1fr}
             #float-cta{display:flex}
             .sec{padding:64px 20px}
             .includes-grid{grid-template-columns:1fr}
@@ -651,6 +653,7 @@
             #hero h1{font-size:clamp(2.4rem,9vw,3.4rem); line-height:1.12}
             .hero-sub{font-size:1rem}
         }
+        @media(max-width:767px){.footer-grid{grid-template-columns:1fr} .footer-logo,.footer-brand{grid-column:auto}}
 
         /* WIDGET */
         #contact-widget{position:fixed;bottom:28px;right:28px;z-index:200;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
@@ -1207,17 +1210,10 @@
 <!-- FOOTER -->
 <footer>
     <div class="footer-grid">
-        <div class="footer-brand">
+        <div class="footer-logo">
             <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
                 <div style="width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--b2),var(--b3));display:flex;align-items:center;justify-content:center;color:#fff;font-size:1rem"><i class="fa-solid fa-heart-pulse"></i></div>
                 <span style="font-family:var(--serif);font-size:1.4rem;color:#fff;font-weight:700">EverCare</span>
-            </div>
-            <p>Compassionate, certified in-home care for seniors across Central Massachusetts. Local, personal, and trusted.</p>
-            <p style="font-size:.78rem;color:rgba(255,255,255,.28);margin-top:10px;line-height:1.6">Serving: Worcester · Shrewsbury · Auburn · Holden · Leicester · Millbury · Grafton · Northborough · Spencer · West Boylston · Marlborough</p>
-            <div class="footer-socials">
-                <a class="soc-btn" href="https://www.facebook.com/evercarehomeservice/" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
-                <a class="soc-btn" href="https://www.linkedin.com/company/evercare-home-service/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a class="soc-btn" href="https://www.instagram.com/homeservicesevercare/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
         <div class="footer-col">
@@ -1255,6 +1251,15 @@
                 <li><a href="/privacy">Privacy Policy</a></li>
                 <li><a href="/terms">Terms of Service</a></li>
             </ul>
+        </div>
+        <div class="footer-brand">
+            <p>Compassionate, certified in-home care for seniors across Central Massachusetts. Local, personal, and trusted.</p>
+            <p style="font-size:.78rem;color:rgba(255,255,255,.28);margin-top:10px;line-height:1.6">Serving: Worcester · Shrewsbury · Auburn · Holden · Leicester · Millbury · Grafton · Northborough · Spencer · West Boylston · Marlborough</p>
+            <div class="footer-socials">
+                <a class="soc-btn" href="https://www.facebook.com/evercarehomeservice/" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="soc-btn" href="https://www.linkedin.com/company/evercare-home-service/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a class="soc-btn" href="https://www.instagram.com/homeservicesevercare/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+            </div>
         </div>
     </div>
     <div class="footer-bottom">

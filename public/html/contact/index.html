@@ -256,18 +256,21 @@
       .channels-grid { grid-template-columns: 1fr; gap: 20px; }
       .form-inner,.hours-inner { grid-template-columns: 1fr; gap: 40px; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
+      .footer-logo { grid-column: 1 / -1; }
+      .footer-brand { grid-column: 1 / -1; }
+      .footer-brand p { max-width: none; }
     }
     @media(max-width:768px) {
       .nav-links,.nav-phone,.btn-nav { display: none; }
       #hamburger { display: block; }
       .channels-grid { grid-template-columns: 1fr; }
       .form-row { grid-template-columns: 1fr; }
-      .footer-grid { grid-template-columns: 1fr; }
       .sec { padding: 64px 20px; }
       #contact-widget { bottom: 20px; right: 16px; }
       #widget-toggle { padding: 11px 16px; }
       .toggle-sub { display: none; }
     }
+    @media(max-width:767px) { .footer-grid { grid-template-columns: 1fr; } .footer-logo, .footer-brand { grid-column: auto; } }
   
     .fa-chevron-down { transition: transform .25s ease; }
   </style>
@@ -572,19 +575,13 @@
   </div>
 </section>
 
+<div class="wave"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,70 800,0 1200,30 L1200,60 L0,60 Z" fill="#1c3350"/></svg></div>
 <!-- FOOTER -->
 <footer>
   <div class="footer-grid">
-    <div class="footer-brand">
+    <div class="footer-logo">
       <div style="margin-bottom:4px">
         <img src="../../assets/logo.svg" alt="EverCare Home Services" style="height:220px;width:auto;display:block">
-      </div>
-      <p>Compassionate in-home care and professional cleaning services for families and businesses across Central Massachusetts.</p>
-      <p class="footer-cities">Serving: Worcester · Shrewsbury · Auburn · Holden · Leicester · Millbury · Grafton · Northborough · Spencer · West Boylston · Marlborough</p>
-      <div class="footer-socials">
-        <a class="soc-btn" href="https://www.facebook.com/evercarehomeservice/" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
-        <a class="soc-btn" href="https://www.linkedin.com/company/evercare-home-service/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a class="soc-btn" href="https://www.instagram.com/homeservicesevercare/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
       </div>
     </div>
     <div class="footer-col">
@@ -621,6 +618,15 @@
         <li><a href="/privacy">Privacy Policy</a></li>
         <li><a href="/terms">Terms of Service</a></li>
       </ul>
+    </div>
+    <div class="footer-brand">
+      <p>Compassionate in-home care and professional cleaning services for families and businesses across Central Massachusetts.</p>
+      <p class="footer-cities">Serving: Worcester · Shrewsbury · Auburn · Holden · Leicester · Millbury · Grafton · Northborough · Spencer · West Boylston · Marlborough</p>
+      <div class="footer-socials">
+        <a class="soc-btn" href="https://www.facebook.com/evercarehomeservice/" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+        <a class="soc-btn" href="https://www.linkedin.com/company/evercare-home-service/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a class="soc-btn" href="https://www.instagram.com/homeservicesevercare/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+      </div>
     </div>
   </div>
   <div class="footer-bottom">

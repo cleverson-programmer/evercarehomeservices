@@ -212,8 +212,8 @@
     .footer-bottom span{color:rgba(255,255,255,.28);font-size:.78rem}
     .footer-bottom a{color:rgba(255,255,255,.28);font-size:.78rem;text-decoration:none;margin-left:20px;transition:color .2s}
     .footer-bottom a:hover{color:var(--b3)}
-    @media(max-width:860px){.footer-grid{grid-template-columns:1fr 1fr}}
-    @media(max-width:520px){.footer-grid{grid-template-columns:1fr}}
+    @media(max-width:1024px){.footer-grid{grid-template-columns:1fr 1fr} .footer-logo{grid-column:1/-1} .footer-brand{grid-column:1/-1} .footer-brand p{max-width:none}}
+    @media(max-width:767px){.footer-grid{grid-template-columns:1fr} .footer-logo,.footer-brand{grid-column:auto}}
 
     /* CONTACT WIDGET */
     /* WIDGET */
@@ -420,7 +420,7 @@
       </a>
       <a href="/evercare-care" class="portal clean">
         <div class="portal-bg">
-          <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b4eae50ae1-0a3efc792f6b3f9addec.png" alt="In-home senior care Worcester MA" style="filter:hue-rotate(100deg) saturate(.7)">
+          <img src="../assets/home-care.jpeg" alt="In-home senior care Worcester MA" style="filter:hue-rotate(100deg) saturate(.2)">
         </div>
         <div class="portal-body">
           <div class="portal-tag"><i class="fa-solid fa-heart-pulse"></i> Care</div>
@@ -581,22 +581,15 @@
       <p class="cta-foot">Worcester, MA</p>
     </div>
   </section>
-  <div class="wave"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,70 800,0 1200,30 L1200,60 L0,60 Z" fill="#060d12"/></svg></div>
+  <div class="wave"><svg viewBox="0 0 1200 60" preserveAspectRatio="none" style="height:60px"><path d="M0,30 C400,70 800,0 1200,30 L1200,60 L0,60 Z" fill="#1c3350"/></svg></div>
 </div>
 
 <!-- FOOTER -->
-<footer>
+<footer style="background: #1c3350">
   <div class="footer-grid">
-    <div class="footer-brand">
+    <div class="footer-logo">
       <div style="margin-bottom:4px">
         <img src="../assets/logo.svg" alt="EverCare Home Services" style="height:220px;width:auto;display:block">
-      </div>
-      <p>Professional cleaning and in-home senior care for families across Central Massachusetts. Local, trusted, and built to grow.</p>
-      <p style="font-size:.77rem;color:rgba(255,255,255,.25);margin-top:10px;line-height:1.6">Serving: Worcester · Shrewsbury · Auburn · Holden · Leicester · Millbury · Grafton · Northborough · Spencer · West Boylston · Marlborough</p>
-      <div class="footer-socials">
-        <a class="soc-btn" href="https://www.facebook.com/evercarehomeservice/" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
-        <a class="soc-btn" href="https://www.linkedin.com/company/evercare-home-service/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a class="soc-btn" href="https://www.instagram.com/homeservicesevercare/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
       </div>
     </div>
     <div class="footer-col">
@@ -633,6 +626,15 @@
         <li><a href="/privacy">Privacy Policy</a></li>
         <li><a href="/terms">Terms of Service</a></li>
       </ul>
+    </div>
+    <div class="footer-brand">
+      <p>Professional cleaning and in-home senior care for families across Central Massachusetts. Local, trusted, and built to grow.</p>
+      <p style="font-size:.77rem;color:rgba(255,255,255,.25);margin-top:10px;line-height:1.6">Serving: Worcester · Shrewsbury · Auburn · Holden · Leicester · Millbury · Grafton · Northborough · Spencer · West Boylston · Marlborough</p>
+      <div class="footer-socials">
+        <a class="soc-btn" href="https://www.facebook.com/evercarehomeservice/" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+        <a class="soc-btn" href="https://www.linkedin.com/company/evercare-home-service/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a class="soc-btn" href="https://www.instagram.com/homeservicesevercare/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+      </div>
     </div>
   </div>
   <div class="footer-bottom">

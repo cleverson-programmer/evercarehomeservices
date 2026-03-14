@@ -379,6 +379,9 @@
       .process-line { display: none; }
       .about-inner,.consider-inner,.caregiver-inner,.includes-inner { grid-template-columns: 1fr; gap: 40px; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
+      .footer-logo { grid-column: 1 / -1; }
+      .footer-brand { grid-column: 1 / -1; }
+      .footer-brand p { max-width: none; }
     }
     @media(max-width:768px) {
       .nav-links,.nav-phone,.btn-nav { display: none; }
@@ -387,8 +390,6 @@
       .areas-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
       .process-steps { grid-template-columns: 1fr; }
       .cta-box { padding: 28px 20px; }
-      .footer-grid { grid-template-columns: 1fr; }
-      
       .sec { padding: 64px 20px; }
       .includes-grid { grid-template-columns: 1fr; }
       .hero-content { padding: 40px 20px; }
@@ -398,6 +399,7 @@
       #widget-toggle { padding: 11px 16px; }
       .toggle-sub { display: none; }
     }
+    @media(max-width:767px) { .footer-grid { grid-template-columns: 1fr; } .footer-logo, .footer-brand { grid-column: auto; } }
   
     .fa-chevron-down { transition: transform .25s ease; }
   
@@ -957,17 +959,10 @@
 <!-- FOOTER -->
 <footer>
   <div class="footer-grid">
-    <div class="footer-brand">
+    <div class="footer-logo">
       <div style="display:flex;align-items:center;gap:10px;margin-bottom:4px">
         <div style="width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--b2),var(--b3));display:flex;align-items:center;justify-content:center;color:#fff;font-size:1rem"><i class="fa-solid fa-broom"></i></div>
         <span style="font-family:var(--serif);font-size:1.4rem;color:#fff;font-weight:700">EverCare</span>
-      </div>
-      <p>Professional residential and commercial cleaning for homes and businesses across Central Massachusetts. Licensed, insured, and trusted.</p>
-      <p style="font-size:.78rem;color:rgba(255,255,255,.28);margin-top:10px;line-height:1.6">Serving: Worcester · Shrewsbury · Auburn · Holden · Leicester · Millbury · Grafton · Northborough · Spencer · West Boylston · Marlborough</p>
-      <div class="footer-socials">
-        <a class="soc-btn" href="https://www.facebook.com/evercarehomeservice/" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
-        <a class="soc-btn" href="https://www.linkedin.com/company/evercare-home-service/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a class="soc-btn" href="https://www.instagram.com/homeservicesevercare/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
       </div>
     </div>
     <div class="footer-col">
@@ -1005,6 +1000,15 @@
         <li><a href="/privacy">Privacy Policy</a></li>
         <li><a href="/terms">Terms of Service</a></li>
       </ul>
+    </div>
+    <div class="footer-brand">
+      <p>Professional residential and commercial cleaning for homes and businesses across Central Massachusetts. Licensed, insured, and trusted.</p>
+      <p style="font-size:.78rem;color:rgba(255,255,255,.28);margin-top:10px;line-height:1.6">Serving: Worcester · Shrewsbury · Auburn · Holden · Leicester · Millbury · Grafton · Northborough · Spencer · West Boylston · Marlborough</p>
+      <div class="footer-socials">
+        <a class="soc-btn" href="https://www.facebook.com/evercarehomeservice/" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+        <a class="soc-btn" href="https://www.linkedin.com/company/evercare-home-service/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a class="soc-btn" href="https://www.instagram.com/homeservicesevercare/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+      </div>
     </div>
   </div>
   <div class="footer-bottom">
