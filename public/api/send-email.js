@@ -2,6 +2,7 @@
 
 const express  = require('express');
 const nodemailer = require('nodemailer');
+const path = require('path');
 const router   = express.Router();
 
 // ─── Service label map (whitelist) ──────────────────────────────────────────
@@ -45,10 +46,6 @@ function createTransporter() {
 // ─── Shared email wrapper ────────────────────────────────────────────────────
 function emailWrapper(bodyContent) {
   const siteUrl = (process.env.SITE_URL || 'https://evercarehomeservice.com').replace(/\/$/, '');
-  // Email clients cannot reach localhost — always use the production URL for the logo
-  const logoUrl = (siteUrl && !siteUrl.includes('localhost'))
-    ? siteUrl
-    : 'https://evercarehomeservice.com';
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,7 +64,7 @@ function emailWrapper(bodyContent) {
           <td style="background:linear-gradient(135deg,#0d1e2e 0%,#0e2a3d 55%,#0a1f18 100%);border-radius:20px 20px 0 0;padding:40px 40px 32px;text-align:center;">
             <!-- Logo image with text fallback -->
             <img
-              src="${logoUrl}/assets/logo.svg"
+              src="cid:evercare-logo"
               alt="EverCare Home Services"
               width="200"
               style="max-width:200px;height:auto;display:inline-block;margin-bottom:0;"
@@ -201,13 +198,6 @@ function buildUserEmail(d) {
 
   const body = `
     <!-- Greeting -->
-    <h2 style="margin:0 0 6px;font-family:Georgia,'Times New Roman',serif;font-size:26px;font-weight:700;color:#0d1e2e;line-height:1.2;">
-      Hi, ${esc(d.first_name)}! &#127968;
-    </h2>
-    <p style="margin:0 0 24px;font-size:15px;color:#4a6070;line-height:1.75;font-weight:300;">
-      Thank you for reaching out to <strong style="color:#1a2e3d;font-weight:600;">EverCare Home Services</strong>. We've received your message and a member of our team will follow up with you shortly — typically within <strong style="color:#2a5f8f;">1–2 business hours</strong> during business hours (Mon–Sat, 8am–7pm).
-    </p>
-
     <div style="background:linear-gradient(135deg,rgba(68,135,191,0.07),rgba(82,183,136,0.05));border:1.5px solid rgba(68,135,191,0.15);border-radius:16px;padding:22px 24px;margin:0 0 24px;">
       <p style="margin:0 0 10px;font-size:15px;color:#1a2e3d;line-height:1.7;font-weight:600;">Hi ${esc(d.first_name)},</p>
       <p style="margin:0 0 10px;font-size:15px;color:#4a6070;line-height:1.75;">Thanks for reaching out! We received your message and someone from our team will be in touch with you very soon.</p>
@@ -306,6 +296,12 @@ router.post('/', express.json({ limit: '16kb' }), async (req, res) => {
 
   try {
     const transporter = createTransporter();
+    const logoAttachment = {
+      filename: 'logo.svg',
+      path: path.resolve(__dirname, '../assets/logo.svg'),
+      cid: 'evercare-logo'
+    };
+
     await Promise.all([
       // Notification to business
       transporter.sendMail({
@@ -313,6 +309,7 @@ router.post('/', express.json({ limit: '16kb' }), async (req, res) => {
         to:      process.env.EMAIL_TO,
         subject: `New Contact Request — ${data.first_name} ${data.last_name}${data.city ? ' from ' + data.city : ''}`,
         html:    buildBusinessEmail(data),
+        attachments: [logoAttachment],
       }),
       // Confirmation to user
       transporter.sendMail({
@@ -320,6 +317,7 @@ router.post('/', express.json({ limit: '16kb' }), async (req, res) => {
         to:      data.email,
         subject: `Got your message — someone from our team will reach out shortly!`,
         html:    buildUserEmail(data),
+        attachments: [logoAttachment],
       }),
     ]);
 
