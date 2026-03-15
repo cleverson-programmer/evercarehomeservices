@@ -2,7 +2,6 @@
 
 const express  = require('express');
 const nodemailer = require('nodemailer');
-const path = require('path');
 const router   = express.Router();
 
 // ─── Service label map (whitelist) ──────────────────────────────────────────
@@ -64,10 +63,10 @@ function emailWrapper(bodyContent) {
           <td style="background:linear-gradient(135deg,#0d1e2e 0%,#0e2a3d 55%,#0a1f18 100%);border-radius:20px 20px 0 0;padding:40px 40px 32px;text-align:center;">
             <!-- Logo image with text fallback -->
             <img
-              src="cid:evercare-logo"
+              src="${siteUrl}/assets/logo.svg"
               alt="EverCare Home Services"
-              width="200"
-              style="max-width:200px;height:auto;display:inline-block;margin-bottom:0;"
+              width="84"
+              style="width:84px;height:84px;display:inline-block;margin-bottom:0;border-radius:14px;"
               onerror="this.style.display='none'"
             >
             <!-- Fallback text logo (hidden if image loads) -->
@@ -296,11 +295,6 @@ router.post('/', express.json({ limit: '16kb' }), async (req, res) => {
 
   try {
     const transporter = createTransporter();
-    const logoAttachment = {
-      filename: 'logo.svg',
-      path: path.resolve(__dirname, '../assets/logo.svg'),
-      cid: 'evercare-logo'
-    };
 
     await Promise.all([
       // Notification to business
@@ -309,7 +303,6 @@ router.post('/', express.json({ limit: '16kb' }), async (req, res) => {
         to:      process.env.EMAIL_TO,
         subject: `New Contact Request — ${data.first_name} ${data.last_name}${data.city ? ' from ' + data.city : ''}`,
         html:    buildBusinessEmail(data),
-        attachments: [logoAttachment],
       }),
       // Confirmation to user
       transporter.sendMail({
@@ -317,7 +310,6 @@ router.post('/', express.json({ limit: '16kb' }), async (req, res) => {
         to:      data.email,
         subject: `Got your message — someone from our team will reach out shortly!`,
         html:    buildUserEmail(data),
-        attachments: [logoAttachment],
       }),
     ]);
 
