@@ -281,7 +281,8 @@
     .footer-bottom a:hover { color: var(--b4); }
 
     /* WIDGET */
-    #contact-widget{position:fixed;bottom:28px;right:28px;z-index:200;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+    #contact-widget{position:fixed;bottom:28px;right:28px;z-index:200;display:flex;flex-direction:column;align-items:flex-end;gap:12px;opacity:0;transform:translateY(14px);pointer-events:none;transition:opacity .25s ease,transform .25s ease}
+    #contact-widget.visible{opacity:1;transform:translateY(0);pointer-events:auto}
     #widget-panel{background:#fff;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.18);width:320px;overflow:hidden;display:none;transform:scale(.9) translateY(10px);opacity:0;transition:all .3s cubic-bezier(.34,1.56,.64,1);transform-origin:bottom right;max-height:calc(100vh - 120px);overflow-y:auto}
     #widget-panel.open{display:block;transform:scale(1) translateY(0);opacity:1}
     .widget-header{background:linear-gradient(135deg,var(--b2),var(--g3));padding:20px}
@@ -540,7 +541,7 @@
       </div>
       <div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex-shrink:0">
         <a href="sms:+15087361263" class="btn-mid-cta"><i class="fa-solid fa-comment-sms"></i> Text for a Free Estimate</a>
-        <span class="mid-cta-sub"><i class="fa-solid fa-clock"></i> Same-day response · No obligation · Fully insured</span>
+        <span class="mid-cta-sub"><i class="fa-solid fa-clock"></i> We reply fast — usually within minutes · No obligation · Fully insured</span>
       </div>
     </div>
   </div>
@@ -729,7 +730,7 @@
       </div>
       <div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex-shrink:0">
         <a href="sms:+15087361263" class="btn-mid-cta"><i class="fa-solid fa-comment-sms"></i> Text for a Free Estimate</a>
-        <span class="mid-cta-sub"><i class="fa-solid fa-clock"></i> Same-day response · No obligation · Fully insured</span>
+        <span class="mid-cta-sub"><i class="fa-solid fa-clock"></i> We reply fast — usually within minutes · No obligation · Fully insured</span>
       </div>
     </div>
   </div>
@@ -868,6 +869,8 @@
   // Nav scroll
   window.addEventListener('scroll', function() {
     document.getElementById('header').classList.toggle('scrolled', window.scrollY > 60);
+    var cw = document.getElementById('contact-widget');
+    if (cw) cw.classList.toggle('visible', window.scrollY > window.innerHeight * 0.2);
   });
 
   // Hamburger

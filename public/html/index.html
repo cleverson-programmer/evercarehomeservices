@@ -131,12 +131,15 @@
     .portal{border-radius:24px;overflow:hidden;position:relative;min-height:420px;display:flex;align-items:flex-end;cursor:pointer;text-decoration:none;box-shadow:var(--sh2);transition:transform .35s}
     .portal:hover{transform:translateY(-6px)}
     .portal-bg{position:absolute;inset:0;z-index:0}
+    .portal-bg::after{content:'';position:absolute;inset:0;pointer-events:none}
+    .portal.clean .portal-bg::after{background:linear-gradient(0deg,rgba(13,30,46,.97) 0%,rgba(13,30,46,.75) 45%,rgba(42,95,143,.2) 75%,transparent 100%)}
+    .portal.care .portal-bg::after{background:linear-gradient(0deg,rgba(13,30,46,.97) 0%,rgba(13,30,46,.75) 45%,rgba(30,92,56,.2) 75%,transparent 100%)}
     .portal-bg img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
     .portal:hover .portal-bg img{transform:scale(1.06)}
     .portal-body{position:relative;z-index:1;padding:36px;width:100%}
     .portal-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.15);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.2);border-radius:100px;padding:6px 14px;color:rgba(255,255,255,.8);font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px}
-    .portal-body h3{font-size:1.8rem;color:#fff;margin-bottom:8px}
-    .portal-body p{color:rgba(255,255,255,.65);font-size:.9rem;line-height:1.65;margin-bottom:22px;max-width:340px}
+    .portal-body h3{font-size:1.8rem;color:#fff;margin-bottom:8px;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+    .portal-body p{color:rgba(255,255,255,.85);font-size:.9rem;line-height:1.65;margin-bottom:22px;max-width:340px;text-shadow:0 1px 6px rgba(0,0,0,.5)}
     .portal-link{display:inline-flex;align-items:center;gap:9px;color:#fff;font-size:.85rem;font-weight:700;border-bottom:1.5px solid rgba(255,255,255,.35);padding-bottom:3px;transition:all .2s}
     .portal-link i{font-size:.75rem;transition:transform .2s}
     .portal:hover .portal-link{border-bottom-color:rgba(255,255,255,.8)}
@@ -326,7 +329,7 @@
       <a href="sms:+15087361263" class="btn-primary"><i class="fa-solid fa-comment-sms"></i> Text for a Free Estimate</a>
       <a href="/about" class="btn-ghost"><i class="fa-solid fa-heart"></i> Our Story</a>
     </div>
-    <p class="hero-note"><i class="fa-solid fa-clock"></i> Same-day response · No obligation · Fully insured</p>
+    <p class="hero-note"><i class="fa-solid fa-clock"></i> We reply fast — usually within minutes · No obligation · Fully insured</p>
   </div>
   <div class="hero-scroll" onclick="document.getElementById('trust-bar').scrollIntoView({behavior:'smooth'})">
     SCROLL <i class="fa-solid fa-chevron-down"></i>
@@ -443,7 +446,7 @@
       </div>
       <div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex-shrink:0">
         <a href="sms:+15087361263" class="btn-mid-cta"><i class="fa-solid fa-comment-sms"></i> Text for a Free Estimate</a>
-        <span class="mid-cta-sub"><i class="fa-solid fa-clock"></i> Same-day response · No obligation · Fully insured</span>
+        <span class="mid-cta-sub"><i class="fa-solid fa-clock"></i> We reply fast — usually within minutes · No obligation · Fully insured</span>
       </div>
     </div>
   </div>
@@ -547,7 +550,7 @@
       </div>
       <div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex-shrink:0">
         <a href="sms:+15087361263" class="btn-mid-cta"><i class="fa-solid fa-comment-sms"></i> Text for a Free Estimate</a>
-        <span class="mid-cta-sub"><i class="fa-solid fa-clock"></i> Same-day response · No obligation · Fully insured</span>
+        <span class="mid-cta-sub"><i class="fa-solid fa-clock"></i> We reply fast — usually within minutes · No obligation · Fully insured</span>
       </div>
     </div>
   </div>

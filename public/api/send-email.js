@@ -208,6 +208,13 @@ function buildUserEmail(d) {
       Thank you for reaching out to <strong style="color:#1a2e3d;font-weight:600;">EverCare Home Services</strong>. We've received your message and a member of our team will follow up with you shortly — typically within <strong style="color:#2a5f8f;">1–2 business hours</strong> during business hours (Mon–Sat, 8am–7pm).
     </p>
 
+    <div style="background:linear-gradient(135deg,rgba(68,135,191,0.07),rgba(82,183,136,0.05));border:1.5px solid rgba(68,135,191,0.15);border-radius:16px;padding:22px 24px;margin:0 0 24px;">
+      <p style="margin:0 0 10px;font-size:15px;color:#1a2e3d;line-height:1.7;font-weight:600;">Hi ${esc(d.first_name)},</p>
+      <p style="margin:0 0 10px;font-size:15px;color:#4a6070;line-height:1.75;">Thanks for reaching out! We received your message and someone from our team will be in touch with you very soon.</p>
+      <p style="margin:0 0 10px;font-size:15px;color:#4a6070;line-height:1.75;">Can't wait? Just text us at <a href="sms:+15087361263" style="color:#4487bf;text-decoration:none;font-weight:700;">(508) 736-1263</a> — we're always quick to respond.</p>
+      <p style="margin:0;font-size:15px;color:#4a6070;line-height:1.75;">Talk soon,<br>The EverCare Team</p>
+    </div>
+
     <!-- Confirmation box -->
     <div style="background:linear-gradient(135deg,rgba(68,135,191,0.07),rgba(82,183,136,0.05));border:1.5px solid rgba(68,135,191,0.15);border-radius:16px;padding:24px;margin-bottom:28px;">
       <div style="font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#4487bf;margin-bottom:16px;">&#10003;&nbsp; Your Request Summary</div>
@@ -311,7 +318,7 @@ router.post('/', express.json({ limit: '16kb' }), async (req, res) => {
       transporter.sendMail({
         from:    `"EverCare Home Services" <${process.env.EMAIL_FROM}>`,
         to:      data.email,
-        subject: `We received your message — EverCare Home Services`,
+        subject: `Got your message — someone from our team will reach out shortly!`,
         html:    buildUserEmail(data),
       }),
     ]);

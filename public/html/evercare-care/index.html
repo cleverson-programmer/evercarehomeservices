@@ -656,7 +656,8 @@
         @media(max-width:767px){.footer-grid{grid-template-columns:1fr} .footer-logo,.footer-brand{grid-column:auto}}
 
         /* WIDGET */
-        #contact-widget{position:fixed;bottom:28px;right:28px;z-index:200;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+        #contact-widget{position:fixed;bottom:28px;right:28px;z-index:200;display:flex;flex-direction:column;align-items:flex-end;gap:12px;opacity:0;transform:translateY(14px);pointer-events:none;transition:opacity .25s ease,transform .25s ease}
+        #contact-widget.visible{opacity:1;transform:translateY(0);pointer-events:auto}
         #widget-panel{background:#fff;border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.18);width:320px;overflow:hidden;display:none;transform:scale(.9) translateY(10px);opacity:0;transition:all .3s cubic-bezier(.34,1.56,.64,1);transform-origin:bottom right;max-height:calc(100vh - 120px);overflow-y:auto}
         #widget-panel.open{display:block;transform:scale(1) translateY(0);opacity:1}
         .widget-header{background:linear-gradient(135deg,var(--b2),var(--g3));padding:20px}
@@ -753,7 +754,7 @@
         <p class="hero-sub">A family-focused service helping seniors stay safe, comfortable, and independent at home — with a certified caregiver you can truly trust.</p>
         <div class="hero-local"><i class="fa-solid fa-location-dot"></i> Proudly serving Worcester, Shrewsbury, Auburn, Holden & surrounding areas</div>
         <div class="hero-actions">
-            <a href="sms:+15087361263" class="btn-hero-primary"><i class="fa-solid fa-comment-sms"></i> Text Us for Care Information</a>
+            <a href="sms:+15087361263&body=Hi!%20I%27m%20interested%20in%20in-home%20senior%20care%20services.%20Can%20someone%20reach%20out%20with%20more%20info%3F" class="btn-hero-primary"><i class="fa-solid fa-comment-sms"></i> Text Us for Care Information</a>
             <a href="tel:+15087361263" class="btn-hero-secondary"><i class="fa-solid fa-phone"></i> Call Us</a>
         </div>
         <p class="hero-note"><i class="fa-solid fa-clock"></i> Fast response by text or call · No pressure, just honest guidance</p>
@@ -860,7 +861,7 @@
             <div class="consider-right">
                 <h3>Not sure if it's the right time?</h3>
                 <p>That's completely okay. Our caregiver is happy to have an honest, no-pressure conversation about your situation — no forms, no obligations, just a real conversation about what your family needs.</p>
-                <a href="sms:+15087361263" class="btn-outline-white"><i class="fa-solid fa-comment-sms"></i> Text Us to Talk About Care</a>
+                <a href="sms:+15087361263&body=Hi!%20I%27m%20interested%20in%20in-home%20senior%20care%20services.%20Can%20someone%20reach%20out%20with%20more%20info%3F" class="btn-outline-white"><i class="fa-solid fa-comment-sms"></i> Text Us to Talk About Care</a>
             </div>
         </div>
     </div>
@@ -933,8 +934,8 @@
         <p>Just send us a text — we respond fast and never pressure you.</p>
       </div>
       <div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex-shrink:0">
-        <a href="sms:+15087361263" class="btn-mid-cta"><i class="fa-solid fa-comment-sms"></i> Text for a Free Estimate</a>
-        <span class="mid-cta-sub"><i class="fa-solid fa-clock"></i> Same-day response · No obligation · Fully insured</span>
+        <a href="sms:+15087361263&body=Hi!%20I%27m%20interested%20in%20in-home%20senior%20care%20services.%20Can%20someone%20reach%20out%20with%20more%20info%3F" class="btn-mid-cta"><i class="fa-solid fa-comment-sms"></i> Text for a Free Estimate</a>
+        <span class="mid-cta-sub"><i class="fa-solid fa-clock"></i> We reply fast — usually within minutes · No obligation · Fully insured</span>
       </div>
     </div>
   </div>
@@ -1057,8 +1058,8 @@
         <p>Just send us a text — we respond fast and never pressure you.</p>
       </div>
       <div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex-shrink:0">
-        <a href="sms:+15087361263" class="btn-mid-cta"><i class="fa-solid fa-comment-sms"></i> Text for a Free Estimate</a>
-        <span class="mid-cta-sub"><i class="fa-solid fa-clock"></i> Same-day response · No obligation · Fully insured</span>
+        <a href="sms:+15087361263&body=Hi!%20I%27m%20interested%20in%20in-home%20senior%20care%20services.%20Can%20someone%20reach%20out%20with%20more%20info%3F" class="btn-mid-cta"><i class="fa-solid fa-comment-sms"></i> Text for a Free Estimate</a>
+        <span class="mid-cta-sub"><i class="fa-solid fa-clock"></i> We reply fast — usually within minutes · No obligation · Fully insured</span>
       </div>
     </div>
   </div>
@@ -1136,8 +1137,8 @@
         <p>Just send us a text — we respond fast and never pressure you.</p>
       </div>
       <div style="display:flex;flex-direction:column;align-items:center;gap:8px;flex-shrink:0">
-        <a href="sms:+15087361263" class="btn-mid-cta"><i class="fa-solid fa-comment-sms"></i> Text for a Free Estimate</a>
-        <span class="mid-cta-sub"><i class="fa-solid fa-clock"></i> Same-day response · No obligation · Fully insured</span>
+        <a href="sms:+15087361263&body=Hi!%20I%27m%20interested%20in%20in-home%20senior%20care%20services.%20Can%20someone%20reach%20out%20with%20more%20info%3F" class="btn-mid-cta"><i class="fa-solid fa-comment-sms"></i> Text for a Free Estimate</a>
+        <span class="mid-cta-sub"><i class="fa-solid fa-clock"></i> We reply fast — usually within minutes · No obligation · Fully insured</span>
       </div>
     </div>
   </div>
@@ -1188,7 +1189,7 @@
         <p style="color:var(--b4);font-size:.9rem;font-weight:600;margin-bottom:32px;letter-spacing:.02em"><i class="fa-solid fa-circle-check" style="margin-right:8px"></i>Currently accepting new care clients in Worcester and nearby communities.</p>
         <div class="cta-box">
             <div class="cta-buttons">
-                <a href="sms:+15087361263" class="btn-cta-main"><i class="fa-solid fa-comment-sms"></i> Text Us for Care Information</a>
+                <a href="sms:+15087361263&body=Hi!%20I%27m%20interested%20in%20in-home%20senior%20care%20services.%20Can%20someone%20reach%20out%20with%20more%20info%3F" class="btn-cta-main"><i class="fa-solid fa-comment-sms"></i> Text Us for Care Information</a>
                 <a href="tel:+15087361263" class="btn-cta-phone"><i class="fa-solid fa-phone"></i> Call Us</a>
             </div>
             <div class="cta-trust-row">
@@ -1287,7 +1288,7 @@
       </div>
     </div>
     <div class="widget-options">
-      <a href="sms:+15087361263&body=Hi! I'd like to learn more about EverCare's services." class="widget-btn wb-sms">
+    <a href="sms:+15087361263&body=Hi!%20I%27m%20interested%20in%20in-home%20senior%20care%20services.%20Can%20someone%20reach%20out%20with%20more%20info%3F" class="widget-btn wb-sms">
         <div class="widget-btn-icon"><i class="fa-solid fa-comment-sms"></i></div>
         <div><span class="wb-label">Text Us</span><span class="wb-sub">Fastest way to reach us</span></div>
       </a>
@@ -1320,8 +1321,8 @@
     document.getElementById('header').classList.toggle('scrolled', scrolled);
     var logo = document.getElementById('logo-text');
     if (logo) logo.style.color = scrolled ? 'var(--navy)' : '#fff';
-    var toggle = document.getElementById('widget-toggle');
-    if (toggle) toggle.classList.toggle('visible', window.scrollY > document.getElementById('hero').offsetHeight * 0.2);
+        var cw = document.getElementById('contact-widget');
+        if (cw) cw.classList.toggle('visible', window.scrollY > document.getElementById('hero').offsetHeight * 0.2);
   });
 
   // Hamburger
